@@ -83,13 +83,13 @@ N -- neighborhood
 
 O -- borough
 
-P
+P -- province
 
-Q
+Q -- continent
 
-R
+R -- planet
 
-S
+S -- planet-moon system
 
 T
 
@@ -99,7 +99,7 @@ V
 
 W
 
-X
+X -- star system
 
 Y
 
