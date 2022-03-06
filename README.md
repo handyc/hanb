@@ -1,9 +1,9 @@
 # hanb
 toy universe
 
-a
+a -- quantum foam particle
 
-b
+b -- Planck particle
 
 c
 
@@ -53,7 +53,7 @@ y
 
 z
 
-A
+A -- Angstrom
 
 B
 
@@ -65,23 +65,23 @@ E
 
 F
 
-G
+G -- pixel
 
 H
 
-I
+I -- 
 
-J
+J -- 
 
-K
+K -- person
 
-L
+L -- lot
 
-M
+M -- hamlet
 
-N
+N -- neighborhood
 
-O
+O -- borough
 
 P
 
@@ -125,6 +125,6 @@ Z
 
 9
 
-_
+_ -- filament
 
-.
+. -- universe container
