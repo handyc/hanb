@@ -88,13 +88,13 @@ x
 y  
 z  
 A -- Angstrom  
-B  
-C  
-D  
-E  
-F  
+B --  
+C --  
+D --  
+E --    
+F --    
 G -- pixel  
-H  
+H --  
 I --   
 J --   
 K -- person  
@@ -138,7 +138,14 @@ planet
 # Implementing hanb
 # physical
 # digital
+# hanb text mode
+# hanb graphics
+# unicode hanb
+# genetic hanb
 
 # Use cases
+# simple rpg example
+# map of city
+#
 
 
