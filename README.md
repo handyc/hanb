@@ -1,11 +1,8 @@
 # hanb
 
-hanb is a simple language for creating model universes at any scale
-
-hanb can be used with or without a computer
-
-if you know the alphabet then you can use hanb
-
+* hanb is a simple language for creating model universes at any scale  
+* hanb can be used with or without a computer  
+* if you know the alphabet then you can use hanb  
 the basis of the hanb system is a 61-cell hexagonal board:
 
 ``▗▗▗▗▗▗▗▗A.A.A.A.A.▗▗▗▗▗▗▗▗``  
