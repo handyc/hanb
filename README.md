@@ -128,12 +128,12 @@ _ -- filament
 
 # hanb replacement language
 describe objects at any resolution, combine various resolutions in any way
-examples:
-apple  
-automobile  
-city  
-continent  
-planet  
+examples:  
+apple  -- size J  
+automobile  -- size K  
+city  -- size O  
+continent  -- size Q  
+planet  -- size R  
 
 # Implementing hanb
 # physical
