@@ -166,9 +166,24 @@ board size L at resolution
 
 hanb translation palettes save memory:  
 
-L -> KKKKKKKKKKKKKKKKKKK
-K -> JJJJJJJJJJJJJJJJJJJ
-J -> IIIIIIIIIIIIIIIIIII
+L -> KKKKKKKKKKKKKKKKKKK  
+K -> JJJJJJJJJJJJJJJJJJJ  
+J -> IIIIIIIIIIIIIIIIIII  
+
+hanb
+translation palette 0 (M cell -> 61 L cells) -- 3904 bytes (61 cell maps for each of 64 possible characters)  
+
+translation palette 1 (L cell -> 61 K cells) -- 3904 bytes 
+translation palette 2 (K cell -> 61 J cells) -- 3904 bytes 
+translation palette 3 (J cell -> 61 I cells) -- 3904 bytes 
+translation palette 4 (I cell -> 61 H cells) -- 3904 bytes 
+translation palette 5 (H cell -> 61 G cells) -- 3904 bytes   
+
+3904 x 5 = 19520 bytes  
+
+using 64 bytes for each cell:
+64^2 = 4096  
+4096 x 5 = 20480 bytes  
 
 # Use cases
 # simple rpg example
