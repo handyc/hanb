@@ -8,23 +8,15 @@ if you know the alphabet then you can use hanb
 
 the basis of the hanb system is a 61-cell hexagonal board:
 
-▗▗▗▗▗▗▗▗A.A.A.A.A.▗▗▗▗▗▗▗▗
-
-▗▗▗▗▗▗▗A.A.A.A.A.A.▗▗▗▗▗▗▗
-
-▗▗▗▗▗▗A.A.A.A.A.A.A.▗▗▗▗▗▗
-
-▗▗▗▗▗A.A.A.A.A.A.A.A.▗▗▗▗
-
-▗▗▗▗A.A.A.A.A.A.A.A.A.▗▗▗▗
-
-▗▗▗▗▗A.A.A.A.A.A.A.A.▗▗▗▗▗
-
-▗▗▗▗▗▗A.A.A.A.A.A.A.▗▗▗▗▗▗
-
-▗▗▗▗▗▗▗A.A.A.A.A.A.▗▗▗▗▗▗▗
-
-▗▗▗▗▗▗▗▗A.A.A.A.A.▗▗▗▗▗▗▗▗
+``▗▗▗▗▗▗▗▗A.A.A.A.A.▗▗▗▗▗▗▗▗``  
+``▗▗▗▗▗▗▗A.A.A.A.A.A.▗▗▗▗▗▗▗``  
+``▗▗▗▗▗▗A.A.A.A.A.A.A.▗▗▗▗▗▗``  
+``▗▗▗▗▗A.A.A.A.A.A.A.A.▗▗▗▗``  
+``▗▗▗▗A.A.A.A.A.A.A.A.A.▗▗▗▗``  
+``▗▗▗▗▗A.A.A.A.A.A.A.A.▗▗▗▗▗``  
+``▗▗▗▗▗▗A.A.A.A.A.A.A.▗▗▗▗▗▗``  
+``▗▗▗▗▗▗▗A.A.A.A.A.A.▗▗▗▗▗▗▗``  
+``▗▗▗▗▗▗▗▗A.A.A.A.A.▗▗▗▗▗▗▗▗``  
 
 each cell contains a single character from a set of 64 total characters:
 
