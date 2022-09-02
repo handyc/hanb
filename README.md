@@ -181,7 +181,7 @@ translation palette 5 (H cell -> 61 G cells) -- 3904 bytes
 
 3904 x 5 = 19520 bytes    
 
-using 64 bytes for each cell:  
+using 64 bytes for each cell (reserve 3 additional bytes for RGB color information):  
 64^2 = 4096    
 4096 x 5 = 20480 bytes    
 
