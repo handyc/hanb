@@ -174,73 +174,73 @@ closely inspect H
 -----
 
 simulated walking map L  
-tFZ2fD1LbWJYCkaB_feYB7wkEVjINP._taGiY8iAef7R1noBhM_uz.Bdwgmld  
-``▗▗▗▗▗▗▗▗A.A.A.A.A.▗▗▗▗▗▗▗▗``  
-``▗▗▗▗▗▗▗A.A.A.A.A.A.▗▗▗▗▗▗▗``  
-``▗▗▗▗▗▗A.A.A.A.A.A.A.▗▗▗▗▗▗``  
-``▗▗▗▗▗A.A.A.A.A.A.A.A.▗▗▗▗``  
-``▗▗▗▗A.A.A.A.A.A.A.A.A.▗▗▗▗``  
-``▗▗▗▗▗A.A.A.A.A.A.A.A.▗▗▗▗▗``  
-``▗▗▗▗▗▗A.A.A.A.A.A.A.▗▗▗▗▗▗``  
-``▗▗▗▗▗▗▗A.A.A.A.A.A.▗▗▗▗▗▗▗``  
-``▗▗▗▗▗▗▗▗A.A.A.A.A.▗▗▗▗▗▗▗▗`` 
+aaaaaKaaaaaKKaaKKaaaaaKaaaaaaaKaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa   
+``▗▗▗▗▗▗▗▗a.a.a.a.a.▗▗▗▗▗▗▗▗``  
+``▗▗▗▗▗▗▗K.a.a.a.a.a.▗▗▗▗▗▗▗``  
+``▗▗▗▗▗▗K.K.a.a.K.K.a.▗▗▗▗▗▗``  
+``▗▗▗▗▗a.a.a.a.K.a.a.a.▗▗▗▗``  
+``▗▗▗▗a.a.a.a.K.a.a.a.J.▗▗▗▗``  
+``▗▗▗▗▗a.a.a.a.a.a.a.a.▗▗▗▗▗``  
+``▗▗▗▗▗▗a.a.a.J.a.a.a.▗▗▗▗▗▗``  
+``▗▗▗▗▗▗▗a.J.a.a.J.a.▗▗▗▗▗▗▗``  
+``▗▗▗▗▗▗▗▗a.a.a.a.a.▗▗▗▗▗▗▗▗`` 
 
-simulated overmap M  
+simulated hamlet overmap M  
 lmXDMBOHISwvumSev7rZtf449JmaUfPIN0EGWHK_yu782UobkdRNNhrkkDVTS  
-``▗▗▗▗▗▗▗▗A.A.A.A.A.▗▗▗▗▗▗▗▗``  
-``▗▗▗▗▗▗▗A.A.A.A.A.A.▗▗▗▗▗▗▗``  
-``▗▗▗▗▗▗A.A.A.A.A.A.A.▗▗▗▗▗▗``  
-``▗▗▗▗▗A.A.A.A.A.A.A.A.▗▗▗▗``  
-``▗▗▗▗A.A.A.A.A.A.A.A.A.▗▗▗▗``  
-``▗▗▗▗▗A.A.A.A.A.A.A.A.▗▗▗▗▗``  
-``▗▗▗▗▗▗A.A.A.A.A.A.A.▗▗▗▗▗▗``  
-``▗▗▗▗▗▗▗A.A.A.A.A.A.▗▗▗▗▗▗▗``  
-``▗▗▗▗▗▗▗▗A.A.A.A.A.▗▗▗▗▗▗▗▗`` 
+``▗▗▗▗▗▗▗▗a.a.a.a.a.▗▗▗▗▗▗▗▗``  
+``▗▗▗▗▗▗▗a.a.a.K.a.a.▗▗▗▗▗▗▗``  
+``▗▗▗▗▗▗a.K.a.a.a.L.a.▗▗▗▗▗▗``  
+``▗▗▗▗▗a.a.a.L.a.a.a.a.▗▗▗▗``  
+``▗▗▗▗a.a.a.a.a.a.a.L.a.▗▗▗▗``  
+``▗▗▗▗▗a.a.L.a.a.a.a.a.▗▗▗▗▗``  
+``▗▗▗▗▗▗a.a.a.a.a.L.a.▗▗▗▗▗▗``  
+``▗▗▗▗▗▗▗a.K.a.K.a.a.▗▗▗▗▗▗▗``  
+``▗▗▗▗▗▗▗▗a.a.a.a.a.▗▗▗▗▗▗▗▗`` 
 
-simulated quest map N  
+simulated village quest map N  
 acuXsBJ18dV_dXTD3pi8hDD6_bDFIQ94wi9vFNbZyCa3ZL8NNN6Bb2zVzoqRE  
-``▗▗▗▗▗▗▗▗A.A.A.A.A.▗▗▗▗▗▗▗▗``  
-``▗▗▗▗▗▗▗A.A.A.A.A.A.▗▗▗▗▗▗▗``  
-``▗▗▗▗▗▗A.A.A.A.A.A.A.▗▗▗▗▗▗``  
-``▗▗▗▗▗A.A.A.A.A.A.A.A.▗▗▗▗``  
-``▗▗▗▗A.A.A.A.A.A.A.A.A.▗▗▗▗``  
-``▗▗▗▗▗A.A.A.A.A.A.A.A.▗▗▗▗▗``  
-``▗▗▗▗▗▗A.A.A.A.A.A.A.▗▗▗▗▗▗``  
-``▗▗▗▗▗▗▗A.A.A.A.A.A.▗▗▗▗▗▗▗``  
-``▗▗▗▗▗▗▗▗A.A.A.A.A.▗▗▗▗▗▗▗▗`` 
+``▗▗▗▗▗▗▗▗a.a.a.a.a.▗▗▗▗▗▗▗▗``  
+``▗▗▗▗▗▗▗a.a.a.a.a.a.▗▗▗▗▗▗▗``  
+``▗▗▗▗▗▗a.a.a.M.a.M.a.▗▗▗▗▗▗``  
+``▗▗▗▗▗a.a.a.a.a.a.a.a.▗▗▗▗``  
+``▗▗▗▗a.a.a.a.M.a.a.a.a.▗▗▗▗``  
+``▗▗▗▗▗a.a.a.a.a.a.M.a.▗▗▗▗▗``  
+``▗▗▗▗▗▗a.a.L.a.a.a.L.▗▗▗▗▗▗``  
+``▗▗▗▗▗▗▗a.a.a.M.a.a.▗▗▗▗▗▗▗``  
+``▗▗▗▗▗▗▗▗a.a.a.a.a.▗▗▗▗▗▗▗▗`` 
 
 simulated city map O  
 fMTNqDeeIKrPQAqveHdY5.BZRDtHxMDlotxyR3y2Cy_5VnrnDpxX6Ssk1LRps  
-``▗▗▗▗▗▗▗▗A.A.A.A.A.▗▗▗▗▗▗▗▗``  
-``▗▗▗▗▗▗▗A.A.A.A.A.A.▗▗▗▗▗▗▗``  
-``▗▗▗▗▗▗A.A.A.A.A.A.A.▗▗▗▗▗▗``  
-``▗▗▗▗▗A.A.A.A.A.A.A.A.▗▗▗▗``  
-``▗▗▗▗A.A.A.A.A.A.A.A.A.▗▗▗▗``  
-``▗▗▗▗▗A.A.A.A.A.A.A.A.▗▗▗▗▗``  
-``▗▗▗▗▗▗A.A.A.A.A.A.A.▗▗▗▗▗▗``  
-``▗▗▗▗▗▗▗A.A.A.A.A.A.▗▗▗▗▗▗▗``  
+``▗▗▗▗▗▗▗▗a.a.a.a.a.▗▗▗▗▗▗▗▗``  
+``▗▗▗▗▗▗▗A.A.A.A.N.a.▗▗▗▗▗▗▗``  
+``▗▗▗▗▗▗a.a.a.a.N.a.a.▗▗▗▗▗▗``  
+``▗▗▗▗▗a.a.K.M.a.K.A.a.▗▗▗▗``  
+``▗▗▗▗a.a.a.a.N.a.a.K.a.▗▗▗▗``  
+``▗▗▗▗▗a.a.L.L.a.A.A.A.▗▗▗▗▗``  
+``▗▗▗▗▗▗A.A.M.A.A.M.A.▗▗▗▗▗▗``  
+``▗▗▗▗▗▗▗A.A.A.L.L.A.▗▗▗▗▗▗▗``  
 ``▗▗▗▗▗▗▗▗A.A.A.A.A.▗▗▗▗▗▗▗▗`` 
 
 simulated kingdom P  
 19i7oMvDURxQzfHiVVCbA4dL278J_XvPfgL.rTOgcQrrK03nlCBJ3RMXHdOyP  
-``▗▗▗▗▗▗▗▗A.A.A.A.A.▗▗▗▗▗▗▗▗``  
-``▗▗▗▗▗▗▗A.A.A.A.A.A.▗▗▗▗▗▗▗``  
-``▗▗▗▗▗▗A.A.A.A.A.A.A.▗▗▗▗▗▗``  
-``▗▗▗▗▗A.A.A.A.A.A.A.A.▗▗▗▗``  
-``▗▗▗▗A.A.A.A.A.A.A.A.A.▗▗▗▗``  
-``▗▗▗▗▗A.A.A.A.A.A.A.A.▗▗▗▗▗``  
-``▗▗▗▗▗▗A.A.A.A.A.A.A.▗▗▗▗▗▗``  
-``▗▗▗▗▗▗▗A.A.A.A.A.A.▗▗▗▗▗▗▗``  
-``▗▗▗▗▗▗▗▗A.A.A.A.A.▗▗▗▗▗▗▗▗`` 
+``▗▗▗▗▗▗▗▗a.a.a.a.a.▗▗▗▗▗▗▗▗``  
+``▗▗▗▗▗▗▗a.A.A.M.O.K.▗▗▗▗▗▗▗``  
+``▗▗▗▗▗▗a.a.K.a.A.A.a.▗▗▗▗▗▗``  
+``▗▗▗▗▗a.O.N.N.a.a.O.a.▗▗▗▗``  
+``▗▗▗▗a.A.A.N.O.M.a.A.a.▗▗▗▗``  
+``▗▗▗▗▗a.a.a.a.K.a.a.a.▗▗▗▗▗``  
+``▗▗▗▗▗▗a.a.M.A.A.M.a.▗▗▗▗▗▗``  
+``▗▗▗▗▗▗▗a.L.A.A.O.a.▗▗▗▗▗▗▗``  
+``▗▗▗▗▗▗▗▗a.a.a.a.a.▗▗▗▗▗▗▗▗`` 
 
 simulated continent Q  
 aYfqpEOK1s5gtDE_ocemVoUH45Ef88Pp9POLKF7cH97WADGBa2dBC6kL6wljU  
 ``▗▗▗▗▗▗▗▗A.A.A.A.A.▗▗▗▗▗▗▗▗``  
-``▗▗▗▗▗▗▗A.A.A.A.A.A.▗▗▗▗▗▗▗``  
-``▗▗▗▗▗▗A.A.A.A.A.A.A.▗▗▗▗▗▗``  
+``▗▗▗▗▗▗▗A.A.A.A.P.A.▗▗▗▗▗▗▗``  
+``▗▗▗▗▗▗A.A.A.P.A.A.A.▗▗▗▗▗▗``  
 ``▗▗▗▗▗A.A.A.A.A.A.A.A.▗▗▗▗``  
-``▗▗▗▗A.A.A.A.A.A.A.A.A.▗▗▗▗``  
-``▗▗▗▗▗A.A.A.A.A.A.A.A.▗▗▗▗▗``  
+``▗▗▗▗A.A.A.P.A.A.A.A.A.▗▗▗▗``  
+``▗▗▗▗▗A.A.A.P.A.A.P.A.▗▗▗▗▗``  
 ``▗▗▗▗▗▗A.A.A.A.A.A.A.▗▗▗▗▗▗``  
 ``▗▗▗▗▗▗▗A.A.A.A.A.A.▗▗▗▗▗▗▗``  
 ``▗▗▗▗▗▗▗▗A.A.A.A.A.▗▗▗▗▗▗▗▗`` 
@@ -248,12 +248,12 @@ aYfqpEOK1s5gtDE_ocemVoUH45Ef88Pp9POLKF7cH97WADGBa2dBC6kL6wljU
 simulated planet R  
 t7t82Ry18okmA1HCr0R8zi0HncVQyGtTo5xGo_44PXA4NRK0ND_sbVrT8fJMt  
 ``▗▗▗▗▗▗▗▗A.A.A.A.A.▗▗▗▗▗▗▗▗``  
-``▗▗▗▗▗▗▗A.A.A.A.A.A.▗▗▗▗▗▗▗``  
-``▗▗▗▗▗▗A.A.A.A.A.A.A.▗▗▗▗▗▗``  
-``▗▗▗▗▗A.A.A.A.A.A.A.A.▗▗▗▗``  
+``▗▗▗▗▗▗▗A.A.A.A.Q.A.▗▗▗▗▗▗▗``  
+``▗▗▗▗▗▗A.A.Q.A.Q.Q.A.▗▗▗▗▗▗``  
+``▗▗▗▗▗A.A.Q.A.A.A.Q.A.▗▗▗▗``  
 ``▗▗▗▗A.A.A.A.A.A.A.A.A.▗▗▗▗``  
-``▗▗▗▗▗A.A.A.A.A.A.A.A.▗▗▗▗▗``  
-``▗▗▗▗▗▗A.A.A.A.A.A.A.▗▗▗▗▗▗``  
+``▗▗▗▗▗A.A.A.Q.Q.Q.A.A.▗▗▗▗▗``  
+``▗▗▗▗▗▗A.A.A.A.Q.A.A.▗▗▗▗▗▗``  
 ``▗▗▗▗▗▗▗A.A.A.A.A.A.▗▗▗▗▗▗▗``  
 ``▗▗▗▗▗▗▗▗A.A.A.A.A.▗▗▗▗▗▗▗▗`` 
 
@@ -261,26 +261,26 @@ t7t82Ry18okmA1HCr0R8zi0HncVQyGtTo5xGo_44PXA4NRK0ND_sbVrT8fJMt
 
 # tourist map of city
 ``▗▗▗▗▗▗▗▗A.A.A.A.A.▗▗▗▗▗▗▗▗``  
-``▗▗▗▗▗▗▗A.A.A.A.A.A.▗▗▗▗▗▗▗``  
-``▗▗▗▗▗▗A.A.A.A.A.A.A.▗▗▗▗▗▗``  
-``▗▗▗▗▗A.A.A.A.A.A.A.A.▗▗▗▗``  
-``▗▗▗▗A.A.A.A.A.A.A.A.A.▗▗▗▗``  
-``▗▗▗▗▗A.A.A.A.A.A.A.A.▗▗▗▗▗``  
-``▗▗▗▗▗▗A.A.A.A.A.A.A.▗▗▗▗▗▗``  
-``▗▗▗▗▗▗▗A.A.A.A.A.A.▗▗▗▗▗▗▗``  
+``▗▗▗▗▗▗▗A.A.A.L.M.A.▗▗▗▗▗▗▗``  
+``▗▗▗▗▗▗A.A.A.A.N.A.A.▗▗▗▗▗▗``  
+``▗▗▗▗▗K.K.K.K.K.K.K.K.▗▗▗▗``  
+``▗▗▗▗A.A.M.A.A.A.A.A.A.▗▗▗▗``  
+``▗▗▗▗▗a.a.L.A.L.A.A.A.▗▗▗▗▗``  
+``▗▗▗▗▗▗A.A.A.A.A.M.A.▗▗▗▗▗▗``  
+``▗▗▗▗▗▗▗a.a.a.N.N.L.▗▗▗▗▗▗▗``  
 ``▗▗▗▗▗▗▗▗A.A.A.A.A.▗▗▗▗▗▗▗▗``  
 
 #
 # model of Solar System  
-``▗▗▗▗▗▗▗▗A.A.A.A.A.▗▗▗▗▗▗▗▗``  
-``▗▗▗▗▗▗▗A.A.A.A.A.A.▗▗▗▗▗▗▗``  
-``▗▗▗▗▗▗A.A.A.A.A.A.A.▗▗▗▗▗▗``  
-``▗▗▗▗▗A.A.A.A.A.A.A.A.▗▗▗▗``  
-``▗▗▗▗A.A.A.A.A.A.A.A.A.▗▗▗▗``  
+``▗▗▗▗▗▗▗▗A.A.A.A.R.▗▗▗▗▗▗▗▗``  
+``▗▗▗▗▗▗▗A.A.A.A.R.A.▗▗▗▗▗▗▗``  
+``▗▗▗▗▗▗A.Q.A.A.R.A.A.▗▗▗▗▗▗``  
+``▗▗▗▗▗A.A.A.A.R.A.A.A.▗▗▗▗``  
+``▗▗▗▗A.A.A.A.X.A.A.A.R.▗▗▗▗``  
 ``▗▗▗▗▗A.A.A.A.A.A.A.A.▗▗▗▗▗``  
-``▗▗▗▗▗▗A.A.A.A.A.A.A.▗▗▗▗▗▗``  
+``▗▗▗▗▗▗A.A.A.A.R.A.A.▗▗▗▗▗▗``  
 ``▗▗▗▗▗▗▗A.A.A.A.A.A.▗▗▗▗▗▗▗``  
-``▗▗▗▗▗▗▗▗A.A.A.A.A.▗▗▗▗▗▗▗▗``  
+``▗▗▗▗▗▗▗▗A.Q.A.A.A.▗▗▗▗▗▗▗▗``  
 
 # model of Milky Way  
 ``▗▗▗▗▗▗▗▗A.A.A.A.A.▗▗▗▗▗▗▗▗``  
