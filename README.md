@@ -198,4 +198,9 @@ t7t82Ry18okmA1HCr0R8zi0HncVQyGtTo5xGo_44PXA4NRK0ND_sbVrT8fJMt
 
 # tourist map of city
 #
+# model of Solar System  
+# model of Milky Way  
+# model of Oxygen atom  
+# model of quark  
+
 
