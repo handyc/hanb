@@ -128,6 +128,15 @@ Z
 _ -- filament  
 . -- universe container  
 
+# hanb replacement language
+describe objects at any resolution, combine various resolutions in any way
+examples:
+apple  
+automobile  
+city  
+continent  
+planet  
+
 # Implementing hanb
 # physical
 # digital
