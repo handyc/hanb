@@ -63,70 +63,70 @@ hanb can be used for a variety of modeling applications, including computer game
 social relationship simulations, terrain visualizations and other types of projects requiring
 large dynamic spaces in limited memory
 
-a -- quantum foam particle
-b -- Planck particle
-c
-d
-e
-f
-g
-h
-i
-j
-k
-l
-m
-n
-o
-p
-q
-r
-s
-t
-u
-v
-w
-x
-y
-z
-A -- Angstrom
-B
-C
-D
-E
-F
-G -- pixel
-H
-I -- 
-J -- 
-K -- person
-L -- lot
-M -- hamlet
-N -- neighborhood
-O -- borough
-P -- province
-Q -- continent
-R -- planet
-S -- planet-moon system
-T
-U
-V
-W
-X -- star system
-Y
-Z
-0
-1
-2
-3
-4
-5
-6 -- galaxy
-7
-8
-9
-_ -- filament
-. -- universe container
+a -- quantum foam particle  
+b -- Planck particle  
+c  
+d  
+e  
+f  
+g  
+h  
+i  
+j  
+k  
+l  
+m  
+n  
+o  
+p  
+q  
+r  
+s  
+t  
+u  
+v  
+w  
+x  
+y  
+z  
+A -- Angstrom  
+B  
+C  
+D  
+E  
+F  
+G -- pixel  
+H  
+I --   
+J --   
+K -- person  
+L -- lot  
+M -- hamlet  
+N -- neighborhood  
+O -- borough  
+P -- province  
+Q -- continent  
+R -- planet  
+S -- planet-moon system  
+T  
+U  
+V  
+W  
+X -- star system  
+Y  
+Z  
+0  
+1  
+2  
+3  
+4  
+5  
+6 -- galaxy  
+7  
+8  
+9  
+_ -- filament  
+. -- universe container  
 
 # Implementing hanb
 # physical
