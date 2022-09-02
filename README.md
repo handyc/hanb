@@ -1,7 +1,9 @@
 # hanb
 
 hanb is a simple language for creating model universes at any scale
+
 hanb can be used with or without a computer
+
 if you know the alphabet then you can use hanb
 
 the basis of the hanb system is a 61-cell hexagonal board:
@@ -17,16 +19,23 @@ the basis of the hanb system is a 61-cell hexagonal board:
 ▗▗▗▗▗▗▗▗A.A.A.A.A.▗▗▗▗▗▗▗▗
 
 each cell contains a single character from a set of 64 total characters:
+
 a-z, A-Z, 0-9, _ and .
 
 boards can be written in a compressed form as 61-character strings, e.g.:
 
 tFZ2fD1LbWJYCkaB_feYB7wkEVjINP._taGiY8iAef7R1noBhM_uz.Bdwgmld
+
 lmXDMBOHISwvumSev7rZtf449JmaUfPIN0EGWHK_yu782UobkdRNNhrkkDVTS
+
 acuXsBJ18dV_dXTD3pi8hDD6_bDFIQ94wi9vFNbZyCa3ZL8NNN6Bb2zVzoqRE
+
 fMTNqDeeIKrPQAqveHdY5.BZRDtHxMDlotxyR3y2Cy_5VnrnDpxX6Ssk1LRps
+
 19i7oMvDURxQzfHiVVCbA4dL278J_XvPfgL.rTOgcQrrK03nlCBJ3RMXHdOyP
+
 aYfqpEOK1s5gtDE_ocemVoUH45Ef88Pp9POLKF7cH97WADGBa2dBC6kL6wljU
+
 t7t82Ry18okmA1HCr0R8zi0HncVQyGtTo5xGo_44PXA4NRK0ND_sbVrT8fJMt
 
 Each board represents a finite space at a particular scale between 0 and 63,
