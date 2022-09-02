@@ -130,7 +130,15 @@ _ -- filament
 describe objects at any resolution, combine various resolutions in any way
 examples:  
 apple  -- size J  
+-- contains high detail sections of size I  
+-- some I sections have very high detail sections size H  
+-- some of those sections have pixel detail sections size G  
+
 automobile  -- size K  
+-- steering wheel size J  
+-- tire size J  
+-- hood ornament size I  
+
 city  -- size O  
 continent  -- size Q  
 planet  -- size R  
@@ -142,6 +150,25 @@ planet  -- size R
 # hanb graphics
 # unicode hanb
 # genetic hanb
+
+# storage benefits  
+
+one board is 61 cells x 1 byte / cell = 61 bytes  
+exponent of level of resolution
+
+board size L at resolution  
+0: 61^0 = 1 byte (component of larger board M)  
+1: 61^1 = 61 bytes (L with K details)  
+2: 61^2 = 3721 bytes (L with J details)  
+3: 61^3 = 226981 bytes (L with I details)  
+4: 61^4 = 13.8 MB (L with H details)  
+5: 61^5 = 845 MB (L with G details, pixel level detail)  
+
+hanb translation palettes save memory:  
+
+L -> KKKKKKKKKKKKKKKKKKK
+K -> JJJJJJJJJJJJJJJJJJJ
+J -> IIIIIIIIIIIIIIIIIII
 
 # Use cases
 # simple rpg example
