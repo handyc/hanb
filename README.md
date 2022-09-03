@@ -134,6 +134,27 @@ apple  -- size J
 -- some I sections have very high detail sections size H  
 -- some of those sections have pixel detail sections size G  
 
+generating apple:  
+-- generate J (apple)  
+
+board='J' 
+
+-- replace J with 61 I cells  
+
+J -> dUp5R4nvFuBGHUDlMg1JyX8ID8H5Znwo82RoF0myOcUhjRjwORaoIJCcZnEsG
+
+-- replace I cells with H cells
+
+board='dUp5R4nvFuBGHUDlMg1JyX8ID8H5Znwo82RoF0myOcUhjRjwORaoIJCcZnEsG'  
+for char in board  
+  char -> lookup(char)
+
+-- replace H cells with G cells (pixels)  
+for char in board  
+  char -> lookup(char)
+
+-G returns RGB
+
 automobile  -- size K  
 -- steering wheel size J  
 -- tire size J  
