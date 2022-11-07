@@ -449,4 +449,10 @@ t7t82Ry18okmA1HCr0R8zi0HncVQyGtTo5xGo_44PXA4NRK0ND_sbVrT8fJMt
 ``▗▗▗▗▗▗▗▗A.A.A.A.A.▗▗▗▗▗▗▗▗``  
 
 
+# hanb and base 64
+https://en.wikipedia.org/wiki/Base64
+
+ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghijklmnopqrstuvwxyz0123456789+/
+
+abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_.
 
