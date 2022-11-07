@@ -154,8 +154,11 @@ w
 x  
 y  
 z -- 1 million yrs
+
 A -- <1 billion yrs  
+
 B --  >1 billion yrs
+
 C -- 1 trillion yrs 
 D -- 1 quadrillion yrs 
 E --    
