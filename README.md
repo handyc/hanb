@@ -61,130 +61,130 @@ hanb can be used for a variety of modeling applications, including computer game
 social relationship simulations, terrain visualizations and other types of projects requiring
 large dynamic spaces in limited memory
 
-a -- quantum foam particle  
-b -- Planck particle  
+`a` -- quantum foam particle  
+`b` -- Planck particle  
 
-c  
+`c`  
 
-d  
+`d`  
 
-e  
+`e`  
 
-f  
+`f`  
 
-g (1 qm) 
+`g` (1 qm) 
 
-h  
+`h`  
 
-i  
+`i`  
 
-j (1 rm) 
+`j` (1 rm) 
 
-k  
+`k`  
 
-l  
+`l`  
 
-m (1 ym) 
+`m` (1 ym) 
 
-n  
+`n`  
 
-o  
+`o`  
 
-p (1 zm) 
+`p` (1 zm) 
 
-q  
+`q`  
 
-r  
+`r`  
 
-s (1 am) 
+`s` (1 am) 
 
-t  
+`t`  
 
-u  
+`u`  
 
-v (1 fm)
+`v` (1 fm)
 
-w  
+`w`  
 
-x  
+`x`  
 
-y (1 pm)
+`y` (1 pm)
 
-z  
+`z`  
 
-A -- Angstrom ("atom")  
+`A` -- Angstrom ("atom")  
 
-B -- small molecule (1 nm)  
+`B` -- small molecule (1 nm)  
 
-C --  
+`C` --  
 
-D --  
+`D` --  
 
-E -- 1 µm  
+`E` -- 1 µm  
 
-F -- 10µm    
+`F` -- 10µm    
 
-G -- classic pixel (.1 mm = 100 µm)  
+`G` -- classic pixel (.1 mm = 100 µm)  
 
-H -- hair (1 mm)
+`H` -- hair (1 mm)
 
-I -- insect / coin size (1 cm)  
+`I` -- insect / coin size (1 cm)  
 
-J -- jar (10 cm) 
+`J` -- jar (10 cm) 
 
-K -- person (1 m) 
+`K` -- person (1 m) 
 
-L -- lot  
+`L` -- lot  
 
-M -- hamlet  
+`M` -- hamlet  
 
-N -- neighborhood (1 km)  
+`N` -- neighborhood (1 km)  
 
-O -- borough  
+`O` -- borough  
 
-P -- province  
+`P` -- province  
 
-Q -- continent (1 Mm) 
+`Q` -- continent (1 Mm) 
 
-R -- planet  
+`R` -- planet  
 
-S -- planet-moon system  
+`S` -- planet-moon system  
 
-T  1 Gm
+`T`  1 Gm
 
-U  
+`U`  
 
-V  
+`V`  
 
-W  1 Tm
+`W`  1 Tm
 
-X -- star system  
+`X` -- star system  
 
-Y  
+`Y`  
 
-Z  1 Pm
+`Z`  1 Pm
 
-0  
+`0`  
 
-1  
+`1`  
 
-2  1 Em
+`2`  1 Em
 
-3  
+`3`  
 
-4  
+`4`  
 
-5  1 Zm
+`5`  1 Zm
 
-6 -- galaxy  
+`6` -- galaxy  
 
-7  
+`7`  
 
-8  1 Ym
+`8`  1 Ym
 
-9  
+`9`  
 
-- -- filament  
+`-` -- filament  
  
 . -- universe container (1 Rm)
 
