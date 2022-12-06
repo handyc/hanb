@@ -63,65 +63,125 @@ large dynamic spaces in limited memory
 
 a -- quantum foam particle  
 b -- Planck particle  
+
 c  
+
 d  
+
 e  
+
 f  
+
 g (1 qm) 
+
 h  
+
 i  
+
 j (1 rm) 
+
 k  
+
 l  
+
 m (1 ym) 
+
 n  
+
 o  
+
 p (1 zm) 
+
 q  
+
 r  
+
 s (1 am) 
+
 t  
+
 u  
+
 v (1 fm)
+
 w  
+
 x  
+
 y (1 pm)
+
 z  
+
 A -- Angstrom ("atom")  
+
 B -- small molecule (1 nm)  
+
 C --  
+
 D --  
+
 E -- 1 µm  
+
 F -- 10µm    
+
 G -- classic pixel (.1 mm = 100 µm)  
+
 H -- hair (1 mm)
+
 I -- insect / coin size (1 cm)  
+
 J -- jar (10 cm) 
+
 K -- person (1 m) 
+
 L -- lot  
+
 M -- hamlet  
+
 N -- neighborhood (1 km)  
+
 O -- borough  
+
 P -- province  
+
 Q -- continent (1 Mm) 
+
 R -- planet  
+
 S -- planet-moon system  
+
 T  1 Gm
+
 U  
+
 V  
+
 W  1 Tm
+
 X -- star system  
+
 Y  
+
 Z  1 Pm
+
 0  
+
 1  
+
 2  1 Em
+
 3  
+
 4  
+
 5  1 Zm
+
 6 -- galaxy  
+
 7  
+
 8  1 Ym
+
 9  
 
 - -- filament  
