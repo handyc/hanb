@@ -22,19 +22,19 @@ a-z, A-Z, 0-9, - and .
 
 boards can be written in a compressed form as 61-character strings, e.g.:
 
-tFZ2fD1LbWJYCkaB_feYB7wkEVjINP._taGiY8iAef7R1noBhM_uz.Bdwgmld
+tFZ2fD1LbWJYCkaB-feYB7wkEVjINP.-taGiY8iAef7R1noBhM_uz.Bdwgmld
 
-lmXDMBOHISwvumSev7rZtf449JmaUfPIN0EGWHK_yu782UobkdRNNhrkkDVTS
+lmXDMBOHISwvumSev7rZtf449JmaUfPIN0EGWHK-yu782UobkdRNNhrkkDVTS
 
-acuXsBJ18dV_dXTD3pi8hDD6_bDFIQ94wi9vFNbZyCa3ZL8NNN6Bb2zVzoqRE
+acuXsBJ18dV-dXTD3pi8hDD6_bDFIQ94wi9vFNbZyCa3ZL8NNN6Bb2zVzoqRE
 
-fMTNqDeeIKrPQAqveHdY5.BZRDtHxMDlotxyR3y2Cy_5VnrnDpxX6Ssk1LRps
+fMTNqDeeIKrPQAqveHdY5.BZRDtHxMDlotxyR3y2Cy-5VnrnDpxX6Ssk1LRps
 
-19i7oMvDURxQzfHiVVCbA4dL278J_XvPfgL.rTOgcQrrK03nlCBJ3RMXHdOyP
+19i7oMvDURxQzfHiVVCbA4dL278J-XvPfgL.rTOgcQrrK03nlCBJ3RMXHdOyP
 
-aYfqpEOK1s5gtDE_ocemVoUH45Ef88Pp9POLKF7cH97WADGBa2dBC6kL6wljU
+aYfqpEOK1s5gtDE-ocemVoUH45Ef88Pp9POLKF7cH97WADGBa2dBC6kL6wljU
 
-t7t82Ry18okmA1HCr0R8zi0HncVQyGtTo5xGo_44PXA4NRK0ND_sbVrT8fJMt
+t7t82Ry18okmA1HCr0R8zi0HncVQyGtTo5xGo-44PXA4NRK0ND-sbVrT8fJMt
 
 Each board represents a finite space at a particular scale between 0 and 63,
 also represented by the above character set, such that 'a' is a board filled
@@ -67,37 +67,37 @@ c
 d  
 e  
 f  
-g  
+g (1 qm) 
 h  
 i  
-j  
+j (1 rm) 
 k  
 l  
-m  
+m (1 ym) 
 n  
 o  
-p  
+p (1 zm) 
 q  
 r  
-s  
+s (1 am) 
 t  
 u  
-v  
+v (1 fm)
 w  
 x  
-y  
+y (1 pm)
 z  
-A -- Angstrom  
-B --  
+A -- Angstrom ("atom")  
+B -- small molecule (1 nm)  
 C --  
 D --  
-E --    
-F --    
-G -- pixel  
-H --  
-I --   
-J --   
-K -- person  
+E -- 1 µm  
+F -- 10µm    
+G -- classic pixel (.1 mm = 100 µm)  
+H -- hair (1 mm)
+I -- insect / coin size (1 cm)  
+J -- jar (10 cm) 
+K -- person (1 m) 
 L -- lot  
 M -- hamlet  
 N -- neighborhood  
