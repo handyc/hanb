@@ -18,7 +18,7 @@ the basis of the hanb system is a 61-cell hexagonal board:
 
 each cell contains a single character from a set of 64 total characters:
 
-a-z, A-Z, 0-9, _ and .
+a-z, A-Z, 0-9, - and .
 
 boards can be written in a compressed form as 61-character strings, e.g.:
 
@@ -123,7 +123,7 @@ Z
 7  
 8  
 9  
-_ -- filament  
+- -- filament  
 . -- universe container  
 
 time in hanb
@@ -193,7 +193,7 @@ Z
 7  
 8  
 9  
-_ --   
+- --   
 . -- 
 
 # hanb replacement language
@@ -454,5 +454,5 @@ https://en.wikipedia.org/wiki/Base64
 
 ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghijklmnopqrstuvwxyz0123456789+/
 
-abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_.
+abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-.
 
