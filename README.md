@@ -46,14 +46,23 @@ and '.' a universe container or universe
 hanb board sizes increase by a factor of 10 with each character, e.g.
 
 1x10^-10 meters or 1 Angstrom is represented by A  
+
 1x10^-9 meters or 1 nanometer is represented by B  
+
 ...  
+
 1x10^-6 meters or 1 micrometer is represented by E
+
 ...
+
 1x10^-3 meters or 1 millimeter is represented by H  
+
 1x10^-2 meters or 1 centimeter is represented by I  
+
 ...  
+
 1x10^0 meters or 1 meter is represented by K  
+
 and so on up to the maximum size of '.' (1 Rm = 1 x 10^27 m, size of universe) 
 
 hanb is based on our actual universe but is highly simplified to allow for different kinds of
