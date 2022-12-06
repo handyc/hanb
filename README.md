@@ -22,7 +22,7 @@ a-z, A-Z, 0-9, - and .
 
 boards can be written in a compressed form as 61-character strings, e.g.:
 
-tFZ2fD1LbWJYCkaB-feYB7wkEVjINP.-taGiY8iAef7R1noBhM_uz.Bdwgmld
+tFZ2fD1LbWJYCkaB-feYB7wkEVjINP.-taGiY8iAef7R1noBhM-uz.Bdwgmld
 
 lmXDMBOHISwvumSev7rZtf449JmaUfPIN0EGWHK-yu782UobkdRNNhrkkDVTS
 
@@ -100,31 +100,33 @@ J -- jar (10 cm)
 K -- person (1 m) 
 L -- lot  
 M -- hamlet  
-N -- neighborhood  
+N -- neighborhood (1 km)  
 O -- borough  
 P -- province  
-Q -- continent  
+Q -- continent (1 Mm) 
 R -- planet  
 S -- planet-moon system  
-T  
+T  1 Gm
 U  
 V  
-W  
+W  1 Tm
 X -- star system  
 Y  
-Z  
+Z  1 Pm
 0  
 1  
-2  
+2  1 Em
 3  
 4  
-5  
+5  1 Zm
 6 -- galaxy  
 7  
-8  
+8  1 Ym
 9  
 - -- filament  
-. -- universe container  
+. -- universe container (1 Rm)
+
+(10^30 m = 1 Qm)
 
 time in hanb
 
