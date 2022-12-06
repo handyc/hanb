@@ -62,6 +62,7 @@ social relationship simulations, terrain visualizations and other types of proje
 large dynamic spaces in limited memory
 
 `a` -- quantum foam particle  
+
 `b` -- Planck particle  
 
 `c`  
@@ -186,79 +187,79 @@ large dynamic spaces in limited memory
 
 `-` -- filament  
  
-. -- universe container (1 Rm)
+`.` -- universe container (1 Rm)
 
 (10^30 m = 1 Qm)
 
 time in hanb
 
-a -- Planck time particle  
-b --   
-c  
-d  
-e  
-f  
-g  
-h  
-i  
-j  
-k  
-l  
-m  
-n  
-o  
-p  
-q  
-r  
-s  
-t  
-u  
-v  
-w  
-x  
-y  
-z -- 1 million yrs
+`a` -- Planck time particle  
+`b` --   
+`c`  
+`d`  
+`e`  
+`f`  
+`g`  
+`h`  
+`i`  
+`j`  
+`k`  
+`l`  
+`m`  
+`n`  
+`o`  
+`p`  
+`q`  
+`r`  
+`s`  
+`t`  
+`u`  
+`v`  
+`w`  
+`x`  
+`y`  
+`z` -- 1 million yrs
 
-A -- <1 billion yrs  
+`A` -- <1 billion yrs  
 
-B --  >1 billion yrs
+`B` --  >1 billion yrs
 
-C -- 1 trillion yrs 
-D -- 1 quadrillion yrs 
-E --    
-F --    
-G --   
-H --  
-I --   
-J --   
-K --   
-L --1e100 yrs   
-M --   
-N --   
-O --  
-P --   
-Q --  
-R --   
-S -- 
-T  
-U  
-V  1e1000 yrs = heat death
-W  
-X -- 
-Y  
-Z  
-0  
-1  
-2  
-3  
-4  
-5  
-6 -- 
-7  
-8  
-9  
-- --   
-. -- 
+`C` -- 1 trillion yrs 
+`D` -- 1 quadrillion yrs 
+`E` --    
+`F` --    
+`G` --   
+`H` --  
+`I` --   
+`J` --   
+`K` --   
+`L` --1e100 yrs   
+`M` --   
+`N` --   
+`O` --  
+`P` --   
+`Q` --  
+`R` --   
+`S` -- 
+`T`  
+`U`  
+`V`  1e1000 yrs = heat death
+`W`  
+`X` -- 
+`Y`  
+`Z`  
+`0`  
+`1`  
+`2`  
+`3`  
+`4`  
+`5`  
+`6` -- 
+`7`  
+`8`  
+`9`  
+`-` --   
+`.` -- 
 
 # hanb replacement language
 describe objects at any resolution, combine various resolutions in any way
