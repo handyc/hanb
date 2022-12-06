@@ -125,69 +125,69 @@ large dynamic spaces in limited memory
 
 `F` -- 10µm    
 
-`G` -- classic pixel (.1 mm = 100 µm)  
+`G` -- pixel (.1 mm = 100 µm)  (.26mm used in CSS so hanb pixel is slightly smaller)
 
-`H` -- hair (1 mm)
+`H` -- "hair" (1 mm)
 
-`I` -- insect / coin size (1 cm)  
+`I` -- "insect" / coin size (1 cm)  
 
-`J` -- jar (10 cm) 
+`J` -- "jar" (10 cm) 
 
 `K` -- person (1 m) 
 
-`L` -- lot  
+`L` -- lot (10 m) 
 
-`M` -- hamlet  
+`M` -- hamlet (100 m) 
 
 `N` -- neighborhood (1 km)  
 
-`O` -- borough  
+`O` -- borough (10 km) 
 
-`P` -- province  
+`P` -- province (100 km) 
 
 `Q` -- continent (1 Mm) 
 
-`R` -- planet  
+`R` -- planet (10 Mm)  
 
-`S` -- planet-moon system  
+`S` -- planet-moon system (100 Mm)
 
-`T`  1 Gm
+`T` -- 1 Gm (~ diameter of sun)
 
 `U`  
 
-`V`  
+`V` -- distance to Venus 
 
-`W`  1 Tm
+`W` -- 1 Tm
 
 `X` -- star system  
 
-`Y`  
+`Y` --  
 
-`Z`  1 Pm
+`Z` -- 1 Pm
 
-`0`  
+`0` --  
 
-`1`  
+`1` -- 
 
-`2`  1 Em
+`2` -- 1 Em
 
-`3`  
+`3` --  
 
-`4`  
+`4` -- 
 
-`5`  1 Zm
+`5` -- 1 Zm
 
 `6` -- galaxy  
 
-`7`  
+`7` -- 
 
-`8`  1 Ym
+`8` -- 1 Ym
 
-`9`  
+`9` -- 
 
 `-` -- filament  
  
-`.` -- universe container (1 Rm)
+`.` -- universe container (1 Rm = 1 x 10^27 m)
 
 (10^30 m = 1 Qm)
 
