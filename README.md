@@ -395,7 +395,7 @@ aaaaaKaaaaaKKaaKKaaaaaKaaaaaaaKaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 ``▗▗▗▗▗▗▗▗a.a.a.a.a.▗▗▗▗▗▗▗▗`` 
 
 simulated hamlet overmap M  
-lmXDMBOHISwvumSev7rZtf449JmaUfPIN0EGWHK-yu782UobkdRNNhrkkDVTS  
+aaaaaaaaKaaaKaaaLaaaaLaaaaaaaaaaaLaaaLaaaaaaaaaaLaaKaKaaaaaaa  
 ``▗▗▗▗▗▗▗▗a.a.a.a.a.▗▗▗▗▗▗▗▗``  
 ``▗▗▗▗▗▗▗a.a.a.K.a.a.▗▗▗▗▗▗▗``  
 ``▗▗▗▗▗▗a.K.a.a.a.L.a.▗▗▗▗▗▗``  
@@ -407,7 +407,7 @@ lmXDMBOHISwvumSev7rZtf449JmaUfPIN0EGWHK-yu782UobkdRNNhrkkDVTS
 ``▗▗▗▗▗▗▗▗a.a.a.a.a.▗▗▗▗▗▗▗▗`` 
 
 simulated village quest map N  
-acuXsBJ18dV-dXTD3pi8hDD6-bDFIQ94wi9vFNbZyCa3ZL8NNN6Bb2zVzoqRE  
+aaaaaaaaaaaaaaMaMaaaaaaaaaaaaaMaaaaaaaaaaMaaaLaaaLaaaMaaaaaaa  
 ``▗▗▗▗▗▗▗▗a.a.a.a.a.▗▗▗▗▗▗▗▗``  
 ``▗▗▗▗▗▗▗a.a.a.a.a.a.▗▗▗▗▗▗▗``  
 ``▗▗▗▗▗▗a.a.a.M.a.M.a.▗▗▗▗▗▗``  
@@ -419,7 +419,7 @@ acuXsBJ18dV-dXTD3pi8hDD6-bDFIQ94wi9vFNbZyCa3ZL8NNN6Bb2zVzoqRE
 ``▗▗▗▗▗▗▗▗a.a.a.a.a.▗▗▗▗▗▗▗▗`` 
 
 simulated city map O  
-fMTNqDeeIKrPQAqveHdY5.BZRDtHxMDlotxyR3y2Cy-5VnrnDpxX6Ssk1LRps  
+aaaaaAAAANaaaaaNaaaaKMaKAaaaaaNaaKaaaLLaAAAAAMAAMAAAALLAAAAAA  
 ``▗▗▗▗▗▗▗▗a.a.a.a.a.▗▗▗▗▗▗▗▗``  
 ``▗▗▗▗▗▗▗A.A.A.A.N.a.▗▗▗▗▗▗▗``  
 ``▗▗▗▗▗▗a.a.a.a.N.a.a.▗▗▗▗▗▗``  
@@ -431,7 +431,7 @@ fMTNqDeeIKrPQAqveHdY5.BZRDtHxMDlotxyR3y2Cy-5VnrnDpxX6Ssk1LRps
 ``▗▗▗▗▗▗▗▗A.A.A.A.A.▗▗▗▗▗▗▗▗`` 
 
 simulated kingdom P  
-19i7oMvDURxQzfHiVVCbA4dL278J-XvPfgL.rTOgcQrrK03nlCBJ3RMXHdOyP  
+aaaaaaAAMOKaaKaAAaaONNaaOaaAANOMaAaaaaaKaaaaaMAAMaaLAAOaaaaaa  
 ``▗▗▗▗▗▗▗▗a.a.a.a.a.▗▗▗▗▗▗▗▗``  
 ``▗▗▗▗▗▗▗a.A.A.M.O.K.▗▗▗▗▗▗▗``  
 ``▗▗▗▗▗▗a.a.K.a.A.A.a.▗▗▗▗▗▗``  
@@ -443,7 +443,7 @@ simulated kingdom P
 ``▗▗▗▗▗▗▗▗a.a.a.a.a.▗▗▗▗▗▗▗▗`` 
 
 simulated continent Q  
-aYfqpEOK1s5gtDE-ocemVoUH45Ef88Pp9POLKF7cH97WADGBa2dBC6kL6wljU  
+AAAAAAAAAPAAAAPAAAAAAAAAAAAAAPAAAAAAAAPAAPAAAAAAAAAAAAAAAAAA  
 ``▗▗▗▗▗▗▗▗A.A.A.A.A.▗▗▗▗▗▗▗▗``  
 ``▗▗▗▗▗▗▗A.A.A.A.P.A.▗▗▗▗▗▗▗``  
 ``▗▗▗▗▗▗A.A.A.P.A.A.A.▗▗▗▗▗▗``  
@@ -455,7 +455,7 @@ aYfqpEOK1s5gtDE-ocemVoUH45Ef88Pp9POLKF7cH97WADGBa2dBC6kL6wljU
 ``▗▗▗▗▗▗▗▗A.A.A.A.A.▗▗▗▗▗▗▗▗`` 
 
 simulated planet R  
-t7t82Ry18okmA1HCr0R8zi0HncVQyGtTo5xGo-44PXA4NRK0ND-sbVrT8fJMt  
+AAAAAAAAQAAAQAQQAAAQAAAQAAAAAAAAAAAAAQQQAAAAAAQAAAAAAAAAAAAA  
 ``▗▗▗▗▗▗▗▗A.A.A.A.A.▗▗▗▗▗▗▗▗``  
 ``▗▗▗▗▗▗▗A.A.A.A.Q.A.▗▗▗▗▗▗▗``  
 ``▗▗▗▗▗▗A.A.Q.A.Q.Q.A.▗▗▗▗▗▗``  
