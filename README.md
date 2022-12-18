@@ -355,7 +355,7 @@ using 64 bytes for each cell (reserve 3 additional bytes for RGB color informati
 # Use cases
 # simple rpg example
 
-generate scope replacement palettes a-z, A-Z, 0-9, _ .
+generate scope replacement palettes a-z, A-Z, 0-9, - .
 
 a -> jHtsb3VjW2bLgToIqvMyJSiz2dvYKT4MOayOO8HjWQ8Jzvnm1YzWbA3CvEoA1  
 b -> pwc0SwumO0nTW9aHCtyRU8PZBDUwDYWFeEbsuFfw5Bn8W6dl8xmuGAdzYwHpx  
