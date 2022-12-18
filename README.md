@@ -453,7 +453,7 @@ closely inspect H
 -----
 
 simulated walking map L  
-aaaaaKaaaaaKKaaKKaaaaaKaaaaaaaKaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa   
+aaaaaKaaaaaKKaaKKaaaaaKaaaaaaaKaaaJaaaaaaaaaaaJaaaaJaaJaaaaaa   
 ``▗▗▗▗▗▗▗▗a.a.a.a.a.▗▗▗▗▗▗▗▗``  
 ``▗▗▗▗▗▗▗K.a.a.a.a.a.▗▗▗▗▗▗▗``  
 ``▗▗▗▗▗▗K.K.a.a.K.K.a.▗▗▗▗▗▗``  
