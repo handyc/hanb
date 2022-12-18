@@ -19,7 +19,7 @@ the basis of the hanb system is a 61-cell hexagonal board:
 ``▗▗▗▗▗▗▗▗A.A.A.A.A.▗▗▗▗▗▗▗▗``  
 ``▗▗▗▗▗▗▗A.A.A.A.A.A.▗▗▗▗▗▗▗``  
 ``▗▗▗▗▗▗A.A.A.A.A.A.A.▗▗▗▗▗▗``  
-``▗▗▗▗▗A.A.A.A.A.A.A.A.▗▗▗▗``  
+``▗▗▗▗▗A.A.A.A.A.A.A.A.▗▗▗▗▗``  
 ``▗▗▗▗A.A.A.A.A.A.A.A.A.▗▗▗▗``  
 ``▗▗▗▗▗A.A.A.A.A.A.A.A.▗▗▗▗▗``  
 ``▗▗▗▗▗▗A.A.A.A.A.A.A.▗▗▗▗▗▗``  
@@ -457,7 +457,7 @@ aaaaaKaaaaaKKaaKKaaaaaKaaaaaaaKaaaJaaaaaaaaaaaJaaaaJaaJaaaaaa
 ``▗▗▗▗▗▗▗▗a.a.a.a.a.▗▗▗▗▗▗▗▗``  
 ``▗▗▗▗▗▗▗K.a.a.a.a.a.▗▗▗▗▗▗▗``  
 ``▗▗▗▗▗▗K.K.a.a.K.K.a.▗▗▗▗▗▗``  
-``▗▗▗▗▗a.a.a.a.K.a.a.a.▗▗▗▗``  
+``▗▗▗▗▗a.a.a.a.K.a.a.a.▗▗▗▗▗``  
 ``▗▗▗▗a.a.a.a.K.a.a.a.J.▗▗▗▗``  
 ``▗▗▗▗▗a.a.a.a.a.a.a.a.▗▗▗▗▗``  
 ``▗▗▗▗▗▗a.a.a.J.a.a.a.▗▗▗▗▗▗``  
@@ -469,7 +469,7 @@ aaaaaaaaKaaaKaaaLaaaaLaaaaaaaaaaaLaaaLaaaaaaaaaaLaaKaKaaaaaaa
 ``▗▗▗▗▗▗▗▗a.a.a.a.a.▗▗▗▗▗▗▗▗``  
 ``▗▗▗▗▗▗▗a.a.a.K.a.a.▗▗▗▗▗▗▗``  
 ``▗▗▗▗▗▗a.K.a.a.a.L.a.▗▗▗▗▗▗``  
-``▗▗▗▗▗a.a.a.L.a.a.a.a.▗▗▗▗``  
+``▗▗▗▗▗a.a.a.L.a.a.a.a.▗▗▗▗▗``  
 ``▗▗▗▗a.a.a.a.a.a.a.L.a.▗▗▗▗``  
 ``▗▗▗▗▗a.a.L.a.a.a.a.a.▗▗▗▗▗``  
 ``▗▗▗▗▗▗a.a.a.a.a.L.a.▗▗▗▗▗▗``  
@@ -481,7 +481,7 @@ aaaaaaaaaaaaaaMaMaaaaaaaaaaaaaMaaaaaaaaaaMaaaLaaaLaaaMaaaaaaa
 ``▗▗▗▗▗▗▗▗a.a.a.a.a.▗▗▗▗▗▗▗▗``  
 ``▗▗▗▗▗▗▗a.a.a.a.a.a.▗▗▗▗▗▗▗``  
 ``▗▗▗▗▗▗a.a.a.M.a.M.a.▗▗▗▗▗▗``  
-``▗▗▗▗▗a.a.a.a.a.a.a.a.▗▗▗▗``  
+``▗▗▗▗▗a.a.a.a.a.a.a.a.▗▗▗▗▗``  
 ``▗▗▗▗a.a.a.a.M.a.a.a.a.▗▗▗▗``  
 ``▗▗▗▗▗a.a.a.a.a.a.M.a.▗▗▗▗▗``  
 ``▗▗▗▗▗▗a.a.L.a.a.a.L.▗▗▗▗▗▗``  
@@ -493,7 +493,7 @@ aaaaaAAAANaaaaaNaaaaKMaKAaaaaaNaaKaaaLLaAAAAAMAAMAAAALLAAAAAA
 ``▗▗▗▗▗▗▗▗a.a.a.a.a.▗▗▗▗▗▗▗▗``  
 ``▗▗▗▗▗▗▗A.A.A.A.N.a.▗▗▗▗▗▗▗``  
 ``▗▗▗▗▗▗a.a.a.a.N.a.a.▗▗▗▗▗▗``  
-``▗▗▗▗▗a.a.K.M.a.K.A.a.▗▗▗▗``  
+``▗▗▗▗▗a.a.K.M.a.K.A.a.▗▗▗▗▗``  
 ``▗▗▗▗a.a.a.a.N.a.a.K.a.▗▗▗▗``  
 ``▗▗▗▗▗a.a.L.L.a.A.A.A.▗▗▗▗▗``  
 ``▗▗▗▗▗▗A.A.M.A.A.M.A.▗▗▗▗▗▗``  
@@ -505,7 +505,7 @@ aaaaaaAAMOKaaKaAAaaONNaaOaaAANOMaAaaaaaKaaaaaMAAMaaLAAOaaaaaa
 ``▗▗▗▗▗▗▗▗a.a.a.a.a.▗▗▗▗▗▗▗▗``  
 ``▗▗▗▗▗▗▗a.A.A.M.O.K.▗▗▗▗▗▗▗``  
 ``▗▗▗▗▗▗a.a.K.a.A.A.a.▗▗▗▗▗▗``  
-``▗▗▗▗▗a.O.N.N.a.a.O.a.▗▗▗▗``  
+``▗▗▗▗▗a.O.N.N.a.a.O.a.▗▗▗▗▗``  
 ``▗▗▗▗a.A.A.N.O.M.a.A.a.▗▗▗▗``  
 ``▗▗▗▗▗a.a.a.a.K.a.a.a.▗▗▗▗▗``  
 ``▗▗▗▗▗▗a.a.M.A.A.M.a.▗▗▗▗▗▗``  
@@ -517,7 +517,7 @@ AAAAAAAAAPAAAAPAAAAAAAAAAAAAAPAAAAAAAAPAAPAAAAAAAAAAAAAAAAAA
 ``▗▗▗▗▗▗▗▗A.A.A.A.A.▗▗▗▗▗▗▗▗``  
 ``▗▗▗▗▗▗▗A.A.A.A.P.A.▗▗▗▗▗▗▗``  
 ``▗▗▗▗▗▗A.A.A.P.A.A.A.▗▗▗▗▗▗``  
-``▗▗▗▗▗A.A.A.A.A.A.A.A.▗▗▗▗``  
+``▗▗▗▗▗A.A.A.A.A.A.A.A.▗▗▗▗▗``  
 ``▗▗▗▗A.A.A.P.A.A.A.A.A.▗▗▗▗``  
 ``▗▗▗▗▗A.A.A.P.A.A.P.A.▗▗▗▗▗``  
 ``▗▗▗▗▗▗A.A.A.A.A.A.A.▗▗▗▗▗▗``  
@@ -529,7 +529,7 @@ AAAAAAAAQAAAQAQQAAAQAAAQAAAAAAAAAAAAAQQQAAAAAAQAAAAAAAAAAAAA
 ``▗▗▗▗▗▗▗▗A.A.A.A.A.▗▗▗▗▗▗▗▗``  
 ``▗▗▗▗▗▗▗A.A.A.A.Q.A.▗▗▗▗▗▗▗``  
 ``▗▗▗▗▗▗A.A.Q.A.Q.Q.A.▗▗▗▗▗▗``  
-``▗▗▗▗▗A.A.Q.A.A.A.Q.A.▗▗▗▗``  
+``▗▗▗▗▗A.A.Q.A.A.A.Q.A.▗▗▗▗▗``  
 ``▗▗▗▗A.A.A.A.A.A.A.A.A.▗▗▗▗``  
 ``▗▗▗▗▗A.A.A.Q.Q.Q.A.A.▗▗▗▗▗``  
 ``▗▗▗▗▗▗A.A.A.A.Q.A.A.▗▗▗▗▗▗``  
@@ -542,7 +542,7 @@ AAAAAAAAQAAAQAQQAAAQAAAQAAAAAAAAAAAAAQQQAAAAAAQAAAAAAAAAAAAA
 ``▗▗▗▗▗▗▗▗A.A.A.A.A.▗▗▗▗▗▗▗▗``  
 ``▗▗▗▗▗▗▗A.A.A.L.M.A.▗▗▗▗▗▗▗``  
 ``▗▗▗▗▗▗A.A.A.A.N.A.A.▗▗▗▗▗▗``  
-``▗▗▗▗▗K.K.K.K.K.K.K.K.▗▗▗▗``  
+``▗▗▗▗▗K.K.K.K.K.K.K.K.▗▗▗▗▗``  
 ``▗▗▗▗A.A.M.A.A.A.A.A.A.▗▗▗▗``  
 ``▗▗▗▗▗a.a.L.A.L.A.A.A.▗▗▗▗▗``  
 ``▗▗▗▗▗▗A.A.A.A.A.M.A.▗▗▗▗▗▗``  
@@ -554,7 +554,7 @@ AAAAAAAAQAAAQAQQAAAQAAAQAAAAAAAAAAAAAQQQAAAAAAQAAAAAAAAAAAAA
 ``▗▗▗▗▗▗▗▗A.A.A.A.R.▗▗▗▗▗▗▗▗``  
 ``▗▗▗▗▗▗▗A.A.A.A.R.A.▗▗▗▗▗▗▗``  
 ``▗▗▗▗▗▗A.Q.A.A.R.A.A.▗▗▗▗▗▗``  
-``▗▗▗▗▗A.A.A.A.R.A.A.A.▗▗▗▗``  
+``▗▗▗▗▗A.A.A.A.R.A.A.A.▗▗▗▗▗``  
 ``▗▗▗▗A.A.A.A.X.A.A.A.R.▗▗▗▗``  
 ``▗▗▗▗▗A.A.A.A.A.A.A.A.▗▗▗▗▗``  
 ``▗▗▗▗▗▗A.A.A.A.R.A.A.▗▗▗▗▗▗``  
@@ -565,7 +565,7 @@ AAAAAAAAQAAAQAQQAAAQAAAQAAAAAAAAAAAAAQQQAAAAAAQAAAAAAAAAAAAA
 ``▗▗▗▗▗▗▗▗-.3.3.-.-.▗▗▗▗▗▗▗▗``  
 ``▗▗▗▗▗▗▗-.3.-.-.3.3.▗▗▗▗▗▗▗``  
 ``▗▗▗▗▗▗-.3.-.3.3.-.-.▗▗▗▗▗▗``  
-``▗▗▗▗▗-.-.3.3.3.-.3.-.▗▗▗▗``  
+``▗▗▗▗▗-.-.3.3.3.-.3.-.▗▗▗▗▗``  
 ``▗▗▗▗-.3.-.3.3.3.3.-.-.▗▗▗▗``  
 ``▗▗▗▗▗-.3.3.3.3.3.-.-.▗▗▗▗▗``  
 ``▗▗▗▗▗▗-.-.-.-.-.3.-.▗▗▗▗▗▗``  
@@ -586,7 +586,7 @@ AAAAAAAAQAAAQAQQAAAQAAAQAAAAAAAAAAAAAQQQAAAAAAQAAAAAAAAAAAAA
 ``▗▗▗▗▗▗▗▗-.-.-.-.-.▗▗▗▗▗▗▗▗``  
 ``▗▗▗▗▗▗▗-.-.-.-.-.-.▗▗▗▗▗▗▗``  
 ``▗▗▗▗▗▗-.-.-.-.-.-.-.▗▗▗▗▗▗``  
-``▗▗▗▗▗-.-.-.v.v.-.-.-.▗▗▗▗``  
+``▗▗▗▗▗-.-.-.v.v.-.-.-.▗▗▗▗▗``  
 ``▗▗▗▗-.v.-.v.v.v.-.v.-.▗▗▗▗``  
 ``▗▗▗▗▗-.-.-.v.v.-.-.-.▗▗▗▗▗``  
 ``▗▗▗▗▗▗-.-.-.-.-.-.-.▗▗▗▗▗▗``  
@@ -607,7 +607,7 @@ AAAAAAAAQAAAQAQQAAAQAAAQAAAAAAAAAAAAAQQQAAAAAAQAAAAAAAAAAAAA
 ``▗▗▗▗▗▗▗▗t.t.t.t.t.▗▗▗▗▗▗▗▗``  
 ``▗▗▗▗▗▗▗t.t.t.t.t.t.▗▗▗▗▗▗▗``  
 ``▗▗▗▗▗▗t.t.t.t.t.t.t.▗▗▗▗▗▗``  
-``▗▗▗▗▗t.t.t.t.t.t.t.t.▗▗▗▗``  
+``▗▗▗▗▗t.t.t.t.t.t.t.t.▗▗▗▗▗``  
 ``▗▗▗▗t.t.t.t.t.t.t.t.t.▗▗▗▗``  
 ``▗▗▗▗▗t.t.t.t.t.t.t.t.▗▗▗▗▗``  
 ``▗▗▗▗▗▗t.t.t.t.t.t.t.▗▗▗▗▗▗``  
