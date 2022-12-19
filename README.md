@@ -440,8 +440,29 @@ _ -> 6weMksPXE7kyap1Q8wxij0ttLn6gHSu9n01k0hENnCCrHf7Zs0Xy9srvnzz6b
 generate character K  
 wZcgQZaWrht6a6rEWLLbcxGbS6rjUPFKBtLrRt8eLNlzxJf0WNiQ5LeIWOXrc
 
+``🍁🍁🍁🍁🌿🍁🌿🍁🌿🍁🌿🍁🌿🍁🍁🍁🍁``  
+``🍁🍁🍁🌿🍁🌿🍁🌿🍁🌿🍁🌿🍁🌿🍁🍁🍁``  
+``🍁🍁🌿🍁🌿🍁🌿🍁💠🍁🌿🍁🌿🍁🌿🍁🍁``  
+``🍁🌿🍁🌿🍁🌿🍁💠🍁💠🍁🌿🍁🌿🍁🌿🍁``  
+``🌿🍁🌿🍁🌿🍁🌿🍁💠🍁💠🍁🌿🍁🌿🍁🌿``  
+``🍁🌿🍁🌿🍁🌿🍁💠🍁💠🍁🌿🍁🌿🍁🌿🍁``  
+``🍁🍁🌿🍁🌿🍁🌿🍁💠🍁💠🍁🌿🍁🌿🍁🍁``  
+``🍁🍁🍁🌿🍁🌿🍁💠🍁💠🍁🌿🍁🌿🍁🍁🍁``  
+``🍁🍁🍁🍁🌿🍁💠🍁💠🍁💠🍁🌿🍁🍁🍁🍁``
+
 generate weapon J  
 S5pl9pE1I37bVazv52AyZiJCnBzLeRwpelSv28oeo9MVHG7zKvnhWBi2ZoHfv
+
+``🍁🍁🍁🍁🌿🍁🌿🍁💠🍁🌿🍁🌿🍁🍁🍁🍁``  
+``🍁🍁🍁🌿🍁🌿🍁🌿🍁🌿🍁🌿🍁🌿🍁🍁🍁``  
+``🍁🍁🌿🍁🌿🍁🌿🍁💠🍁🌿🍁🌿🍁🌿🍁🍁``  
+``🍁🌿🍁🌿🍁🌿🍁🌿🍁🌿🍁🌿🍁🌿🍁🌿🍁``  
+``🌿🍁🌿🍁🌿🍁🌿🍁💠🍁🌿🍁🌿🍁🌿🍁🌿``  
+``🍁🌿🍁🌿🍁🌿🍁🌿🍁🌿🍁🌿🍁🌿🍁🌿🍁``  
+``🍁🍁🌿🍁🌿🍁💠🍁💠🍁💠🍁🌿🍁🌿🍁🍁``  
+``🍁🍁🍁🌿🍁🌿🍁🌿🍁🌿🍁🌿🍁🌿🍁🍁🍁``  
+``🍁🍁🍁🍁🌿🍁🌿🍁💠🍁🌿🍁🌿🍁🍁🍁🍁`` 
+
 
 generate magic ring I  
 ``aaHaaaaGGaaaaFFFaaaaFaaFaaaaFaaaFaaaaFaaFaaaaFaFaaaaFFaaaaaaa``  
