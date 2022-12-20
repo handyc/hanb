@@ -345,7 +345,9 @@ time in hanb
 
 # hanb replacement language
 describe objects at any resolution, combine various resolutions in any way
+
 examples:  
+
 apple  -- size J  
 -- contains high detail sections of size I  
 -- some I sections have very high detail sections size H  
