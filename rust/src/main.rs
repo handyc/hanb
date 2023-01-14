@@ -3,6 +3,8 @@ use std::io::BufRead;
 
 use clap::{self, Parser};
 
+const  CHARACTER_MAP: &str = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-.";
+
 /// Hanb is a simple language for creating model universes at any scale
 #[derive(Parser, Debug)]
 #[clap(author, version, about, long_about = None)]
