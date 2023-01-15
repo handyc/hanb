@@ -795,8 +795,8 @@ abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-.
 ``🌿🌿🌿🌿🌿🌿🌿🌿🌻🌿🌸🌿🌼🌿🌻🌿🌸🌿🌿🌿🌿🌿🌿🌿🌿🌿``  
 
 
-physical hanb example
-![physical hanb](images/hex_board.jpg)
+wooden hanb board by John Fisherkeller
+![wooden hanb board](images/hex_board.jpg)
 
 color test
 
