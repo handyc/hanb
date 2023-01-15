@@ -343,6 +343,29 @@ time in hanb
 
 `.` -- 
 
+# situations and events
+
+The basis for movement in hanb is the relationship between situations and events.
+A situation is a hanb board that is described in terms of object positions and object types (use one 64-character string for position as above
+and a second 64-character string to define object types):
+
+`bdhdjsskjhbsdgyuulskjhddfsghdjjjhgfdhjgkjskjhgdgdhjdkjhgshgdhPPP`
+`ddfgljhgelrufhfhfhuurlkjhffhdjklkjheghjdkjhgdf7876dljhfffjjdg111`
+
+An event is the transition from one situation to a different situation in terms of position and/or type, e.g.
+
+`bdhdjsskjhbsdgyuulskjhddfsghdjjjhgfdhjgkjskjhgdgdhjdkjhgshgdhPPP`
+`ddfgljhgelrufhfhfhuurlkjhffhdjklkjheghjdkjhgdf7876dljhfffjjdg111`
+
+--->
+
+`HdhdjsskjhbsdgyuulskjhddfsghdjjjhgfdhjgkjskjhgdgdhjdkjhgshgdhPPP`
+`ddfgljhgelrufhfhfhuurlkjhffhdjklkjheghjdkjhgdf7876dljhfffjjdg111`
+
+In the above example, the position string has been altered by one character, such that cell 0 has changed from
+object size 'b' to object size 'H'
+
+
 # hanb replacement language
 describe objects at any resolution, combine various resolutions in any way
 
@@ -421,9 +444,20 @@ translation palette 5 (H cell -> 61 G cells) -- 3904 bytes
 
 3904 x 5 = 19520 bytes    
 
+# 64-character strings
+
 using 64 bytes for each cell (reserve 3 additional bytes for RGB color information):  
 64^2 = 4096    
-4096 x 5 = 20480 bytes    
+4096 x 5 = 20480 bytes   
+
+A 3-character return value is appended to each 61-character string to allow for a base case
+in situations that do not allow a board to be resolved fully:
+
+`AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA555`
+
+In the above example, the string of A characters represents the cell values, and the string "555" at the end is a return value.
+In this way an RGB color value or other types on information can be returned with each board as an alternative to displaying the board.
+ 
 
 # Use cases
 # simple rpg example
