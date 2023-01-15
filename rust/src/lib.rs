@@ -52,10 +52,10 @@ pub struct Board {
 impl Board {
     /// Create a new board from a BOARD_SIZE long string. Can optionally include a color.
     pub fn new(board: &str) -> Result<Self, String> {
-        if board.len() < BOARD_SIZE {
+        if board.len() < 1 {
             return Err(format!(
                 "Board must be at least {} characters long. You entered {}",
-                BOARD_SIZE,
+                1,
                 board.len()
             ));
         }
@@ -116,10 +116,10 @@ impl Navigator {
     }
 
     /// Go to a cell in the current board returning it
-    pub fn descend(&mut self, cell: usize) -> Option<&Board> {
-        self.resolve(cell).ok()?;
+    pub fn descend(&mut self, cell: usize) ->Result<&Board, String> {
+        self.resolve(cell)?;
         self.cell_stack.push(cell);
-        Some(self.current_board())
+        Ok(self.current_board())
     }
 
     /// Resolve the cell at position `pos` in the current board.
@@ -146,5 +146,22 @@ impl Navigator {
                 pos
             ))
         }
+    }
+
+    /// Define the board for a cell in the current board.
+    pub fn define(&mut self, pos: usize, value: &str) -> Result<(), String> {
+        if pos >= self.current_board().cells.len() {
+            return Err(format!(
+                "Position must be less than {}. You entered {}",
+                self.current_board().cells.len(), pos
+            ));
+        }
+
+        let mut board = &mut self.root_board;
+        for cell in &self.cell_stack {
+            board = board.cells[*cell].board.as_mut().unwrap();
+        }
+        board.cells[pos].set_board_from_str(value)?;
+        Ok(())
     }
 }
