@@ -1,3 +1,5 @@
+use std::cmp::min;
+
 const BOARD_SIZE: usize = 61;
 const DIAGONAL: u8 = 9;
 
@@ -54,13 +56,7 @@ impl Board {
                 board.len()
             ));
         }
-        if board.len() > BOARD_SIZE + 3 {
-            return Err(format!(
-                "Board must be at most {} characters long. You entered {}",
-                BOARD_SIZE + 3,
-                board.len()
-            ));
-        }
+        let board = board[0..min(board.len(), BOARD_SIZE+3)].to_string();
         let mut cells = Vec::new();
         for c in board.chars().take(BOARD_SIZE) {
             cells.push(Cell::new(c));
