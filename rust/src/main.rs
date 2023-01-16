@@ -24,6 +24,10 @@ struct Args {
     /// Read from stdin instead of using the input argument.
     #[clap(short, long)]
     stdin: bool,
+
+    /// Max verbosity
+    #[clap(short, long)]
+    verbose: bool,
 }
 
 fn repl() {
@@ -83,11 +87,11 @@ fn repl() {
 }
 
 /// Reads from a line string iterator and evals each line
-fn eval_lines(lines: &mut dyn Iterator<Item = String>) {
+fn eval_lines(lines: &mut dyn Iterator<Item = String>, stdout: bool) {
     let navigator = &mut Navigator::new(Board::new(lines.next().unwrap().as_str()).unwrap());
     for stdinline in lines {
         let line = stdinline.trim().to_owned();
-        if let Err(e) = eval(navigator, line.as_str(), false) {
+        if let Err(e) = eval(navigator, line.as_str(), stdout) {
             eprintln!("{}", e);
         }
     }
@@ -99,7 +103,7 @@ fn main() {
         println!("Waiting for board...");
         let stdin = io::stdin();
         let mut lines = stdin.lock().lines().map(|l| l.unwrap());
-        eval_lines(&mut lines);
+        eval_lines(&mut lines, args.verbose);
         return;
     }
     if args.input.is_empty() {

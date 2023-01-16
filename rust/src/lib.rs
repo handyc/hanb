@@ -56,12 +56,14 @@ impl Board {
                 board.len()
             ));
         }
-        let board = board[0..min(board.len(), BOARD_SIZE+3)].to_string();
+        let mut truncated_board = board[0..min(board.len(), BOARD_SIZE + 3)].to_string();
+        // Complete the remaining with '.'
+        truncated_board += &".".repeat(BOARD_SIZE + 3 - board.len());
         let mut cells = Vec::new();
-        for c in board.chars().take(BOARD_SIZE) {
+        for c in truncated_board.chars().take(BOARD_SIZE) {
             cells.push(Cell::new(c));
         }
-        let color = board.chars().skip(BOARD_SIZE).take(3).collect();
+        let color = truncated_board.chars().skip(BOARD_SIZE).take(3).collect();
         Ok(Board { cells, color })
     }
 
