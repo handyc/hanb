@@ -1,4 +1,5 @@
 const BOARD_SIZE: usize = 61;
+const DIAGONAL: u8 = 9;
 
 pub const DEFAULT_WIDTH: u8 = 12;
 
@@ -14,14 +15,6 @@ impl Cell {
     /// Create a new cell with a value.
     pub fn new(value: char) -> Self {
         Self { value, board: None }
-    }
-
-    /// Create a new cell with a value and a board.
-    pub fn new_with_board(value: char, board: Board) -> Self {
-        Self {
-            value,
-            board: Some(board),
-        }
     }
 
     /// Define the board that this cell resolves to.
@@ -182,21 +175,34 @@ pub fn print_board(board: &str, width: u8) {
         return;
     }
     let mut board = board.chars();
-    for c in 0..9 {
-        let mut n_cells = c + 5;
-        if c > 4 {
-            n_cells = 13 - c;
+    let left_padding = (width - DIAGONAL) / 2;
+    let right_padding = width - DIAGONAL - left_padding;
+    for r in 0..DIAGONAL {
+        let mut n_cells = r + 5 as u8;
+        if r > DIAGONAL / 2 {
+            n_cells = DIAGONAL / 2 + DIAGONAL - r;
         }
-        for r in 0..width {
-            if r < (width - n_cells) / 2 || r >= (width + n_cells) / 2 {
-                print!("▗");
+        let offset: i8 = (r as i8) - (DIAGONAL as i8) / 2;
+        for _ in 0..(left_padding + offset.abs() as u8) {
+            print!("  ");
+        }
+        let start = (width - n_cells) / 2;
+        let end = (width + n_cells) / 2;
+        for c in start..end {
+            let char = if let Some(cell) = board.next() {
+                cell
             } else {
-                if let Some(cell) = board.next() {
-                    print!("{}", cell);
-                } else {
-                    print!("▗");
-                }
+                // Unset cell
+                '.'
+            };
+            if c == end - 1 {
+                print!(" {}", char);
+            } else {
+                print!(" {}  ", char);
             }
+        }
+        for _ in 0..(right_padding + offset.abs() as u8) {
+            print!("  ");
         }
         println!();
     }

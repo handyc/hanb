@@ -67,11 +67,11 @@ fn repl() {
                 }
             }
             Err(ReadlineError::Interrupted) => {
-                eprintln!("CTRL-C exiting...");
+                eprintln!("exiting...");
                 break;
             }
             Err(ReadlineError::Eof) => {
-                eprintln!("CTRL-D exiting...");
+                eprintln!("exiting...");
                 break;
             }
             Err(err) => {
@@ -82,20 +82,24 @@ fn repl() {
     }
 }
 
+/// Reads from a line string iterator and evals each line
+fn eval_lines(lines: &mut dyn Iterator<Item = String>) {
+    let navigator = &mut Navigator::new(Board::new(lines.next().unwrap().as_str()).unwrap());
+    for stdinline in lines {
+        let line = stdinline.trim().to_owned();
+        if let Err(e) = eval(navigator, line.as_str(), false) {
+            eprintln!("{}", e);
+        }
+    }
+}
+
 fn main() {
     let args = Args::parse();
     if args.stdin {
-        println!("Waiting for boad...");
+        println!("Waiting for board...");
         let stdin = io::stdin();
-        let mut lines = stdin.lock().lines();
-        let navigator =
-            &mut Navigator::new(Board::new(lines.next().unwrap().unwrap().as_str()).unwrap());
-        for stdinline in lines {
-            let line = stdinline.unwrap().trim().to_owned();
-            if let Err(e) = eval(navigator, line.as_str(), false) {
-                eprintln!("{}", e);
-            }
-        }
+        let mut lines = stdin.lock().lines().map(|l| l.unwrap());
+        eval_lines(&mut lines);
         return;
     }
     if args.input.is_empty() {
