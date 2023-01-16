@@ -223,7 +223,7 @@ pub fn eval(navigator: &mut Navigator, line: &str, stdout: bool) -> Result<(), S
             println!("  define, df [cell_number] [value]: Defines the inner board of a cell");
         }
         "print" | "p" => {
-            print_board(&navigator.root_board.to_string(), DEFAULT_WIDTH);
+            print_board(&navigator.current_board().to_string(), DEFAULT_WIDTH);
         }
         "save" | "sv" => return Err("Not implemented".to_string()),
         "load" | "ld" => return Err("Not implemented".to_string()),
