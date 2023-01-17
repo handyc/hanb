@@ -1,11 +1,9 @@
-mod lib;
-
 use std::io;
 use std::io::BufRead;
 
 use clap::{self, Parser};
 
-use lib::{eval, print_board, Board, Navigator, DEFAULT_WIDTH};
+use hanb::{constants::DEFAULT_WIDTH, hanb::{Navigator, Board}, eval, print_board};
 use rustyline::{error::ReadlineError, Editor};
 
 /// Hanb is a simple language for creating model universes at any scale
