@@ -2,6 +2,7 @@ use std::cmp::min;
 
 const BOARD_SIZE: usize = 61;
 const DIAGONAL: u8 = 9;
+const SIZES: &str = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890-.";
 
 pub const DEFAULT_WIDTH: u8 = 12;
 
@@ -47,6 +48,23 @@ pub struct Board {
 }
 
 impl Board {
+    /// Preprocess input characters in a board
+    fn preprocess(input: &str) -> String {
+        let mut output = String::new();
+        for c in input.chars() {
+            if SIZES.contains(c) {
+                output.push(c);
+            } else {
+                output.push(match c {
+                    ' ' => '-',
+                    // TODO what to do with other invalid characters?
+                    _ => '.',
+                });
+            }
+        }
+        output
+    }
+
     /// Create a new board from a BOARD_SIZE long string. Can optionally include a color.
     pub fn new(board: &str) -> Result<Self, String> {
         if board.len() < 1 {
@@ -56,7 +74,7 @@ impl Board {
                 board.len()
             ));
         }
-        let mut truncated_board = board[0..min(board.len(), BOARD_SIZE + 3)].to_string();
+        let mut truncated_board = Board::preprocess(&board[0..min(board.len(), BOARD_SIZE + 3)]);
         // Complete the remaining with '.'
         truncated_board += &".".repeat(BOARD_SIZE + 3 - board.len());
         let mut cells = Vec::new();
