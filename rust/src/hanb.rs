@@ -172,5 +172,17 @@ impl Navigator {
         board.cells[pos].set_board_from_str(value)?;
         Ok(())
     }
+
+    /// Sets the current board's cells to new values.
+    pub fn set_board(&mut self, board: &str) -> Result<(), String> {
+        let board = Board::new(board)?;
+        let mut current_board = &mut self.root_board;
+        for cell in &self.cell_stack {
+            current_board = current_board.cells[*cell].board.as_mut().unwrap();
+        }
+        current_board.cells = board.cells;
+        current_board.color = board.color;
+        Ok(())
+    }
 }
 
