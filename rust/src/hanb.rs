@@ -72,7 +72,9 @@ impl Board {
         }
         let mut truncated_board = Board::preprocess(&board[0..min(board.len(), BOARD_SIZE + 3)]);
         // Complete the remaining with '.'
-        truncated_board += &".".repeat(BOARD_SIZE + 3 - board.len());
+        if truncated_board.len() < BOARD_SIZE + 3 {
+            truncated_board.push_str(&".".repeat(BOARD_SIZE + 3 - truncated_board.len()));
+        }
         let mut cells = Vec::new();
         for c in truncated_board.chars().take(BOARD_SIZE) {
             cells.push(Cell::new(c));

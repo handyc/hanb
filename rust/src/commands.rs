@@ -276,7 +276,7 @@ pub const COMMANDS: &[Command] = &[
     Command {
         command: "save",
         short: "s",
-        help: "Saves the current setting serialized to a file",
+        help: "Saves the current situation to a file",
         args: &[CommonArgs::Filename.value()],
         stdout: false,
         action: |cmd, _navigator, args| {
@@ -292,7 +292,7 @@ pub const COMMANDS: &[Command] = &[
     Command {
         command: "load",
         short: "l",
-        help: "Load a saved setting from a file",
+        help: "Load a saved situation from a file",
         args: &[CommonArgs::Filename.value()],
         stdout: false,
         action: |cmd, _navigator, args| {
