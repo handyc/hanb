@@ -1,4 +1,4 @@
-use crate::{constants::DEFAULT_WIDTH, hanb::Navigator, print_board};
+use crate::{constants::DEFAULT_WIDTH, hanb::Navigator, print_level_board};
 
 #[derive(Debug)]
 enum ArgTypes {
@@ -118,6 +118,7 @@ impl<'a> Command<'a> {
 }
 
 enum CommonArgs {
+    CommandName,
     Board,
     Cell,
     Filename,
@@ -126,6 +127,12 @@ enum CommonArgs {
 impl CommonArgs {
     const fn value(&self) -> CmdArg {
         match self {
+            CommonArgs::CommandName => CmdArg {
+                name: "command",
+                description: "Command name to get help from",
+                default: None,
+                type_: ArgTypes::String,
+            },
             CommonArgs::Board => CmdArg {
                 name: "board",
                 description: "Board as string",
@@ -153,24 +160,52 @@ pub const COMMANDS: &[Command] = &[
         command: "help",
         short: "h",
         help: "Prints this help message",
-        args: &[],
+        args: &[CommonArgs::CommandName.value()],
         stdout: true,
-        action: |_cmd, _navigator, _args| {
-            println!("Hanb Commands:");
-            for cmd in COMMANDS.iter() {
-                let mut args = "".to_string();
-                for arg in cmd.args {
-                    let default = match arg.default {
-                        Some(value) => value.to_string(),
-                        None => "None".to_string(),
+        action: |cmd, _navigator, args| {
+            println!("Hanb help:");
+            let args_res = cmd.argparse(args);
+            match args_res {
+                Ok(args) => {
+                    let cmdname = match args.get(0).unwrap() {
+                        ArgValue::String(cmdname) => cmdname,
+                        _ => unreachable!(),
                     };
-                    args.push_str(&format!(" [{}: {} = {}]", arg.name, arg.type_, default));
+                    for cmd in COMMANDS {
+                        if cmd.command == cmdname {
+                            println!("{}: {}", cmd.command, cmd.help);
+                            println!("Arguments:");
+                            for arg in cmd.args {
+                                println!(
+                                    "  {}: {} (default: {})",
+                                    arg.name,
+                                    arg.description,
+                                    arg.default.unwrap_or("None")
+                                );
+                            }
+                            return Ok("".to_string());
+                        }
+                    }
+                    return Err(format!("Command {} not found", cmdname));
                 }
-                // replace line breaks with nothing
-                args = args.replace("\n", "");
-                println!("  {} | {} {} -> {}", cmd.command, cmd.short, args, cmd.help);
+                Err(_) => {
+                    for cmd in COMMANDS.iter() {
+                        let mut args = "".to_string();
+                        for arg in cmd.args {
+                            let default = match arg.default {
+                                Some(value) => value.to_string(),
+                                None => "None".to_string(),
+                            };
+                            args.push_str(&format!(" [{}: {} = {}]", arg.name, arg.type_, default));
+                        }
+                        // replace line breaks with nothing
+                        args = args.replace("\n", "");
+                        println!("  {} | {} {} -> {}", cmd.command, cmd.short, args, cmd.help);
+                    }
+                    println!("Arguments are represented like: [name: type = default]\n\n");
+                }
+
             }
-            println!("Arguments are represented like: [name: type = default]\n\n");
             Ok("".to_string())
         },
     },
@@ -181,7 +216,23 @@ pub const COMMANDS: &[Command] = &[
         args: &[],
         stdout: true,
         action: |_cmd, navigator, _args| {
-            print_board(&navigator.current_board().to_string(), DEFAULT_WIDTH)
+            print_level_board(navigator, DEFAULT_WIDTH)
+        },
+    },
+    Command {
+        command: "printseq",
+        short: "ps",
+        help: "Prints the current board as a string sequence",
+        args: &[],
+        stdout: true,
+        action: |_cmd, navigator, _args| {
+            let board = navigator.current_board();
+            let mut seq = String::new();
+            for cell in board.cells.iter() {
+                seq.push_str(&cell.to_string());
+            }
+            seq.push_str("\n");
+            Ok(seq)
         },
     },
     Command {
@@ -191,13 +242,13 @@ pub const COMMANDS: &[Command] = &[
         stdout: false,
         args: &[],
         action: |_cmd, navigator, _args| match navigator.ascend() {
-            Some(board) => {
-                let board_str = print_board(&board.to_string(), DEFAULT_WIDTH).unwrap();
+            Some(_) => {
+                let board_str = print_level_board(navigator, DEFAULT_WIDTH).unwrap();
                 Ok(format!("You ascend to the upper board. You see:\n{}", board_str).to_string())
             }
             None => {
                 let board_str =
-                    print_board(&navigator.current_board().to_string(), DEFAULT_WIDTH).unwrap();
+                    print_level_board(navigator, DEFAULT_WIDTH).unwrap();
                 Ok(format!("You can't ascend any further.\n{}", board_str).to_string())
             }
         },
@@ -216,8 +267,8 @@ pub const COMMANDS: &[Command] = &[
                 _ => unreachable!(),
             };
             match navigator.descend(cell as usize) {
-                Ok(board) => {
-                    let board_str = print_board(&board.to_string(), DEFAULT_WIDTH).unwrap();
+                Ok(_) => {
+                    let board_str = print_level_board(navigator, DEFAULT_WIDTH).unwrap();
                     Ok(format!("You resolved cell {}. You see:\n{}", cell, board_str).to_string())
                 }
                 Err(msg) => Err(msg),
@@ -227,7 +278,7 @@ pub const COMMANDS: &[Command] = &[
     Command {
         command: "define",
         short: "df",
-        help: "Define a cell's value",
+        help: "Define or change some cell's board",
         args: &[CommonArgs::Cell.value(), CommonArgs::Board.value()],
         stdout: false,
         action: |cmd, navigator, args| {
@@ -242,8 +293,7 @@ pub const COMMANDS: &[Command] = &[
             };
             match navigator.define(cell as usize, board_arg) {
                 Ok(_) => {
-                    let board = navigator.current_board();
-                    let board_str = print_board(&board.to_string(), DEFAULT_WIDTH).unwrap();
+                    let board_str = print_level_board(navigator, DEFAULT_WIDTH).unwrap();
                     Ok(format!("You defined cell {}. You see:\n{}", cell, board_str).to_string())
                 }
                 Err(msg) => Err(msg),
@@ -265,8 +315,7 @@ pub const COMMANDS: &[Command] = &[
             };
             match navigator.set_board(board_arg) {
                 Ok(_) => {
-                    let board = navigator.current_board();
-                    let board_str = print_board(&board.to_string(), DEFAULT_WIDTH).unwrap();
+                    let board_str = print_level_board(navigator, DEFAULT_WIDTH).unwrap();
                     Ok(format!("You set the board. You see:\n{}", board_str).to_string())
                 }
                 Err(msg) => Err(msg),

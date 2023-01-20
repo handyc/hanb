@@ -6,6 +6,17 @@ pub mod hanb;
 pub mod constants;
 
 
+pub fn print_level_board(navigator: &Navigator, width: u8) -> Result<String, String> {
+    let level = navigator.level;
+    let mut board_string = String::new();
+    board_string += &format!("Level: {}\n\n", level);
+    match print_board(&navigator.current_board().to_string(), width) {
+        Ok(board) => board_string += &board,
+        Err(e) => return Err(e),
+    }
+    Ok(board_string)
+}
+
 pub fn print_board(board: &str, width: u8) -> Result<String, String> {
     let mut output: String = "".to_string();
     if board.is_empty() || board.len() > 64 {

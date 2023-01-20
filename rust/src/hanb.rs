@@ -2,10 +2,22 @@ use std::cmp::min;
 
 use crate::constants::{SIZES, BOARD_SIZE};
 
+/// Compares two characters in the SIZE sequence. If a character index is greater than the other it
+/// is considered to be bigger.
+pub fn size_greater(a: char, b: char) -> bool {
+    let a_index = SIZES.chars().position(|r| r == a).unwrap();
+    let b_index = SIZES.chars().position(|r| r == b).unwrap();
+    a_index > b_index
+}
+
+pub fn size_smaller(a: char, b: char) -> bool {
+    !size_greater(a, b)
+}
+
 /// Hanb cell. A cell has a fixed value and can resolve to a dynamic board.
 pub struct Cell {
-    /// The value of the cell.
-    pub value: char,
+    /// The Size of the cell.
+    pub size: char,
     /// The board that this cell resolves to.
     pub board: Option<Board>,
 }
@@ -13,7 +25,7 @@ pub struct Cell {
 impl Cell {
     /// Create a new cell with a value.
     pub fn new(value: char) -> Self {
-        Self { value, board: None }
+        Self { size: value, board: None }
     }
 
     /// Define the board that this cell resolves to.
@@ -31,6 +43,11 @@ impl Cell {
     /// Get the board that this cell resolves to.
     pub fn get_board(&self) -> Option<&Board> {
         self.board.as_ref()
+    }
+
+    /// Converts the cell size to a string.
+    pub(crate) fn to_string(&self) -> String {
+        format!("{}", self.size)
     }
 }
 
@@ -87,7 +104,7 @@ impl Board {
     pub fn to_string(&self) -> String {
         let mut board = String::new();
         for cell in &self.cells {
-            board.push(cell.value);
+            board.push(cell.size);
         }
         board.push_str(&self.color);
         board
@@ -98,15 +115,21 @@ impl Board {
 pub struct Navigator {
     pub root_board: Board,
     pub cell_stack: Vec<usize>,
+    pub level: char,
 }
 
 impl Navigator {
     /// Create a new navigator with a board.
-    pub fn new(board: Board) -> Self {
-        Self {
-            root_board: board,
-            cell_stack: Vec::new(),
+    pub fn new(level: char) -> Result<Self, String> {
+        if !SIZES.contains(level) {
+            return Err(format!("Invalid level: {}", level));
         }
+        let root_board = Board::new(&".".repeat(BOARD_SIZE))?;
+        Ok(Self {
+            root_board,
+            cell_stack: Vec::new(),
+            level,
+        })
     }
 
     /// Get the current board.
@@ -158,6 +181,9 @@ impl Navigator {
     }
 
     /// Define the board for a cell in the current board.
+    /// If the cell is already defined, it will be overwritten.
+    /// If any of the input board cells are bigger than the current one whey will be truncated to
+    /// the level smaller than the current one.
     pub fn define(&mut self, pos: usize, value: &str) -> Result<(), String> {
         if pos >= self.current_board().cells.len() {
             return Err(format!(

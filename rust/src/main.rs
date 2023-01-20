@@ -3,7 +3,7 @@ use std::io::BufRead;
 
 use clap::{self, Parser};
 
-use hanb::{constants::DEFAULT_WIDTH, hanb::{Navigator, Board}, eval, print_board};
+use hanb::{constants::DEFAULT_WIDTH, hanb::Navigator, eval, print_board};
 use rustyline::{error::ReadlineError, Editor};
 
 /// Hanb is a simple language for creating model universes at any scale
@@ -41,21 +41,29 @@ fn repl() {
     let mut navigator: Navigator;
     loop {
         println!();
-        println!("Please provide initial board:");
-        let readline = rl.readline("board> ");
+        println!("Please provide start level");
+        let readline = rl.readline("level> ");
         if readline.is_err() {
             println!("Exiting");
             return;
         }
 
         let line = readline.unwrap();
-        let board = Board::new(&line);
+        if line.is_empty() {
+            continue
+        }
+        if line.len() > 1 {
+            println!("Please provide a single character");
+            continue
+        }
+        let level = line.chars().nth(0);
         rl.add_history_entry(line);
-        if let Err(e) = board {
-            eprintln!("{}", e);
-        } else {
-            navigator = Navigator::new(board.unwrap());
-            break;
+        match Navigator::new(level.unwrap()) {
+            Ok(nav) => {
+                navigator = nav;
+                break
+            },
+            Err(e) => println!("{}", e),
         }
     }
     loop {
@@ -86,7 +94,13 @@ fn repl() {
 
 /// Reads from a line string iterator and evals each line
 fn eval_lines(lines: &mut dyn Iterator<Item = String>, stdout: bool) {
-    let navigator = &mut Navigator::new(Board::new(lines.next().unwrap().as_str()).unwrap());
+    let first = lines.next().unwrap();
+    let level = first.as_str();
+    if level.len() != 1 {
+        eprintln!("Invalid start level");
+        return;
+    }
+    let navigator = &mut Navigator::new(level.chars().nth(0).unwrap()).unwrap();
     for stdinline in lines {
         let line = stdinline.trim().to_owned();
         if let Err(e) = eval(navigator, line.as_str(), stdout) {
@@ -111,6 +125,10 @@ fn main() {
         );
         repl();
     } else {
-        print_board(&args.input, args.width);
+        let pb = print_board(&args.input, args.width);
+        match pb {
+            Ok(board) => println!("{}", board),
+            Err(e) => eprintln!("{}", e),
+        }
     }
 }
