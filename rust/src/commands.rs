@@ -242,11 +242,11 @@ pub const COMMANDS: &[Command] = &[
         stdout: false,
         args: &[],
         action: |_cmd, navigator, _args| match navigator.ascend() {
-            Some(_) => {
+            Ok(_) => {
                 let board_str = print_level_board(navigator, DEFAULT_WIDTH).unwrap();
                 Ok(format!("You ascend to the upper board. You see:\n{}", board_str).to_string())
             }
-            None => {
+            Err(_) => {
                 let board_str =
                     print_level_board(navigator, DEFAULT_WIDTH).unwrap();
                 Ok(format!("You can't ascend any further.\n{}", board_str).to_string())

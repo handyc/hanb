@@ -142,13 +142,26 @@ impl Navigator {
     }
 
     /// Return to previous/upper board returning it
-    pub fn ascend(&mut self) -> Option<&Board> {
-        self.cell_stack.pop()?;
-        Some(self.current_board())
+    pub fn ascend(&mut self) -> Result<&Board, String> {
+        let index = SIZES.find(self.level).unwrap();
+        if index == SIZES.len() - 1 {
+            return Err(format!("You've reached the top limit fo the universe: {}", self.current_board().color));
+        }
+        match self.cell_stack.pop() {
+            Some(it) => it,
+            None => return Err("You can't go upper".to_string()),
+        };
+        self.level = SIZES.chars().nth(index + 1).unwrap();
+        Ok(self.current_board())
     }
 
     /// Go to a cell in the current board returning it
     pub fn descend(&mut self, cell: usize) -> Result<&Board, String> {
+        let index = SIZES.find(self.level).unwrap();
+        if index == 0 {
+            return Err(format!("You've reached the bottom limit fo the universe: {}", self.current_board().color));
+        }
+        self.level = SIZES.chars().nth(index - 1).unwrap();
         self.resolve(cell)?;
         self.cell_stack.push(cell);
         Ok(self.current_board())
@@ -197,11 +210,30 @@ impl Navigator {
         for cell in &self.cell_stack {
             board = board.cells[*cell].board.as_mut().unwrap();
         }
-        board.cells[pos].set_board_from_str(value)?;
+        let mut truncated_value = String::new();
+        for char in value.chars() {
+            if size_smaller(char, self.level) {
+                truncated_value.push(self.level);
+            } else {
+                let index = SIZES.find(self.level).unwrap();
+                if index == 0 {
+                    return Err(format!(
+                        "Nothing can be smaller than this level: {}",
+                        self.level
+                    ));
+                }
+                let level = SIZES.chars().nth(index - 1).unwrap();
+                truncated_value.push(level);
+            }
+        }
+
+        board.cells[pos].set_board_from_str(truncated_value.as_str())?;
         Ok(())
     }
 
     /// Sets the current board's cells to new values.
+    /// If any of the values are bigger than the current level they will be truncated to the
+    /// current level.
     pub fn set_board(&mut self, board: &str) -> Result<(), String> {
         let board = Board::new(board)?;
         let mut current_board = &mut self.root_board;
