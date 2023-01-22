@@ -1,6 +1,6 @@
 # Rust Implementation of Hanb
 
-## Run
+## Clone, Build, Run
 
 You must have rust and cargo installed.
 
@@ -34,4 +34,11 @@ Alternatively
 cargo run -- AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA                              <<<
 ```
 
-#### Enjoy hanb
+## Hanb scripts
+Check the examples folder. Run with:
+
+```sh
+cargo run -- -f examples/demo.hanb
+```
+
+That file contains some info and instructions about the query language.

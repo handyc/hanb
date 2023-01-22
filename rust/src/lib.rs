@@ -9,7 +9,7 @@ pub mod constants;
 pub fn print_level_board(navigator: &Navigator, width: u8) -> Result<String, String> {
     let level = navigator.level;
     let mut board_string = String::new();
-    board_string += &format!("Level: {}\n\n", level);
+    board_string += &format!("Level: {} - {}\n\n", level, navigator.get_path());
     match print_board(&navigator.current_board().to_string(), width) {
         Ok(board) => board_string += &board,
         Err(e) => return Err(e),
@@ -64,6 +64,11 @@ pub fn print_board(board: &str, width: u8) -> Result<String, String> {
 }
 
 pub fn eval(navigator: &mut Navigator, line: &str, stdout: bool) -> Result<(), String> {
+    // Everything after a '#' is a comment so we can ignore it.
+    let line = line.split('#').next().unwrap().trim();
+    if line.is_empty() {
+        return Ok(());
+    }
     // Process commands
     let mut args = line.split_whitespace();
     let command = args.next().unwrap().to_lowercase();

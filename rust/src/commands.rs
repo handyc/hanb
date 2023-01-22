@@ -1,3 +1,5 @@
+use std::{fmt, fs::File, io::Write};
+
 use crate::{constants::DEFAULT_WIDTH, hanb::Navigator, print_level_board};
 
 #[derive(Debug)]
@@ -53,7 +55,7 @@ impl<'a> CmdArg<'a> {
     fn default(&self) -> ArgValue<String> {
         match self.default {
             Some(value) => self.parse(value),
-            None => ArgValue::Err(format!("Argument {} has no default value", self.name)),
+            None => ArgValue::Err(format!("Argument {} is required. Check 'help command'", self.name)),
         }
     }
 }
@@ -67,10 +69,18 @@ pub struct Command<'a> {
     pub short: &'a str,
     /// Should the command output to stdout?
     pub stdout: bool,
+    /// Is this command only available in the repl?
+    pub repl_only: bool,
     /// Description of the command
     help: &'a str,
     /// Arguments of the command
     args: &'a [CmdArg<'a>],
+}
+
+impl fmt::Display for Command<'_> {
+    fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
+        write!(f, "{}", self.command)
+    }
 }
 
 impl<'a> Command<'a> {
@@ -122,6 +132,7 @@ enum CommonArgs {
     Board,
     Cell,
     Filename,
+    ScriptName,
 }
 
 impl CommonArgs {
@@ -148,9 +159,15 @@ impl CommonArgs {
             CommonArgs::Filename => CmdArg {
                 name: "filename",
                 description: "File to use",
-                default: Some("hanb.dump"),
+                default: Some("hanb.hsit"),
                 type_: ArgTypes::String,
             },
+            CommonArgs::ScriptName => CmdArg {
+                name: "script",
+                description: ".hanb script path",
+                default: Some("script.hanb"),
+                type_: ArgTypes::String,
+            }
         }
     }
 }
@@ -162,6 +179,7 @@ pub const COMMANDS: &[Command] = &[
         help: "Prints this help message",
         args: &[CommonArgs::CommandName.value()],
         stdout: true,
+        repl_only: false,
         action: |cmd, _navigator, args| {
             println!("Hanb help:");
             let args_res = cmd.argparse(args);
@@ -215,6 +233,7 @@ pub const COMMANDS: &[Command] = &[
         help: "Prints the current board",
         args: &[],
         stdout: true,
+        repl_only: false,
         action: |_cmd, navigator, _args| {
             print_level_board(navigator, DEFAULT_WIDTH)
         },
@@ -225,6 +244,7 @@ pub const COMMANDS: &[Command] = &[
         help: "Prints the current board as a string sequence",
         args: &[],
         stdout: true,
+        repl_only: false,
         action: |_cmd, navigator, _args| {
             let board = navigator.current_board();
             let mut seq = String::new();
@@ -240,6 +260,7 @@ pub const COMMANDS: &[Command] = &[
         short: "u",
         help: "Move up one level",
         stdout: false,
+        repl_only: false,
         args: &[],
         action: |_cmd, navigator, _args| match navigator.ascend() {
             Ok(_) => {
@@ -257,6 +278,7 @@ pub const COMMANDS: &[Command] = &[
         command: "down",
         short: "d",
         stdout: false,
+        repl_only: false,
         help: "Move down one level",
         args: &[CommonArgs::Cell.value()],
         action: |cmd, navigator, args| {
@@ -276,36 +298,12 @@ pub const COMMANDS: &[Command] = &[
         },
     },
     Command {
-        command: "define",
-        short: "df",
-        help: "Define or change some cell's board",
-        args: &[CommonArgs::Cell.value(), CommonArgs::Board.value()],
-        stdout: false,
-        action: |cmd, navigator, args| {
-            let args = cmd.argparse(args)?;
-            let cell = match args.get(0).unwrap() {
-                ArgValue::Int(cell) => *cell,
-                _ => unreachable!(),
-            };
-            let board_arg = match args.get(1).unwrap() {
-                ArgValue::String(board) => board,
-                _ => unreachable!(),
-            };
-            match navigator.define(cell as usize, board_arg) {
-                Ok(_) => {
-                    let board_str = print_level_board(navigator, DEFAULT_WIDTH).unwrap();
-                    Ok(format!("You defined cell {}. You see:\n{}", cell, board_str).to_string())
-                }
-                Err(msg) => Err(msg),
-            }
-        }
-    },
-    Command {
         command: "board",
         short: "b",
         help: "Set the current board",
         args: &[CommonArgs::Board.value()],
         stdout: false,
+        repl_only: false,
         action: |cmd, navigator, args| {
             let args = cmd.argparse(args)?;
             let board_arg = args.get(0).unwrap();
@@ -328,6 +326,7 @@ pub const COMMANDS: &[Command] = &[
         help: "Saves the current situation to a file",
         args: &[CommonArgs::Filename.value()],
         stdout: false,
+        repl_only: false,
         action: |cmd, _navigator, args| {
             let args = cmd.argparse(args)?;
             let filename = args.get(0).unwrap();
@@ -344,6 +343,7 @@ pub const COMMANDS: &[Command] = &[
         help: "Load a saved situation from a file",
         args: &[CommonArgs::Filename.value()],
         stdout: false,
+        repl_only: false,
         action: |cmd, _navigator, args| {
             let args = cmd.argparse(args)?;
             let filename = args.get(0).unwrap();
@@ -354,4 +354,32 @@ pub const COMMANDS: &[Command] = &[
             Err("To be done".to_string())
         }
     },
+    Command {
+        command: "export",
+        short: "e",
+        help: "Export the current repl history as a hanb script",
+        args: &[CommonArgs::ScriptName.value()],
+        stdout: false,
+        repl_only: true,
+        action: |cmd, _navigator, args| {
+            let argparsed = cmd.argparse(args)?;
+            let filename = argparsed.get(0).unwrap();
+            let filename = match filename {
+                ArgValue::String(filename) => filename,
+                _ => unreachable!(),
+            };
+            // Script is all strings in arguments after file name
+            let script = args.trim_start_matches(filename).trim();
+            let mut file = File::create(filename);
+            match file {
+                Ok(ref mut file) => {
+                    match file.write_all(script.as_bytes()) {
+                        Ok(_) => Ok(format!("Script {} saved", filename)),
+                        Err(err) => Err(format!("Error saving script: {}", err)),
+                    }
+                }
+                Err(e) => Err(format!("Error saving script: {}", e)),
+            }
+        }
+    }
 ];

@@ -3,7 +3,7 @@ use std::io::BufRead;
 
 use clap::{self, Parser};
 
-use hanb::{constants::DEFAULT_WIDTH, hanb::Navigator, eval, print_board};
+use hanb::{constants::DEFAULT_WIDTH, hanb::Navigator, eval, print_board, commands::COMMANDS};
 use rustyline::{error::ReadlineError, Editor};
 
 /// Hanb is a simple language for creating model universes at any scale
@@ -26,6 +26,71 @@ struct Args {
     /// Max verbosity
     #[clap(short, long)]
     verbose: bool,
+
+    /// List query language commands and exit
+    #[clap(short, long)]
+    commands: bool,
+
+    /// Execute hanb script from file
+    #[clap(short, long)]
+    file: Option<String>,
+}
+
+fn main() {
+    let args = Args::parse();
+    if args.commands {
+        for cmd in COMMANDS {
+            if cmd.repl_only {
+                continue;
+            }
+            println!("{}", cmd);
+        }
+        return;
+    }
+    if args.file.is_some() {
+        let filename = args.file.unwrap();
+        let file = std::fs::File::open(filename).expect("Unable to open file");
+        let reader = io::BufReader::new(file);
+        let mut lines = reader.lines().map(|l| l.unwrap());
+        eval_lines(&mut lines, args.verbose);
+        return;
+    }
+    if args.stdin {
+        println!("Waiting for board...");
+        let stdin = io::stdin();
+        let mut lines = stdin.lock().lines().map(|l| l.unwrap());
+        eval_lines(&mut lines, args.verbose);
+        return;
+    }
+    if args.input.is_empty() {
+        println!(
+            "Welcome to Hanb! Version {}",
+            option_env!("CARGO_PKG_VERSION").unwrap_or("unknown")
+        );
+        repl();
+    } else {
+        let pb = print_board(&args.input, args.width);
+        match pb {
+            Ok(board) => println!("{}", board),
+            Err(e) => eprintln!("{}", e),
+        }
+    }
+}
+
+
+fn parse_level(line: &str) -> Result<char, String> {
+    if line.is_empty() {
+        return Err("Empty line".to_string());
+    }
+    let level = line.split("#").next().unwrap().trim();
+    if level.len() > 1 {
+        return Err(format!("Invalid level: {}", level));
+    }
+    let value = level.chars().next();
+    if value.is_none() {
+        return Err("Empty line".to_string());
+    }
+    Ok(value.unwrap())
 }
 
 fn repl() {
@@ -52,11 +117,11 @@ fn repl() {
         if line.is_empty() {
             continue
         }
-        if line.len() > 1 {
-            println!("Please provide a single character");
-            continue
+        let level = parse_level(&line);
+        if level.is_err() {
+            println!("{}", level.err().unwrap());
+            continue;
         }
-        let level = line.chars().nth(0);
         rl.add_history_entry(line);
         match Navigator::new(level.unwrap()) {
             Ok(nav) => {
@@ -94,13 +159,22 @@ fn repl() {
 
 /// Reads from a line string iterator and evals each line
 fn eval_lines(lines: &mut dyn Iterator<Item = String>, stdout: bool) {
-    let first = lines.next().unwrap();
-    let level = first.as_str();
-    if level.len() != 1 {
-        eprintln!("Invalid start level");
-        return;
+    let mut level: Result<char, String>;
+    loop {
+        let first = lines.next().unwrap();
+        level = parse_level(&first);
+        if level.is_err() {
+            match level.as_ref().err().unwrap().as_str() {
+                "Empty line" => continue,
+                _ => {
+                    eprintln!("{}", level.err().unwrap());
+                    return;
+                }
+            }
+        }
+        break;
     }
-    let navigator = &mut Navigator::new(level.chars().nth(0).unwrap()).unwrap();
+    let navigator = &mut Navigator::new(level.unwrap()).unwrap();
     for stdinline in lines {
         let line = stdinline.trim().to_owned();
         if let Err(e) = eval(navigator, line.as_str(), stdout) {
@@ -109,26 +183,3 @@ fn eval_lines(lines: &mut dyn Iterator<Item = String>, stdout: bool) {
     }
 }
 
-fn main() {
-    let args = Args::parse();
-    if args.stdin {
-        println!("Waiting for board...");
-        let stdin = io::stdin();
-        let mut lines = stdin.lock().lines().map(|l| l.unwrap());
-        eval_lines(&mut lines, args.verbose);
-        return;
-    }
-    if args.input.is_empty() {
-        println!(
-            "Welcome to Hanb! Version {}",
-            option_env!("CARGO_PKG_VERSION").unwrap_or("unknown")
-        );
-        repl();
-    } else {
-        let pb = print_board(&args.input, args.width);
-        match pb {
-            Ok(board) => println!("{}", board),
-            Err(e) => eprintln!("{}", e),
-        }
-    }
-}

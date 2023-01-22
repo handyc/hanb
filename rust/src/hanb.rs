@@ -61,7 +61,7 @@ pub struct Board {
 }
 
 impl Board {
-    /// Preprocess input characters in a board
+    /// Preprocess input characters in a board limiting to the valid SIZES
     fn preprocess(input: &str) -> String {
         let mut output = String::new();
         for c in input.chars() {
@@ -177,11 +177,9 @@ impl Navigator {
         }
         let cells = &self.current_board().cells;
         if cells[pos].board.is_none() {
-            return Err(format!(
-                "Cell at position {} does not resolve to a board",
-                pos
-            ));
+            self.define(pos, ".")?;
         }
+        let cells = &self.current_board().cells;
         let cell = &cells[pos];
         if let Some(board) = cell.get_board() {
             Ok(board)
@@ -211,6 +209,7 @@ impl Navigator {
             board = board.cells[*cell].board.as_mut().unwrap();
         }
         let mut truncated_value = String::new();
+        let value = Board::preprocess(value);
         for char in value.chars() {
             if size_smaller(char, self.level) {
                 truncated_value.push(self.level);
@@ -240,9 +239,31 @@ impl Navigator {
         for cell in &self.cell_stack {
             current_board = current_board.cells[*cell].board.as_mut().unwrap();
         }
-        current_board.cells = board.cells;
+        for (i, cell) in board.cells.iter().enumerate() {
+            if size_smaller(cell.size, self.level) {
+                current_board.cells[i].size = cell.size;
+            } else {
+                let index = SIZES.find(self.level).unwrap();
+                if index == 0 {
+                    return Err(format!(
+                        "Nothing can be smaller than this level: {}",
+                        self.level
+                    ));
+                }
+                current_board.cells[i].size = SIZES.chars().nth(index - 1).unwrap();
+            }
+        }
         current_board.color = board.color;
         Ok(())
+    }
+
+    /// Gets the board path as a string.
+    pub fn get_path(&self) -> String {
+        self.cell_stack
+            .iter()
+            .map(|it| it.to_string())
+            .collect::<Vec<String>>()
+            .join(" -> ")
     }
 }
 
