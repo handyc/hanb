@@ -1,15 +1,16 @@
+use std::io::{self, BufRead};
+
 use constants::DIAGONAL;
 use hanb::Navigator;
 
 pub mod commands;
-pub mod hanb;
 pub mod constants;
-
+pub mod hanb;
 
 pub fn print_level_board(navigator: &Navigator, width: u8) -> Result<String, String> {
     let level = navigator.level;
     let mut board_string = String::new();
-    board_string += &format!("Level: {} - {}\n\n", level, navigator.get_path());
+    board_string += &format!("Level: {} = {}\n\n", level, navigator.get_path());
     match print_board(&navigator.current_board().to_string(), width) {
         Ok(board) => board_string += &board,
         Err(e) => return Err(e),
@@ -63,7 +64,74 @@ pub fn print_board(board: &str, width: u8) -> Result<String, String> {
     Ok(output)
 }
 
-pub fn eval(navigator: &mut Navigator, line: &str, stdout: bool) -> Result<(), String> {
+pub struct EvalContext {
+    stdout: bool,
+    repl: bool,
+    pub history: String,
+}
+
+impl EvalContext {
+    pub fn new(stdout: bool, repl: bool) -> Self {
+        Self {
+            stdout,
+            repl,
+            history: String::new(),
+        }
+    }
+}
+
+pub fn parse_level(line: &str) -> Result<char, String> {
+    if line.is_empty() {
+        return Err("Empty line".to_string());
+    }
+    let level = line.split("#").next().unwrap().trim();
+    if level.len() > 1 {
+        return Err(format!("Invalid level: {}", level));
+    }
+    let value = level.chars().next();
+    if value.is_none() {
+        return Err("Empty line".to_string());
+    }
+    Ok(value.unwrap())
+}
+
+/// Reads from a line string iterator and evals each line
+pub fn eval_lines(lines: &mut dyn Iterator<Item = String>, context: &mut EvalContext) {
+    let mut level: Result<char, String>;
+    loop {
+        let first = lines.next().unwrap();
+        level = parse_level(&first);
+        if level.is_err() {
+            match level.as_ref().err().unwrap().as_str() {
+                "Empty line" => continue,
+                _ => {
+                    if context.repl {
+                        eprintln!("{}", level.err().unwrap());
+                        return;
+                    } else {
+                        println!("Defaulting to level '.'");
+                        level = Ok('.');
+                    }
+                }
+            }
+        }
+        break;
+    }
+    let level = level.unwrap();
+    context.history.push_str(format!("{}\n", level).as_str());
+    let navigator = &mut Navigator::new(level).unwrap();
+    for stdinline in lines {
+        let line = stdinline.trim().to_owned();
+        if let Err(e) = eval(navigator, line.as_str(), context) {
+            eprintln!("{}", e);
+        }
+    }
+}
+
+pub fn eval(navigator: &mut Navigator, line: &str, context: &mut EvalContext) -> Result<(), String> {
+    let stdout: bool = context.stdout;
+    let repl: bool = context.repl;
+
     // Everything after a '#' is a comment so we can ignore it.
     let line = line.split('#').next().unwrap().trim();
     if line.is_empty() {
@@ -74,17 +142,40 @@ pub fn eval(navigator: &mut Navigator, line: &str, stdout: bool) -> Result<(), S
     let command = args.next().unwrap().to_lowercase();
     let args = args.collect::<Vec<&str>>().join(" ");
     for cmd in commands::COMMANDS.iter() {
+        if cmd.repl_only && !repl {
+            continue;
+        }
         if cmd.command == command || cmd.short == command {
-            match (cmd.action)(cmd, navigator, &args) {
+            let result = match cmd.command {
+                "export" => {
+                    if args.trim().is_empty() {
+                        return Err("Missing filename".to_string());
+                    }
+                    (cmd.action)(cmd, navigator, (args + " " + context.history.as_str()).as_str())
+                },
+                "import" => {
+                    let file = std::fs::File::open(args).expect("Unable to open file");
+                    let reader = io::BufReader::new(file);
+                    let mut lines = reader.lines().map(|l| l.unwrap());
+                    eval_lines(&mut lines, context);
+                    Err("Import sucessful!".to_string())
+                }
+                _ => (cmd.action)(cmd, navigator, &args),
+            };
+            match result {
                 Ok(res) => {
                     if stdout || cmd.stdout {
                         println!("{}", res);
                     }
+                    context.history.push_str(format!("{}\n", line).as_str());
                     return Ok(());
                 }
                 Err(e) => return Err(e),
             }
         }
     }
-    Err(format!("Command {} not found. Use 'help' to see available commands.", command))
+    Err(format!(
+        "Command {} not found. Use 'help' to see available commands.",
+        command
+    ))
 }

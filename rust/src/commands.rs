@@ -55,7 +55,10 @@ impl<'a> CmdArg<'a> {
     fn default(&self) -> ArgValue<String> {
         match self.default {
             Some(value) => self.parse(value),
-            None => ArgValue::Err(format!("Argument {} is required. Check 'help command'", self.name)),
+            None => ArgValue::Err(format!(
+                "Argument {} is required. Check 'help command'",
+                self.name
+            )),
         }
     }
 }
@@ -167,7 +170,7 @@ impl CommonArgs {
                 description: ".hanb script path",
                 default: Some("script.hanb"),
                 type_: ArgTypes::String,
-            }
+            },
         }
     }
 }
@@ -222,7 +225,6 @@ pub const COMMANDS: &[Command] = &[
                     }
                     println!("Arguments are represented like: [name: type = default]\n\n");
                 }
-
             }
             Ok("".to_string())
         },
@@ -234,9 +236,7 @@ pub const COMMANDS: &[Command] = &[
         args: &[],
         stdout: true,
         repl_only: false,
-        action: |_cmd, navigator, _args| {
-            print_level_board(navigator, DEFAULT_WIDTH)
-        },
+        action: |_cmd, navigator, _args| print_level_board(navigator, DEFAULT_WIDTH),
     },
     Command {
         command: "printseq",
@@ -268,8 +268,7 @@ pub const COMMANDS: &[Command] = &[
                 Ok(format!("You ascend to the upper board. You see:\n{}", board_str).to_string())
             }
             Err(_) => {
-                let board_str =
-                    print_level_board(navigator, DEFAULT_WIDTH).unwrap();
+                let board_str = print_level_board(navigator, DEFAULT_WIDTH).unwrap();
                 Ok(format!("You can't ascend any further.\n{}", board_str).to_string())
             }
         },
@@ -318,7 +317,7 @@ pub const COMMANDS: &[Command] = &[
                 }
                 Err(msg) => Err(msg),
             }
-        }
+        },
     },
     Command {
         command: "save",
@@ -335,7 +334,7 @@ pub const COMMANDS: &[Command] = &[
                 _ => unreachable!(),
             };
             Err("To be done".to_string())
-        }
+        },
     },
     Command {
         command: "load",
@@ -352,7 +351,7 @@ pub const COMMANDS: &[Command] = &[
                 _ => unreachable!(),
             };
             Err("To be done".to_string())
-        }
+        },
     },
     Command {
         command: "export",
@@ -361,25 +360,28 @@ pub const COMMANDS: &[Command] = &[
         args: &[CommonArgs::ScriptName.value()],
         stdout: false,
         repl_only: true,
-        action: |cmd, _navigator, args| {
-            let argparsed = cmd.argparse(args)?;
-            let filename = argparsed.get(0).unwrap();
-            let filename = match filename {
-                ArgValue::String(filename) => filename,
-                _ => unreachable!(),
-            };
+        action: |_cmd, _navigator, args| {
+            let arglist = args.split(' ').collect::<Vec<&str>>();
+            let filename = arglist.get(0).unwrap().to_string();
             // Script is all strings in arguments after file name
-            let script = args.trim_start_matches(filename).trim();
-            let mut file = File::create(filename);
+            let script = arglist[1..].join(" ");
+            let mut file = File::create(&filename);
             match file {
-                Ok(ref mut file) => {
-                    match file.write_all(script.as_bytes()) {
-                        Ok(_) => Ok(format!("Script {} saved", filename)),
-                        Err(err) => Err(format!("Error saving script: {}", err)),
-                    }
-                }
+                Ok(ref mut file) => match file.write_all(script.as_bytes()) {
+                    Ok(_) => Ok(format!("Script {} saved", filename)),
+                    Err(err) => Err(format!("Error saving script: {}", err)),
+                },
                 Err(e) => Err(format!("Error saving script: {}", e)),
             }
-        }
-    }
+        },
+    },
+    Command {
+        command: "import",
+        short: "i",
+        help: "Import a hanb script and execute it into this repl",
+        args: &[CommonArgs::ScriptName.value()],
+        stdout: false,
+        repl_only: true,
+        action: |_cmd, _navigator, _args| Err("Implement this from repl".to_string()),
+    },
 ];

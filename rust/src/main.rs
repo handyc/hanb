@@ -3,7 +3,10 @@ use std::io::BufRead;
 
 use clap::{self, Parser};
 
-use hanb::{constants::DEFAULT_WIDTH, hanb::Navigator, eval, print_board, commands::COMMANDS};
+use hanb::{
+    commands::COMMANDS, constants::DEFAULT_WIDTH, eval, eval_lines, hanb::Navigator, parse_level,
+    print_board, EvalContext,
+};
 use rustyline::{error::ReadlineError, Editor};
 
 /// Hanb is a simple language for creating model universes at any scale
@@ -52,14 +55,16 @@ fn main() {
         let file = std::fs::File::open(filename).expect("Unable to open file");
         let reader = io::BufReader::new(file);
         let mut lines = reader.lines().map(|l| l.unwrap());
-        eval_lines(&mut lines, args.verbose);
+        let mut context = EvalContext::new(false, false);
+        eval_lines(&mut lines, &mut context);
         return;
     }
     if args.stdin {
         println!("Waiting for board...");
         let stdin = io::stdin();
         let mut lines = stdin.lock().lines().map(|l| l.unwrap());
-        eval_lines(&mut lines, args.verbose);
+        let mut context = EvalContext::new(args.verbose, false);
+        eval_lines(&mut lines, &mut context);
         return;
     }
     if args.input.is_empty() {
@@ -77,22 +82,6 @@ fn main() {
     }
 }
 
-
-fn parse_level(line: &str) -> Result<char, String> {
-    if line.is_empty() {
-        return Err("Empty line".to_string());
-    }
-    let level = line.split("#").next().unwrap().trim();
-    if level.len() > 1 {
-        return Err(format!("Invalid level: {}", level));
-    }
-    let value = level.chars().next();
-    if value.is_none() {
-        return Err("Empty line".to_string());
-    }
-    Ok(value.unwrap())
-}
-
 fn repl() {
     let rl = Editor::<()>::new();
     if rl.is_err() {
@@ -102,8 +91,8 @@ fn repl() {
     let mut rl = rl.unwrap();
     // TODO: Add repl history
     // TODO: Add repl completion
-    // TODO: Use board from cli or stdin or file
     let mut navigator: Navigator;
+    let mut context = EvalContext::new(true, true);
     loop {
         println!();
         println!("Please provide start level");
@@ -115,19 +104,21 @@ fn repl() {
 
         let line = readline.unwrap();
         if line.is_empty() {
-            continue
+            continue;
         }
         let level = parse_level(&line);
         if level.is_err() {
             println!("{}", level.err().unwrap());
             continue;
         }
+        let level = level.unwrap();
         rl.add_history_entry(line);
-        match Navigator::new(level.unwrap()) {
+        match Navigator::new(level) {
             Ok(nav) => {
                 navigator = nav;
-                break
-            },
+                context.history.push_str(format!("{}\n", level).as_str());
+                break;
+            }
             Err(e) => println!("{}", e),
         }
     }
@@ -137,7 +128,7 @@ fn repl() {
             Ok(line) => {
                 let line = line.trim();
                 rl.add_history_entry(line);
-                if let Err(e) = eval(&mut navigator, line, true) {
+                if let Err(e) = eval(&mut navigator, line, &mut context) {
                     eprintln!("{}", e);
                 }
             }
@@ -156,30 +147,3 @@ fn repl() {
         }
     }
 }
-
-/// Reads from a line string iterator and evals each line
-fn eval_lines(lines: &mut dyn Iterator<Item = String>, stdout: bool) {
-    let mut level: Result<char, String>;
-    loop {
-        let first = lines.next().unwrap();
-        level = parse_level(&first);
-        if level.is_err() {
-            match level.as_ref().err().unwrap().as_str() {
-                "Empty line" => continue,
-                _ => {
-                    eprintln!("{}", level.err().unwrap());
-                    return;
-                }
-            }
-        }
-        break;
-    }
-    let navigator = &mut Navigator::new(level.unwrap()).unwrap();
-    for stdinline in lines {
-        let line = stdinline.trim().to_owned();
-        if let Err(e) = eval(navigator, line.as_str(), stdout) {
-            eprintln!("{}", e);
-        }
-    }
-}
-
