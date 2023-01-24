@@ -16,3 +16,12 @@ jobs:
         run: |
           cd rust
           cargo clippy --all-targets --all-features
+
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run cargo test
+        run: |
+          cd rust
+          cargo test

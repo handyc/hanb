@@ -326,7 +326,7 @@ pub const COMMANDS: &[Command] = &[
         action: |cmd, _navigator, args| {
             let args = cmd.argparse(args)?;
             let filename = args.first().unwrap();
-            let filename = match filename {
+            let _filename = match filename {
                 ArgValue::String(filename) => filename,
                 _ => unreachable!(),
             };
@@ -343,7 +343,7 @@ pub const COMMANDS: &[Command] = &[
         action: |cmd, _navigator, args| {
             let args = cmd.argparse(args)?;
             let filename = args.first().unwrap();
-            let filename = match filename {
+            let _filename = match filename {
                 ArgValue::String(filename) => filename,
                 _ => unreachable!(),
             };
