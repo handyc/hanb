@@ -1,4 +1,4 @@
-Level: D = 
+Level: D      
 
            C   a   a   a   a            
          a   b   b   a   b   b          
@@ -10,7 +10,7 @@ Level: D =
          C   C   C   C   C   C          
            C   C   C   C   C            
 
-Level: C = 45
+Level: C      45
 
            A   A   A   A   A            
          B   C   A   B   B   B          
@@ -22,7 +22,7 @@ Level: C = 45
          B   B   B   B   B   B          
            B   B   B   B   B            
 
-Level: B = 45 -> 60
+Level: B      45 -> 60
 
            A   A   c   A   A            
          A   A   A   A   A   A          
@@ -34,7 +34,7 @@ Level: B = 45 -> 60
          A   A   A   A   A   A          
            A   A   A   A   A            
 
-Level: A = 45 -> 40 -> 39
+Level: A      45 -> 40 -> 39
 
            x   z   z   z   z            
          z   z   z   z   z   z          
