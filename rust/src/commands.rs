@@ -41,13 +41,10 @@ impl<'a> CmdArg<'a> {
             ArgTypes::String => ArgValue::String(value.to_string()),
             ArgTypes::Int => {
                 let default = value.parse::<i32>();
-                if default.is_err() {
-                    ArgValue::Err(format!(
-                        "Invalid default value for argument {}: '{}'",
-                        self.name, value
-                    ))
+                if let Ok(default) = default {
+                    ArgValue::Int(default as u16)
                 } else {
-                    ArgValue::Int(default.unwrap() as u16)
+                    ArgValue::Err(format!("{} is not a valid integer", value))
                 }
             }
         }
@@ -188,7 +185,7 @@ pub const COMMANDS: &[Command] = &[
             let args_res = cmd.argparse(args);
             match args_res {
                 Ok(args) => {
-                    let cmdname = match args.get(0).unwrap() {
+                    let cmdname = match args.first().unwrap() {
                         ArgValue::String(cmdname) => cmdname,
                         _ => unreachable!(),
                     };
@@ -220,7 +217,7 @@ pub const COMMANDS: &[Command] = &[
                             args.push_str(&format!(" [{}: {} = {}]", arg.name, arg.type_, default));
                         }
                         // replace line breaks with nothing
-                        args = args.replace("\n", "");
+                        args = args.replace('\n', "");
                         println!("  {} | {} {} -> {}", cmd.command, cmd.short, args, cmd.help);
                     }
                     println!("Arguments are represented like: [name: type = default]\n\n");
@@ -251,7 +248,7 @@ pub const COMMANDS: &[Command] = &[
             for cell in board.cells.iter() {
                 seq.push_str(&cell.to_string());
             }
-            seq.push_str("\n");
+            seq.push('\n');
             Ok(seq)
         },
     },
@@ -265,11 +262,11 @@ pub const COMMANDS: &[Command] = &[
         action: |_cmd, navigator, _args| match navigator.ascend() {
             Ok(_) => {
                 let board_str = print_level_board(navigator, DEFAULT_WIDTH).unwrap();
-                Ok(format!("You ascend to the upper board. You see:\n{}", board_str).to_string())
+                Ok(format!("You ascend to the upper board. You see:\n{}", board_str))
             }
             Err(_) => {
                 let board_str = print_level_board(navigator, DEFAULT_WIDTH).unwrap();
-                Ok(format!("You can't ascend any further.\n{}", board_str).to_string())
+                Ok(format!("You can't ascend any further.\n{}", board_str))
             }
         },
     },
@@ -282,7 +279,7 @@ pub const COMMANDS: &[Command] = &[
         args: &[CommonArgs::Cell.value()],
         action: |cmd, navigator, args| {
             let args = cmd.argparse(args)?;
-            let cell = args.get(0).unwrap();
+            let cell = args.first().unwrap();
             let cell = match cell {
                 ArgValue::Int(cell) => *cell,
                 _ => unreachable!(),
@@ -290,7 +287,7 @@ pub const COMMANDS: &[Command] = &[
             match navigator.descend(cell as usize) {
                 Ok(_) => {
                     let board_str = print_level_board(navigator, DEFAULT_WIDTH).unwrap();
-                    Ok(format!("You resolved cell {}. You see:\n{}", cell, board_str).to_string())
+                    Ok(format!("You resolved cell {}. You see:\n{}", cell, board_str))
                 }
                 Err(msg) => Err(msg),
             }
@@ -305,7 +302,7 @@ pub const COMMANDS: &[Command] = &[
         repl_only: false,
         action: |cmd, navigator, args| {
             let args = cmd.argparse(args)?;
-            let board_arg = args.get(0).unwrap();
+            let board_arg = args.first().unwrap();
             let board_arg = match board_arg {
                 ArgValue::String(board) => board,
                 _ => unreachable!(),
@@ -313,7 +310,7 @@ pub const COMMANDS: &[Command] = &[
             match navigator.set_board(board_arg) {
                 Ok(_) => {
                     let board_str = print_level_board(navigator, DEFAULT_WIDTH).unwrap();
-                    Ok(format!("You set the board. You see:\n{}", board_str).to_string())
+                    Ok(format!("You set the board. You see:\n{}", board_str))
                 }
                 Err(msg) => Err(msg),
             }
@@ -328,7 +325,7 @@ pub const COMMANDS: &[Command] = &[
         repl_only: false,
         action: |cmd, _navigator, args| {
             let args = cmd.argparse(args)?;
-            let filename = args.get(0).unwrap();
+            let filename = args.first().unwrap();
             let filename = match filename {
                 ArgValue::String(filename) => filename,
                 _ => unreachable!(),
@@ -345,7 +342,7 @@ pub const COMMANDS: &[Command] = &[
         repl_only: false,
         action: |cmd, _navigator, args| {
             let args = cmd.argparse(args)?;
-            let filename = args.get(0).unwrap();
+            let filename = args.first().unwrap();
             let filename = match filename {
                 ArgValue::String(filename) => filename,
                 _ => unreachable!(),
@@ -362,7 +359,7 @@ pub const COMMANDS: &[Command] = &[
         repl_only: true,
         action: |_cmd, _navigator, args| {
             let arglist = args.split(' ').collect::<Vec<&str>>();
-            let filename = arglist.get(0).unwrap().to_string();
+            let filename = arglist.first().unwrap().to_string();
             // Script is all strings in arguments after file name
             let script = arglist[1..].join(" ");
             let mut file = File::create(&filename);

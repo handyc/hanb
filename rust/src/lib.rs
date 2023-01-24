@@ -33,12 +33,12 @@ pub fn print_board(board: &str, width: u8) -> Result<String, String> {
     let left_padding = (width - DIAGONAL) / 2;
     let right_padding = width - DIAGONAL - left_padding;
     for r in 0..DIAGONAL {
-        let mut n_cells = r + 5 as u8;
+        let mut n_cells = r + 5_u8;
         if r > DIAGONAL / 2 {
             n_cells = DIAGONAL / 2 + DIAGONAL - r;
         }
         let offset: i8 = (r as i8) - (DIAGONAL as i8) / 2;
-        for _ in 0..(left_padding + offset.abs() as u8) {
+        for _ in 0..(left_padding + offset.unsigned_abs()) {
             output += "  ";
         }
         let start = (width - n_cells) / 2;
@@ -56,7 +56,7 @@ pub fn print_board(board: &str, width: u8) -> Result<String, String> {
                 output += format!(" {}  ", char).as_str();
             }
         }
-        for _ in 0..(right_padding + offset.abs() as u8) {
+        for _ in 0..(right_padding + offset.unsigned_abs()) {
             output += "  ";
         }
         output += "\n";
@@ -84,7 +84,7 @@ pub fn parse_level(line: &str) -> Result<char, String> {
     if line.is_empty() {
         return Err("Empty line".to_string());
     }
-    let level = line.split("#").next().unwrap().trim();
+    let level = line.split('#').next().unwrap().trim();
     if level.len() > 1 {
         return Err(format!("Invalid level: {}", level));
     }
@@ -128,7 +128,11 @@ pub fn eval_lines(lines: &mut dyn Iterator<Item = String>, context: &mut EvalCon
     }
 }
 
-pub fn eval(navigator: &mut Navigator, line: &str, context: &mut EvalContext) -> Result<(), String> {
+pub fn eval(
+    navigator: &mut Navigator,
+    line: &str,
+    context: &mut EvalContext,
+) -> Result<(), String> {
     let stdout: bool = context.stdout;
     let repl: bool = context.repl;
 
@@ -151,8 +155,12 @@ pub fn eval(navigator: &mut Navigator, line: &str, context: &mut EvalContext) ->
                     if args.trim().is_empty() {
                         return Err("Missing filename".to_string());
                     }
-                    (cmd.action)(cmd, navigator, (args + " " + context.history.as_str()).as_str())
-                },
+                    (cmd.action)(
+                        cmd,
+                        navigator,
+                        (args + " " + context.history.as_str()).as_str(),
+                    )
+                }
                 "import" => {
                     let file = std::fs::File::open(args).expect("Unable to open file");
                     let reader = io::BufReader::new(file);

@@ -1,6 +1,6 @@
-use std::cmp::min;
+use std::{cmp::min, fmt};
 
-use crate::constants::{SIZES, BOARD_SIZE};
+use crate::constants::{BOARD_SIZE, SIZES};
 
 /// Compares two characters in the SIZE sequence. If a character index is greater than the other it
 /// is considered to be bigger.
@@ -25,7 +25,10 @@ pub struct Cell {
 impl Cell {
     /// Create a new cell with a value.
     pub fn new(value: char) -> Self {
-        Self { size: value, board: None }
+        Self {
+            size: value,
+            board: None,
+        }
     }
 
     /// Define the board that this cell resolves to.
@@ -44,10 +47,11 @@ impl Cell {
     pub fn get_board(&self) -> Option<&Board> {
         self.board.as_ref()
     }
+}
 
-    /// Converts the cell size to a string.
-    pub(crate) fn to_string(&self) -> String {
-        format!("{}", self.size)
+impl fmt::Display for Cell {
+    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+        write!(f, "{}", self.size)
     }
 }
 
@@ -80,7 +84,7 @@ impl Board {
 
     /// Create a new board from a BOARD_SIZE long string. Can optionally include a color.
     pub fn new(board: &str) -> Result<Self, String> {
-        if board.len() < 1 {
+        if board.is_empty() {
             return Err(format!(
                 "Board must be at least {} characters long. You entered {}",
                 1,
@@ -99,15 +103,16 @@ impl Board {
         let color = truncated_board.chars().skip(BOARD_SIZE).take(3).collect();
         Ok(Board { cells, color })
     }
+}
 
-    /// Converts the board to a string.
-    pub fn to_string(&self) -> String {
+impl fmt::Display for Board {
+    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
         let mut board = String::new();
         for cell in &self.cells {
             board.push(cell.size);
         }
         board.push_str(&self.color);
-        board
+        write!(f, "{}", board)
     }
 }
 
@@ -145,7 +150,10 @@ impl Navigator {
     pub fn ascend(&mut self) -> Result<&Board, String> {
         let index = SIZES.find(self.level).unwrap();
         if index == SIZES.len() - 1 {
-            return Err(format!("You've reached the top limit fo the universe: {}", self.current_board().color));
+            return Err(format!(
+                "You've reached the top limit fo the universe: {}",
+                self.current_board().color
+            ));
         }
         match self.cell_stack.pop() {
             Some(it) => it,
@@ -159,7 +167,10 @@ impl Navigator {
     pub fn descend(&mut self, cell: usize) -> Result<&Board, String> {
         let index = SIZES.find(self.level).unwrap();
         if index == 0 {
-            return Err(format!("You've reached the bottom limit fo the universe: {}", self.current_board().color));
+            return Err(format!(
+                "You've reached the bottom limit fo the universe: {}",
+                self.current_board().color
+            ));
         }
         self.level = SIZES.chars().nth(index - 1).unwrap();
         self.resolve(cell)?;
@@ -266,4 +277,3 @@ impl Navigator {
             .join(" -> ")
     }
 }
-
