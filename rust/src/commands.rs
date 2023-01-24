@@ -360,6 +360,7 @@ pub const COMMANDS: &[Command] = &[
         action: |_cmd, _navigator, args| {
             let arglist = args.split(' ').collect::<Vec<&str>>();
             let filename = arglist.first().unwrap().to_string();
+
             // Script is all strings in arguments after file name
             let script = arglist[1..].join(" ");
             let mut file = File::create(&filename);
