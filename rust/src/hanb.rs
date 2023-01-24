@@ -260,6 +260,10 @@ impl Navigator {
             .join(" -> ")
     }
 
+    pub fn go_to_root(&mut self) {
+        while self.ascend().is_ok() {}
+    }
+
     fn serialize(&mut self) -> String {
         let mut situation = String::new();
         situation.push_str(self.get_path().as_str());
@@ -274,6 +278,7 @@ impl Navigator {
             if self.current_board().cells[i].board.is_some() {
                 self.descend(i).unwrap();
                 situation.push_str(self.serialize().as_str());
+                self.ascend().unwrap();
             }
         }
         situation
@@ -283,7 +288,7 @@ impl Navigator {
     pub fn get_situation(&mut self) -> String {
         // Store the path to restore it later
         let current_path = self.cell_stack.clone();
-        while self.ascend().is_ok() {}
+        self.go_to_root();
         let situation = self.serialize();
         // Return to the current path
         for cell in current_path {
