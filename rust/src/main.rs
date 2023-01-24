@@ -56,7 +56,9 @@ fn main() {
         let reader = io::BufReader::new(file);
         let mut lines = reader.lines().map(|l| l.unwrap());
         let mut context = EvalContext::new(false, false);
-        eval_lines(&mut lines, &mut context);
+        if let Err(s) = eval_lines(&mut lines, &mut context) {
+            eprintln!("{}", s);
+        }
         return;
     }
     if args.stdin {
@@ -64,7 +66,9 @@ fn main() {
         let stdin = io::stdin();
         let mut lines = stdin.lock().lines().map(|l| l.unwrap());
         let mut context = EvalContext::new(args.verbose, false);
-        eval_lines(&mut lines, &mut context);
+        if let Err(s) = eval_lines(&mut lines, &mut context) {
+            eprintln!("{}", s);
+        }
         return;
     }
     if args.input.is_empty() {

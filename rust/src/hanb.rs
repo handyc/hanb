@@ -76,7 +76,6 @@ impl Board {
             } else {
                 output.push(match c {
                     ' ' => '-',
-                    // TODO what to do with other invalid characters?
                     _ => '.',
                 });
             }
@@ -191,7 +190,7 @@ impl Navigator {
         }
         let cells = &self.current_board().cells;
         if cells[pos].board.is_none() {
-            self.define(pos, ".")?;
+            self.add_cell(pos)?;
         }
         let cells = &self.current_board().cells;
         let cell = &cells[pos];
@@ -205,11 +204,8 @@ impl Navigator {
         }
     }
 
-    /// Define the board for a cell in the current board.
-    /// If the cell is already defined, it will be overwritten.
-    /// If any of the input board cells are bigger than the current one whey will be truncated to
-    /// the level smaller than the current one.
-    pub fn define(&mut self, pos: usize, value: &str) -> Result<(), String> {
+    /// Adds a undefine cell to a board
+    pub fn add_cell(&mut self, pos: usize) -> Result<(), String> {
         if pos >= self.current_board().cells.len() {
             return Err(format!(
                 "Position must be less than {}. You entered {}",
@@ -222,25 +218,7 @@ impl Navigator {
         for cell in &self.cell_stack {
             board = board.cells[*cell].board.as_mut().unwrap();
         }
-        let mut truncated_value = String::new();
-        let value = Board::preprocess(value);
-        for char in value.chars() {
-            if size_smaller(char, self.level) {
-                truncated_value.push(self.level);
-            } else {
-                let index = SIZES.find(self.level).unwrap();
-                if index == 0 {
-                    return Err(format!(
-                        "Nothing can be smaller than this level: {}",
-                        self.level
-                    ));
-                }
-                let level = SIZES.chars().nth(index - 1).unwrap();
-                truncated_value.push(level);
-            }
-        }
-
-        board.cells[pos].set_board_from_str(truncated_value.as_str())?;
+        board.cells[pos].set_board_from_str(".")?;
         Ok(())
     }
 
