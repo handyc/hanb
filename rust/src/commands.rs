@@ -323,14 +323,24 @@ pub const COMMANDS: &[Command] = &[
         args: &[CommonArgs::Filename.value()],
         stdout: false,
         repl_only: false,
-        action: |cmd, _navigator, args| {
+        action: |cmd, navigator, args| {
             let args = cmd.argparse(args)?;
             let filename = args.first().unwrap();
-            let _filename = match filename {
+            let filename = match filename {
                 ArgValue::String(filename) => filename,
                 _ => unreachable!(),
             };
-            Err("To be done".to_string())
+            let file = File::create(filename);
+            match file {
+                Ok(mut file) => {
+                    let content = navigator.get_situation();
+                    match file.write_all(content.as_bytes()) {
+                        Ok(_) => Ok(format!("Saved to {}", filename)),
+                        Err(_) => Err(format!("Could not write to {}", filename)),
+                    }
+                }
+                Err(err) => Err(format!("Error saving to {}: {}", filename, err)),
+            }
         },
     },
     Command {

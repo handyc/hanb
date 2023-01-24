@@ -78,7 +78,7 @@ impl Board {
             } else {
                 output.push(match c {
                     ' ' => SIZES.chars().rev().nth(1).unwrap(),
-                    _ => SIZES.chars().rev().nth(0).unwrap(),
+                    _ => SIZES.chars().rev().next().unwrap(),
                 });
             }
         }
@@ -258,5 +258,42 @@ impl Navigator {
             .map(|it| it.to_string())
             .collect::<Vec<String>>()
             .join(" -> ")
+    }
+
+    fn serialize(&mut self) -> String {
+        let mut situation = String::new();
+        situation.push_str(self.get_path().as_str());
+        situation.push(' ');
+        let clone = self.clone();
+        let cells = &clone.current_board().cells;
+        for cell in cells.iter() {
+            situation.push(cell.size);
+        }
+        situation.push('\n');
+        for (i, _) in cells.iter().enumerate() {
+            if self.current_board().cells[i].board.is_some() {
+                self.descend(i).unwrap();
+                situation.push_str(self.serialize().as_str());
+            }
+        }
+        situation
+    }
+
+    /// Serialize into a situaion string representation
+    pub fn get_situation(&mut self) -> String {
+        // Store the path to restore it later
+        let current_path = self.cell_stack.clone();
+        while self.ascend().is_ok() {}
+        let situation = self.serialize();
+        // Return to the current path
+        for cell in current_path {
+            self.descend(cell).unwrap();
+        }
+        situation
+    }
+
+    /// Creates a navigator from a situation string representation
+    pub fn from_situation(_situation: &str) -> Result<Self, String> {
+        todo!()
     }
 }
