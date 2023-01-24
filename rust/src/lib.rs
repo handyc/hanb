@@ -162,8 +162,14 @@ pub fn eval(
                     )
                 }
                 "import" => {
-                    let file = std::fs::File::open(args).expect("Unable to open file");
-                    let reader = io::BufReader::new(file);
+                    if args.trim().is_empty() {
+                        return Err("Missing filename".to_string());
+                    }
+                    let file = std::fs::File::open(args);
+                    if let Err(e) = file {
+                        return Err(format!("{}", e));
+                    }
+                    let reader = io::BufReader::new(file.unwrap());
                     let mut lines = reader.lines().map(|l| l.unwrap());
                     eval_lines(&mut lines, context);
                     Err("Import sucessful!".to_string())
