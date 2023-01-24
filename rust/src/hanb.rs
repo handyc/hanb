@@ -2,6 +2,8 @@ use std::{cmp::min, fmt};
 
 use crate::constants::{BOARD_SIZE, SIZES};
 
+static DEFAULT_CELL_SIZE: &str = ".";
+
 /// Compares two characters in the SIZE sequence. If a character index is greater than the other it
 /// is considered to be bigger.
 pub fn size_greater(a: char, b: char) -> bool {
@@ -75,8 +77,8 @@ impl Board {
                 output.push(c);
             } else {
                 output.push(match c {
-                    ' ' => '-',
-                    _ => '.',
+                    ' ' => SIZES.chars().rev().nth(1).unwrap(),
+                    _ => SIZES.chars().rev().nth(0).unwrap(),
                 });
             }
         }
@@ -95,7 +97,7 @@ impl Board {
         let mut truncated_board = Board::preprocess(&board[0..min(board.len(), BOARD_SIZE + 3)]);
         // Complete the remaining with '.'
         if truncated_board.len() < BOARD_SIZE + 3 {
-            truncated_board.push_str(&".".repeat(BOARD_SIZE + 3 - truncated_board.len()));
+            truncated_board.push_str(&DEFAULT_CELL_SIZE.repeat(BOARD_SIZE + 3 - truncated_board.len()));
         }
         let mut cells = Vec::new();
         for c in truncated_board.chars().take(BOARD_SIZE) {
@@ -131,7 +133,7 @@ impl Navigator {
         if !SIZES.contains(level) {
             return Err(format!("Invalid level: {}", level));
         }
-        let root_board = Board::new(&".".repeat(BOARD_SIZE))?;
+        let root_board = Board::new(&DEFAULT_CELL_SIZE.repeat(BOARD_SIZE))?;
         Ok(Self {
             root_board,
             cell_stack: Vec::new(),
@@ -218,7 +220,7 @@ impl Navigator {
         for cell in &self.cell_stack {
             board = board.cells[*cell].board.as_mut().unwrap();
         }
-        board.cells[pos].set_board_from_str(".")?;
+        board.cells[pos].set_board_from_str(DEFAULT_CELL_SIZE)?;
         Ok(())
     }
 
