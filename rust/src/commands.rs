@@ -376,7 +376,7 @@ pub const COMMANDS: &[Command] = &[
     Command {
         command: "import",
         short: "i",
-        help: "Import a hanb script and execute it into this repl",
+        help: "Import a hanb script and execute it into this repl overwriting the current navigator",
         args: &[CommonArgs::ScriptName.value()],
         stdout: false,
         repl_only: true,

@@ -15,6 +15,7 @@ pub fn size_smaller(a: char, b: char) -> bool {
 }
 
 /// Hanb cell. A cell has a fixed value and can resolve to a dynamic board.
+#[derive(Debug, Clone)]
 pub struct Cell {
     /// The Size of the cell.
     pub size: char,
@@ -57,6 +58,7 @@ impl fmt::Display for Cell {
 
 /// Hanb board. A board is a collection of 61 cells + 3 optional characters that are the board
 /// color.
+#[derive(Debug, Clone)]
 pub struct Board {
     /// The cells of the board.
     pub cells: Vec<Cell>,
@@ -117,6 +119,7 @@ impl fmt::Display for Board {
 }
 
 /// Implement the board navigator that keeps track of the current level and board.
+#[derive(Debug, Clone)]
 pub struct Navigator {
     pub root_board: Board,
     pub cell_stack: Vec<usize>,

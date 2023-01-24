@@ -10,7 +10,7 @@ pub mod hanb;
 pub fn print_level_board(navigator: &Navigator, width: u8) -> Result<String, String> {
     let level = navigator.level;
     let mut board_string = String::new();
-    board_string += &format!("Level: {} = {}\n\n", level, navigator.get_path());
+    board_string += &format!("Level: {}      {}\n\n", level, navigator.get_path());
     match print_board(&navigator.current_board().to_string(), width) {
         Ok(board) => board_string += &board,
         Err(e) => return Err(e),
@@ -96,7 +96,7 @@ pub fn parse_level(line: &str) -> Result<char, String> {
 }
 
 /// Reads from a line string iterator and evals each line
-pub fn eval_lines(lines: &mut dyn Iterator<Item = String>, context: &mut EvalContext) {
+pub fn eval_lines(lines: &mut dyn Iterator<Item = String>, context: &mut EvalContext) -> Result<Navigator, String> {
     let mut level: Result<char, String>;
     loop {
         let first = lines.next().unwrap();
@@ -106,8 +106,8 @@ pub fn eval_lines(lines: &mut dyn Iterator<Item = String>, context: &mut EvalCon
                 "Empty line" => continue,
                 _ => {
                     if context.repl {
-                        eprintln!("{}", level.err().unwrap());
-                        return;
+                        eprintln!("{}", level.as_ref().err().unwrap());
+                        return Err(level.err().unwrap());
                     } else {
                         println!("Defaulting to level '.'");
                         level = Ok('.');
@@ -126,6 +126,7 @@ pub fn eval_lines(lines: &mut dyn Iterator<Item = String>, context: &mut EvalCon
             eprintln!("{}", e);
         }
     }
+    Ok(navigator.clone())
 }
 
 pub fn eval(
@@ -171,8 +172,12 @@ pub fn eval(
                     }
                     let reader = io::BufReader::new(file.unwrap());
                     let mut lines = reader.lines().map(|l| l.unwrap());
-                    eval_lines(&mut lines, context);
-                    Err("Import sucessful!".to_string())
+                    if let Ok(inner_nav) = eval_lines(&mut lines, context) {
+                        *navigator = inner_nav;
+                        Ok("Import successfull!".to_string())
+                    } else {
+                        Err("Failed to import".to_string())
+                    }
                 }
                 _ => (cmd.action)(cmd, navigator, &args),
             };
