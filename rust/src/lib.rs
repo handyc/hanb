@@ -1,7 +1,7 @@
 use std::io::{self, BufRead};
 
-use constants::DIAGONAL;
-use hanb::Navigator;
+use crate::constants::DIAGONAL;
+use crate::hanb::Navigator;
 
 pub mod commands;
 pub mod constants;

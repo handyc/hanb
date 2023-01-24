@@ -12,6 +12,7 @@ description = "hanb is a system for representing objects in space at different s
 authors = ["mattf <matheusfillipeag@gmail.com>"]
 
 [dependencies]
+assert_cmd = "2.0.8"
 clap = { version = "4.1.0", features = ["derive"] }
 rustyline = "10.0.0"
 

@@ -1,0 +1,50 @@
+Level: D = 
+
+           C   a   a   a   a            
+         a   b   b   a   b   b          
+       a   a   C   C   C   C   C        
+     C   C   C   C   C   C   C   C      
+   C   C   C   C   C   C   C   C   C    
+     C   C   C   C   C   C   C   C      
+       C   C   C   C   C   C   C        
+         C   C   C   C   C   C          
+           C   C   C   C   C            
+
+Level: C = 45
+
+           A   A   A   A   A            
+         B   C   A   B   B   B          
+       B   B   B   B   B   B   B        
+     B   B   B   B   B   B   B   B      
+   B   B   B   B   B   B   B   B   B    
+     B   B   B   B   B   B   B   B      
+       B   B   B   B   B   B   B        
+         B   B   B   B   B   B          
+           B   B   B   B   B            
+
+Level: B = 45 -> 60
+
+           A   A   c   A   A            
+         A   A   A   A   A   A          
+       A   A   A   A   A   A   A        
+     A   A   A   A   A   A   A   A      
+   A   A   A   A   A   A   A   A   A    
+     A   A   A   A   A   A   A   A      
+       A   A   A   A   A   A   A        
+         A   A   A   A   A   A          
+           A   A   A   A   A            
+
+Level: A = 45 -> 40 -> 39
+
+           x   z   z   z   z            
+         z   z   z   z   z   z          
+       z   z   z   z   z   z   z        
+     z   z   z   z   z   z   z   z      
+   z   z   z   z   z   x   z   z   z    
+     z   z   z   z   z   z   z   z      
+       z   z   z   z   z   z   z        
+         z   z   z   z   z   z          
+           z   z   z   z   z            
+
+xzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzxzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+
