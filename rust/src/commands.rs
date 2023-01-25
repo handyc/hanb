@@ -392,11 +392,11 @@ pub const COMMANDS: &[Command] = &[
                 Ok(nav) => {
                     *navigator = nav;
                     Ok(format!("Loaded from '{}' successfully", filename))
-                },
+                }
                 Err(msg) => {
                     eprintln!("Error loading from '{}'", filename);
                     Err(msg)
-                },
+                }
             }
         },
     },
