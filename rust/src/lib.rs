@@ -96,7 +96,10 @@ pub fn parse_level(line: &str) -> Result<char, String> {
 }
 
 /// Reads from a line string iterator and evals each line
-pub fn eval_lines(lines: &mut dyn Iterator<Item = String>, context: &mut EvalContext) -> Result<Navigator, String> {
+pub fn eval_lines(
+    lines: &mut dyn Iterator<Item = String>,
+    context: &mut EvalContext,
+) -> Result<Navigator, String> {
     let mut level: Result<char, String>;
     loop {
         let first = lines.next().unwrap();

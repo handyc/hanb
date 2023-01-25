@@ -1,6 +1,10 @@
-use std::{fmt, fs::File, io::Write};
+use std::{
+    fmt,
+    fs::{self, File},
+    io::Write,
+};
 
-use crate::{constants::DEFAULT_WIDTH, hanb::Navigator, print_level_board};
+use crate::{constants::DEFAULT_WIDTH, hanb::Navigator, parse_level, print_level_board};
 
 #[derive(Debug)]
 enum ArgTypes {
@@ -133,6 +137,7 @@ enum CommonArgs {
     Cell,
     Filename,
     ScriptName,
+    Level,
 }
 
 impl CommonArgs {
@@ -166,6 +171,12 @@ impl CommonArgs {
                 name: "script",
                 description: ".hanb script path",
                 default: Some("script.hanb"),
+                type_: ArgTypes::String,
+            },
+            CommonArgs::Level => CmdArg {
+                name: "Level",
+                description: "Level to load board at",
+                default: Some("."),
                 type_: ArgTypes::String,
             },
         }
@@ -262,7 +273,10 @@ pub const COMMANDS: &[Command] = &[
         action: |_cmd, navigator, _args| match navigator.ascend() {
             Ok(_) => {
                 let board_str = print_level_board(navigator, DEFAULT_WIDTH).unwrap();
-                Ok(format!("You ascend to the upper board. You see:\n{}", board_str))
+                Ok(format!(
+                    "You ascend to the upper board. You see:\n{}",
+                    board_str
+                ))
             }
             Err(_) => {
                 let board_str = print_level_board(navigator, DEFAULT_WIDTH).unwrap();
@@ -287,7 +301,10 @@ pub const COMMANDS: &[Command] = &[
             match navigator.descend(cell as usize) {
                 Ok(_) => {
                     let board_str = print_level_board(navigator, DEFAULT_WIDTH).unwrap();
-                    Ok(format!("You resolved cell {}. You see:\n{}", cell, board_str))
+                    Ok(format!(
+                        "You resolved cell {}. You see:\n{}",
+                        cell, board_str
+                    ))
                 }
                 Err(msg) => Err(msg),
             }
@@ -347,17 +364,40 @@ pub const COMMANDS: &[Command] = &[
         command: "load",
         short: "l",
         help: "Load a saved situation from a file",
-        args: &[CommonArgs::Filename.value()],
+        args: &[CommonArgs::Filename.value(), CommonArgs::Level.value()],
         stdout: false,
         repl_only: false,
-        action: |cmd, _navigator, args| {
+        action: |cmd, navigator, args| {
             let args = cmd.argparse(args)?;
             let filename = args.first().unwrap();
-            let _filename = match filename {
+            let filename = match filename {
                 ArgValue::String(filename) => filename,
                 _ => unreachable!(),
             };
-            Err("To be done".to_string())
+            let level = args.get(1).unwrap();
+            let level = match level {
+                ArgValue::String(filename) => filename,
+                _ => unreachable!(),
+            };
+            let content = match fs::read_to_string(filename) {
+                Ok(content) => content,
+                Err(err) => return Err(format!("Error reading {}: {}", filename, err)),
+            };
+            let level = match parse_level(level) {
+                Ok(level) => level,
+                Err(err) => return Err(err),
+            };
+            println!("Loading at level {} from {}", level, filename);
+            match Navigator::from_situation(level, &content) {
+                Ok(nav) => {
+                    *navigator = nav;
+                    Ok(format!("Loaded from '{}' successfully", filename))
+                },
+                Err(msg) => {
+                    eprintln!("Error loading from '{}'", filename);
+                    Err(msg)
+                },
+            }
         },
     },
     Command {
@@ -386,7 +426,8 @@ pub const COMMANDS: &[Command] = &[
     Command {
         command: "import",
         short: "i",
-        help: "Import a hanb script and execute it into this repl overwriting the current navigator",
+        help:
+            "Import a hanb script and execute it into this repl overwriting the current navigator",
         args: &[CommonArgs::ScriptName.value()],
         stdout: false,
         repl_only: true,
