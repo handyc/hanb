@@ -1,5 +1,7 @@
 use std::io::{self, BufRead};
 
+use constants::SIZES;
+
 use crate::constants::DIAGONAL;
 use crate::hanb::Navigator;
 
@@ -100,27 +102,7 @@ pub fn eval_lines(
     lines: &mut dyn Iterator<Item = String>,
     context: &mut EvalContext,
 ) -> Result<Navigator, String> {
-    let mut level: Result<char, String>;
-    loop {
-        let first = lines.next().unwrap();
-        level = parse_level(&first);
-        if level.is_err() {
-            match level.as_ref().err().unwrap().as_str() {
-                "Empty line" => continue,
-                _ => {
-                    if context.repl {
-                        eprintln!("{}", level.as_ref().err().unwrap());
-                        return Err(level.err().unwrap());
-                    } else {
-                        println!("Defaulting to level '.'");
-                        level = Ok('.');
-                    }
-                }
-            }
-        }
-        break;
-    }
-    let level = level.unwrap();
+    let level = SIZES.chars().last().unwrap();
     context.history.push_str(format!("{}\n", level).as_str());
     let navigator = &mut Navigator::new(level).unwrap();
     for stdinline in lines {

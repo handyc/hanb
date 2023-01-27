@@ -1,50 +1,50 @@
-Level: D      
+Level: .      
 
-           C   a   a   a   a            
+           E   a   a   a   a            
          a   b   b   a   b   b          
-       a   a   C   C   C   C   C        
-     C   C   C   C   C   C   C   C      
-   C   C   C   C   C   C   C   C   C    
-     C   C   C   C   C   C   C   C      
-       C   C   C   C   C   C   C        
-         C   C   C   C   C   C          
-           C   C   C   C   C            
+       a   a   .   .   .   .   .        
+     .   .   .   .   .   .   .   .      
+   .   .   .   .   .   .   .   .   .    
+     .   .   .   .   .   .   .   .      
+       .   .   .   .   .   .   .        
+         .   .   .   .   .   .          
+           .   .   .   .   .            
 
-Level: C      45
+Level: -      45
 
            A   A   A   A   A            
-         B   C   A   B   B   B          
-       B   B   B   B   B   B   B        
-     B   B   B   B   B   B   B   B      
-   B   B   B   B   B   B   B   B   B    
-     B   B   B   B   B   B   B   B      
-       B   B   B   B   B   B   B        
-         B   B   B   B   B   B          
-           B   B   B   B   B            
+         B   C   A   9   9   9          
+       9   9   9   9   9   9   9        
+     9   9   9   9   9   9   9   9      
+   9   9   9   9   9   9   9   9   9    
+     9   9   9   9   9   9   9   9      
+       9   9   9   9   9   9   9        
+         9   9   9   9   9   9          
+           9   9   9   9   9            
 
-Level: B      45 -> 60
+Level: 9      45 -> 60
 
-           A   A   c   A   A            
-         A   A   A   A   A   A          
-       A   A   A   A   A   A   A        
-     A   A   A   A   A   A   A   A      
-   A   A   A   A   A   A   A   A   A    
-     A   A   A   A   A   A   A   A      
-       A   A   A   A   A   A   A        
-         A   A   A   A   A   A          
-           A   A   A   A   A            
+           8   8   c   8   8            
+         8   8   8   8   8   8          
+       8   8   8   8   8   8   8        
+     8   8   8   8   8   8   8   8      
+   8   8   8   8   8   8   8   8   8    
+     8   8   8   8   8   8   8   8      
+       8   8   8   8   8   8   8        
+         8   8   8   8   8   8          
+           8   8   8   8   8            
 
-Level: A      45 -> 40 -> 39
+Level: 8      45 -> 40 -> 39
 
-           x   z   z   z   z            
-         z   z   z   z   z   z          
-       z   z   z   z   z   z   z        
-     z   z   z   z   z   z   z   z      
-   z   z   z   z   z   x   z   z   z    
-     z   z   z   z   z   z   z   z      
-       z   z   z   z   z   z   z        
-         z   z   z   z   z   z          
-           z   z   z   z   z            
+           x   7   7   7   7            
+         7   7   7   7   7   7          
+       7   7   7   7   7   7   7        
+     7   7   7   7   7   7   7   7      
+   7   7   7   7   7   x   7   7   7    
+     7   7   7   7   7   7   7   7      
+       7   7   7   7   7   7   7        
+         7   7   7   7   7   7          
+           7   7   7   7   7            
 
-xzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzxzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+x777777777777777777777777777777x77777777777777777777777777777
 

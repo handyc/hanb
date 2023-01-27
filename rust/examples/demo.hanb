@@ -1,5 +1,4 @@
  # This is a comment
-D # first line of hanb must always be the biggest size level you are willing to use.
 board Eaaaaabbabbaa # This is how you define the board. We are currently in level D and the cells can't be bigger than that
 print # prints the current board
 down 45 # Enters into cell 45

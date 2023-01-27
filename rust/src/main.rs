@@ -4,7 +4,10 @@ use std::io::BufRead;
 use clap::{self, Parser};
 
 use hanb::{
-    commands::COMMANDS, constants::DEFAULT_WIDTH, eval, eval_lines, hanb::Navigator, parse_level,
+    commands::COMMANDS,
+    constants::{DEFAULT_WIDTH, SIZES},
+    eval, eval_lines,
+    hanb::Navigator,
     print_board, EvalContext,
 };
 use rustyline::{error::ReadlineError, Editor};
@@ -110,12 +113,7 @@ fn repl() {
         if line.is_empty() {
             continue;
         }
-        let level = parse_level(&line);
-        if level.is_err() {
-            println!("{}", level.err().unwrap());
-            continue;
-        }
-        let level = level.unwrap();
+        let level = SIZES.chars().last().unwrap();
         rl.add_history_entry(line);
         match Navigator::new(level) {
             Ok(nav) => {

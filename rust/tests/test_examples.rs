@@ -11,7 +11,6 @@ fn test_example() -> Result<(), Box<dyn std::error::Error>> {
     Ok(())
 }
 
-
 #[test]
 fn test_serialization() -> Result<(), Box<dyn std::error::Error>> {
     let mut cmd = Command::cargo_bin("hanb")?;

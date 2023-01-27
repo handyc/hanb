@@ -4,7 +4,11 @@ use std::{
     io::Write,
 };
 
-use crate::{constants::DEFAULT_WIDTH, hanb::Navigator, parse_level, print_level_board};
+use crate::{
+    constants::{DEFAULT_WIDTH, SIZES},
+    hanb::Navigator,
+    print_level_board,
+};
 
 #[derive(Debug)]
 enum ArgTypes {
@@ -374,19 +378,11 @@ pub const COMMANDS: &[Command] = &[
                 ArgValue::String(filename) => filename,
                 _ => unreachable!(),
             };
-            let level = args.get(1).unwrap();
-            let level = match level {
-                ArgValue::String(filename) => filename,
-                _ => unreachable!(),
-            };
             let content = match fs::read_to_string(filename) {
                 Ok(content) => content,
                 Err(err) => return Err(format!("Error reading {}: {}", filename, err)),
             };
-            let level = match parse_level(level) {
-                Ok(level) => level,
-                Err(err) => return Err(err),
-            };
+            let level = SIZES.chars().last().unwrap();
             println!("Loading at level {} from {}", level, filename);
             match Navigator::from_situation(level, &content) {
                 Ok(nav) => {
