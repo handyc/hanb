@@ -2,7 +2,7 @@ use std::{cmp::min, fmt};
 
 use crate::constants::{BOARD_SIZE, SIZES};
 
-static DEFAULT_CELL_SIZE: &str = ".";
+static DEFAULT_CELL_SIZE: &str = "a";
 
 /// Compares two characters in the SIZE sequence. If a character index is greater than the other it
 /// is considered to be bigger.
