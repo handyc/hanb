@@ -9,7 +9,8 @@ edgeboard="
      a   a   a   a   a   a   a   a
        a   a   a   a   a   a   a
          a   a   a   a   a   a
-           a   a   a   a   a"
+           a   a   a   a   a
+"
 pointboard="
                                a                    
                           a         a               
