@@ -98,32 +98,14 @@ fn repl() {
     let mut rl = rl.unwrap();
     // TODO: Add repl history
     // TODO: Add repl completion
-    let mut navigator: Navigator;
     let mut context = EvalContext::new(true, true);
-    loop {
-        println!();
-        println!("Please provide start level");
-        let readline = rl.readline("level> ");
-        if readline.is_err() {
-            println!("Exiting");
-            return;
-        }
-
-        let line = readline.unwrap();
-        if line.is_empty() {
-            continue;
-        }
-        let level = SIZES.chars().last().unwrap();
-        rl.add_history_entry(line);
-        match Navigator::new(level) {
-            Ok(nav) => {
-                navigator = nav;
-                context.history.push_str(format!("{}\n", level).as_str());
-                break;
-            }
-            Err(e) => println!("{}", e),
-        }
+    let level = SIZES.chars().last().unwrap();
+    let navigator = Navigator::new(level);
+    if let Err(e) = navigator {
+        eprintln!("{}", e);
+        return;
     }
+    let mut navigator = navigator.unwrap();
     loop {
         let readline = rl.readline("hanb> ");
         match readline {
