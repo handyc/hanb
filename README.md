@@ -231,7 +231,71 @@ large dynamic spaces in limited memory
 
 (10^30 m = 1 Qm)
 
-time in hanb
+# situations and events
+
+The basis for movement in hanb is the relationship between situations and events.
+A situation is a hanb board that is described in terms of object positions and object types (use one 64-character string for position as above
+and a second 64-character string to define object types):
+
+`bdhdjsskjhbsdgyuulskjhddfsghdjjjhgfdhjgkjskjhgdgdhjdkjhgshgdhPPP`
+`ddfgljhgelrufhfhfhuurlkjhffhdjklkjheghjdkjhgdf7876dljhfffjjdg111`
+
+An event is the transition from one situation to a different situation in terms of position and/or type, e.g.
+
+`bdhdjsskjhbsdgyuulskjhddfsghdjjjhgfdhjgkjskjhgdgdhjdkjhgshgdhPPP`
+`ddfgljhgelrufhfhfhuurlkjhffhdjklkjheghjdkjhgdf7876dljhfffjjdg111`
+
+--->
+
+`HdhdjsskjhbsdgyuulskjhddfsghdjjjhgfdhjgkjskjhgdgdhjdkjhgshgdhPPP`
+`ddfgljhgelrufhfhfhuurlkjhffhdjklkjheghjdkjhgdf7876dljhfffjjdg111`
+
+In the above example, the position string has been altered by one character, such that cell 0 has changed from
+object size 'b' to object size 'H'
+
+
+# hanb replacement language
+describe objects at any resolution, combine various resolutions in any way
+
+examples:  
+
+apple  -- size J  
+-- contains high detail sections of size I  
+-- some I sections have very high detail sections size H  
+-- some of those sections have pixel detail sections size G  
+
+generating apple:  
+-- generate J (apple)  
+
+board='J' 
+
+-- replace J with 61 I cells  
+
+J -> dUp5R4nvFuBGHUDlMg1JyX8ID8H5Znwo82RoF0myOcUhjRjwORaoIJCcZnEsG
+
+-- replace I cells with H cells
+
+board='dUp5R4nvFuBGHUDlMg1JyX8ID8H5Znwo82RoF0myOcUhjRjwORaoIJCcZnEsG'  
+for char in board  
+  char -> lookup(char)
+
+-- replace H cells with G cells (pixels)  
+for char in board  
+  char -> lookup(char)
+
+-G returns RGB
+
+automobile  -- size K  
+-- steering wheel size J  
+-- tire size J  
+-- hood ornament size I  
+
+city  -- size O  
+continent  -- size Q  
+planet  -- size R  
+
+
+# time in hanb
 
 `a` -- Planck time particle  
 
@@ -361,68 +425,6 @@ time in hanb
 
 `.` -- 
 
-# situations and events
-
-The basis for movement in hanb is the relationship between situations and events.
-A situation is a hanb board that is described in terms of object positions and object types (use one 64-character string for position as above
-and a second 64-character string to define object types):
-
-`bdhdjsskjhbsdgyuulskjhddfsghdjjjhgfdhjgkjskjhgdgdhjdkjhgshgdhPPP`
-`ddfgljhgelrufhfhfhuurlkjhffhdjklkjheghjdkjhgdf7876dljhfffjjdg111`
-
-An event is the transition from one situation to a different situation in terms of position and/or type, e.g.
-
-`bdhdjsskjhbsdgyuulskjhddfsghdjjjhgfdhjgkjskjhgdgdhjdkjhgshgdhPPP`
-`ddfgljhgelrufhfhfhuurlkjhffhdjklkjheghjdkjhgdf7876dljhfffjjdg111`
-
---->
-
-`HdhdjsskjhbsdgyuulskjhddfsghdjjjhgfdhjgkjskjhgdgdhjdkjhgshgdhPPP`
-`ddfgljhgelrufhfhfhuurlkjhffhdjklkjheghjdkjhgdf7876dljhfffjjdg111`
-
-In the above example, the position string has been altered by one character, such that cell 0 has changed from
-object size 'b' to object size 'H'
-
-
-# hanb replacement language
-describe objects at any resolution, combine various resolutions in any way
-
-examples:  
-
-apple  -- size J  
--- contains high detail sections of size I  
--- some I sections have very high detail sections size H  
--- some of those sections have pixel detail sections size G  
-
-generating apple:  
--- generate J (apple)  
-
-board='J' 
-
--- replace J with 61 I cells  
-
-J -> dUp5R4nvFuBGHUDlMg1JyX8ID8H5Znwo82RoF0myOcUhjRjwORaoIJCcZnEsG
-
--- replace I cells with H cells
-
-board='dUp5R4nvFuBGHUDlMg1JyX8ID8H5Znwo82RoF0myOcUhjRjwORaoIJCcZnEsG'  
-for char in board  
-  char -> lookup(char)
-
--- replace H cells with G cells (pixels)  
-for char in board  
-  char -> lookup(char)
-
--G returns RGB
-
-automobile  -- size K  
--- steering wheel size J  
--- tire size J  
--- hood ornament size I  
-
-city  -- size O  
-continent  -- size Q  
-planet  -- size R  
 
 # Implementing hanb
 # physical
