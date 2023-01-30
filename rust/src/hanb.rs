@@ -1,8 +1,6 @@
 use std::{cmp::min, fmt};
 
-use crate::constants::{BOARD_SIZE, SIZES};
-
-pub const DEFAULT_CELL_SIZE: &str = "a";
+use crate::constants::{BOARD_SIZE, DEFAULT_CELL_SIZE, SIZES};
 
 /// Compares two characters in the SIZE sequence. If a character index is greater than the other it
 /// is considered to be bigger.
@@ -156,7 +154,7 @@ impl Navigator {
         let index = SIZES.find(self.level).unwrap();
         if index == SIZES.len() - 1 {
             return Err(format!(
-                "You've reached the top limit fo the universe\n Color {}",
+                "You've reached the top limit fo the universe\nColor {}",
                 self.current_board().color
             ));
         }

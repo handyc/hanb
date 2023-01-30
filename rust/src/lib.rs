@@ -2,7 +2,7 @@ use std::io::{self, BufRead};
 
 use constants::SIZES;
 
-use crate::constants::DIAGONAL;
+use crate::constants::{DEFAULT_CELL_SIZE, DIAGONAL};
 use crate::hanb::Navigator;
 
 pub mod commands;
@@ -50,7 +50,7 @@ pub fn print_board(board: &str, width: u8) -> Result<String, String> {
                 cell
             } else {
                 // Unset cell
-                hanb::DEFAULT_CELL_SIZE.chars().next().unwrap()
+                DEFAULT_CELL_SIZE.chars().next().unwrap()
             };
             if c == end - 1 {
                 output += format!(" {}", char).as_str();

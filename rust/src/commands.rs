@@ -5,8 +5,8 @@ use std::{
 };
 
 use crate::{
-    constants::{DEFAULT_WIDTH, SIZES},
-    hanb::{Navigator, DEFAULT_CELL_SIZE},
+    constants::{DEFAULT_CELL_SIZE, DEFAULT_WIDTH, SIZES},
+    hanb::Navigator,
     print_level_board,
 };
 
