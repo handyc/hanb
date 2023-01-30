@@ -39,7 +39,7 @@ cargo run -- AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA   
 hanb
 ```
 
-Provide a start level and then type `help`.
+Then type `help`.
 
 ```
 Hanb help:
@@ -84,3 +84,23 @@ This is basically a declarative language for hanb.
 
 ## Palettes 
 Not implemented
+
+# Contributing
+
+1. Fork the repo
+2. Make your changes and update/add tests
+3. Install pre-commit and install this repos hooks:
+```sh
+pip install pre-commit
+cd /repo/root/path
+pre-commit install
+```
+4. Commit your changes and pre-commit will auto format the source code.
+    4.1. if you don't want to use pre-commit run this:
+```sh
+cd /repo/root/path
+cd rust/
+cargo fmt
+cargo clippy
+```
+5. Open a PR
