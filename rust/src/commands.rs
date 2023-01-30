@@ -6,7 +6,7 @@ use std::{
 
 use crate::{
     constants::{DEFAULT_WIDTH, SIZES},
-    hanb::Navigator,
+    hanb::{Navigator, DEFAULT_CELL_SIZE},
     print_level_board,
 };
 
@@ -156,7 +156,7 @@ impl CommonArgs {
             CommonArgs::Board => CmdArg {
                 name: "board",
                 description: "Board as string",
-                default: Some("."),
+                default: Some(DEFAULT_CELL_SIZE),
                 type_: ArgTypes::String,
             },
             CommonArgs::Cell => CmdArg {
@@ -180,7 +180,7 @@ impl CommonArgs {
             CommonArgs::Level => CmdArg {
                 name: "Level",
                 description: "Level to load board at",
-                default: Some("."),
+                default: Some(DEFAULT_CELL_SIZE),
                 type_: ArgTypes::String,
             },
         }
@@ -274,7 +274,7 @@ pub const COMMANDS: &[Command] = &[
         stdout: false,
         repl_only: false,
         args: &[],
-        action: |_cmd, navigator, _args| match navigator.ascend() {
+        action: |_cmd, navigator, _args| match navigator.up() {
             Ok(_) => {
                 let board_str = print_level_board(navigator, DEFAULT_WIDTH).unwrap();
                 Ok(format!(
@@ -282,9 +282,9 @@ pub const COMMANDS: &[Command] = &[
                     board_str
                 ))
             }
-            Err(_) => {
+            Err(e) => {
                 let board_str = print_level_board(navigator, DEFAULT_WIDTH).unwrap();
-                Ok(format!("You can't ascend any further.\n{}", board_str))
+                Ok(format!("{}\n{}", e, board_str))
             }
         },
     },

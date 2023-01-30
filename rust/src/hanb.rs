@@ -2,7 +2,7 @@ use std::{cmp::min, fmt};
 
 use crate::constants::{BOARD_SIZE, SIZES};
 
-static DEFAULT_CELL_SIZE: &str = "a";
+pub const DEFAULT_CELL_SIZE: &str = "a";
 
 /// Compares two characters in the SIZE sequence. If a character index is greater than the other it
 /// is considered to be bigger.
@@ -95,7 +95,7 @@ impl Board {
             ));
         }
         let mut truncated_board = Board::preprocess(&board[0..min(board.len(), BOARD_SIZE + 3)]);
-        // Complete the remaining with '.'
+        // Complete the remaining with 'a'
         if truncated_board.len() < BOARD_SIZE + 3 {
             truncated_board
                 .push_str(&DEFAULT_CELL_SIZE.repeat(BOARD_SIZE + 3 - truncated_board.len()));
@@ -152,20 +152,33 @@ impl Navigator {
     }
 
     /// Return to previous/upper board returning it
-    pub fn ascend(&mut self) -> Result<&Board, String> {
+    pub fn up(&mut self) -> Result<&Board, String> {
         let index = SIZES.find(self.level).unwrap();
         if index == SIZES.len() - 1 {
             return Err(format!(
-                "You've reached the top limit fo the universe: {}",
+                "You've reached the top limit fo the universe\n Color {}",
                 self.current_board().color
             ));
         }
         match self.cell_stack.pop() {
             Some(it) => it,
-            None => return Err("You can't go upper".to_string()),
+            None => {
+                return Err(format!(
+                    "You can't go upper\nColor: {}",
+                    self.current_board().color
+                ))
+            }
         };
-        self.level = SIZES.chars().nth(index + 1).unwrap();
-        Ok(self.current_board())
+        // Compute current level and board
+        let mut board = &self.root_board;
+        for cell in &self.cell_stack {
+            self.level = board.cells[*cell].size;
+            board = board.cells[*cell].get_board().unwrap();
+        }
+        if self.cell_stack.is_empty() {
+            self.level = SIZES.chars().rev().next().unwrap();
+        }
+        Ok(board)
     }
 
     /// Go to a cell in the current board returning it
@@ -174,7 +187,8 @@ impl Navigator {
         let index = SIZES.find(cell_size).unwrap();
         if index == 0 {
             return Err(format!(
-                "You've reached the bottom limit fo the universe: {}",
+                "You can't go smaller than: {}\nColor: {}",
+                cell_size,
                 self.current_board().color
             ));
         }
@@ -263,7 +277,7 @@ impl Navigator {
     }
 
     pub fn go_to_root(&mut self) {
-        while self.ascend().is_ok() {}
+        while self.up().is_ok() {}
     }
 
     fn serialize(&mut self) -> String {
@@ -280,7 +294,7 @@ impl Navigator {
             if self.current_board().cells[i].board.is_some() {
                 self.down(i).unwrap();
                 situation.push_str(self.serialize().as_str());
-                self.ascend().unwrap();
+                self.up().unwrap();
             }
         }
         situation

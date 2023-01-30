@@ -12,7 +12,7 @@ pub mod hanb;
 pub fn print_level_board(navigator: &Navigator, width: u8) -> Result<String, String> {
     let level = navigator.level;
     let mut board_string = String::new();
-    board_string += &format!("Level: {}      {}\n\n", level, navigator.get_path());
+    board_string += &format!("Level: {}      Path: {}\n\n", level, navigator.get_path());
     match print_board(&navigator.current_board().to_string(), width) {
         Ok(board) => board_string += &board,
         Err(e) => return Err(e),
@@ -50,7 +50,7 @@ pub fn print_board(board: &str, width: u8) -> Result<String, String> {
                 cell
             } else {
                 // Unset cell
-                '.'
+                hanb::DEFAULT_CELL_SIZE.chars().next().unwrap()
             };
             if c == end - 1 {
                 output += format!(" {}", char).as_str();

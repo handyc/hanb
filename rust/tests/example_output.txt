@@ -2,49 +2,49 @@ Level: .
 
            E   a   a   a   a            
          a   b   b   a   b   b          
-       a   a   .   .   .   .   .        
-     .   .   .   .   .   .   .   .      
-   .   .   .   .   .   .   .   .   .    
-     .   .   .   .   .   .   .   .      
-       .   .   .   .   .   .   .        
-         .   .   .   .   .   .          
-           .   .   .   .   .            
+       a   a   a   a   a   a   a        
+     a   a   a   a   a   a   a   a      
+   a   a   a   a   a   a   a   a   a    
+     a   a   a   a   a   a   a   a      
+       a   a   a   a   a   a   a        
+         a   a   a   a   a   a          
+           a   a   a   a   a            
 
-Level: -      45
+Level: .      
 
            A   A   A   A   A            
-         B   C   A   9   9   9          
-       9   9   9   9   9   9   9        
-     9   9   9   9   9   9   9   9      
-   9   9   9   9   9   9   9   9   9    
-     9   9   9   9   9   9   9   9      
-       9   9   9   9   9   9   9        
-         9   9   9   9   9   9          
-           9   9   9   9   9            
+         B   C   A   a   a   a          
+       a   a   a   a   a   a   a        
+     a   a   a   a   a   a   a   a      
+   a   a   a   a   a   a   a   a   a    
+     a   a   a   a   a   a   a   a      
+       a   a   a   a   a   a   a        
+         a   a   a   a   a   a          
+           a   a   a   a   a            
 
-Level: 9      45 -> 60
+Level: .      
 
-           8   8   c   8   8            
-         8   8   8   8   8   8          
-       8   8   8   8   8   8   8        
-     8   8   8   8   8   8   8   8      
-   8   8   8   8   8   8   8   8   8    
-     8   8   8   8   8   8   8   8      
-       8   8   8   8   8   8   8        
-         8   8   8   8   8   8          
-           8   8   8   8   8            
+           .   -   c   a   a            
+         a   a   a   a   a   a          
+       a   a   a   a   a   a   a        
+     a   a   a   a   a   a   a   a      
+   a   a   a   a   a   a   a   a   a    
+     a   a   a   a   a   a   a   a      
+       a   a   a   a   a   a   a        
+         a   a   a   a   a   a          
+           a   a   a   a   a            
 
-Level: 8      45 -> 40 -> 39
+Level: .      
 
-           x   7   7   7   7            
-         7   7   7   7   7   7          
-       7   7   7   7   7   7   7        
-     7   7   7   7   7   7   7   7      
-   7   7   7   7   7   x   7   7   7    
-     7   7   7   7   7   7   7   7      
-       7   7   7   7   7   7   7        
-         7   7   7   7   7   7          
-           7   7   7   7   7            
+           x   .   .   .   .            
+         .   .   .   .   .   .          
+       .   .   .   .   .   .   .        
+     .   .   .   .   .   .   .   .      
+   .   .   .   .   .   x   a   a   a    
+     a   a   a   a   a   a   a   a      
+       a   a   a   a   a   a   a        
+         a   a   a   a   a   a          
+           a   a   a   a   a            
 
-x777777777777777777777777777777x77777777777777777777777777777
+x..............................xaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 
