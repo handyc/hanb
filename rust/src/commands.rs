@@ -302,7 +302,7 @@ pub const COMMANDS: &[Command] = &[
                 ArgValue::Int(cell) => *cell,
                 _ => unreachable!(),
             };
-            match navigator.descend(cell as usize) {
+            match navigator.down(cell as usize) {
                 Ok(_) => {
                     let board_str = print_level_board(navigator, DEFAULT_WIDTH).unwrap();
                     Ok(format!(

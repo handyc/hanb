@@ -169,15 +169,16 @@ impl Navigator {
     }
 
     /// Go to a cell in the current board returning it
-    pub fn descend(&mut self, cell: usize) -> Result<&Board, String> {
-        let index = SIZES.find(self.level).unwrap();
+    pub fn down(&mut self, cell: usize) -> Result<&Board, String> {
+        let cell_size = self.current_board().cells[cell].size;
+        let index = SIZES.find(cell_size).unwrap();
         if index == 0 {
             return Err(format!(
                 "You've reached the bottom limit fo the universe: {}",
                 self.current_board().color
             ));
         }
-        self.level = SIZES.chars().nth(index - 1).unwrap();
+        self.level = SIZES.chars().nth(index).unwrap();
         self.resolve(cell)?;
         self.cell_stack.push(cell);
         Ok(self.current_board())
@@ -277,7 +278,7 @@ impl Navigator {
         situation.push('\n');
         for (i, _) in cells.iter().enumerate() {
             if self.current_board().cells[i].board.is_some() {
-                self.descend(i).unwrap();
+                self.down(i).unwrap();
                 situation.push_str(self.serialize().as_str());
                 self.ascend().unwrap();
             }
@@ -293,7 +294,7 @@ impl Navigator {
         let situation = self.serialize();
         // Return to the current path
         for cell in current_path {
-            self.descend(cell).unwrap();
+            self.down(cell).unwrap();
         }
         situation
     }
@@ -326,7 +327,7 @@ impl Navigator {
                 }
                 match value.parse::<usize>() {
                     Ok(numeric) => {
-                        match navigator.descend(numeric) {
+                        match navigator.down(numeric) {
                             Ok(_) => {}
                             Err(e) => {
                                 return Err(format!(
