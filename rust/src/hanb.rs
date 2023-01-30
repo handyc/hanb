@@ -11,7 +11,7 @@ pub fn size_greater(a: char, b: char) -> bool {
 }
 
 pub fn size_smaller(a: char, b: char) -> bool {
-    !size_greater(a, b)
+    !size_greater(a, b) && a != b
 }
 
 /// Hanb cell. A cell has a fixed value and can resolve to a dynamic board.
