@@ -181,6 +181,12 @@ impl Navigator {
 
     /// Go to a cell in the current board returning it
     pub fn down(&mut self, cell: usize) -> Result<&Board, String> {
+        if cell >= BOARD_SIZE {
+            return Err(format!(
+                "Position must be less than {}. You entered {}",
+                BOARD_SIZE, cell
+            ));
+        }
         let cell_size = self.current_board().cells[cell].size;
         let index = SIZES.find(cell_size).unwrap();
         if index == 0 {
