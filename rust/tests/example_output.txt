@@ -1,16 +1,16 @@
-Level: .      
+Level: #      Path: 
 
-           E   a   a   a   a            
-         a   b   b   a   b   b          
-       a   a   a   a   a   a   a        
-     a   a   a   a   a   a   a   a      
-   a   a   a   a   a   a   a   a   a    
+           A   D   B   D   D            
+         B   F   J   B   D   F          
+       J   K   S   J   F   K   J        
+     S   B   K   J   B   F   J   D      
+   K   J   S   B   D   J   F   D   J    
      a   a   a   a   a   a   a   a      
        a   a   a   a   a   a   a        
          a   a   a   a   a   a          
            a   a   a   a   a            
 
-Level: .      
+Level: D      Path: 4
 
            A   A   A   A   A            
          B   C   A   a   a   a          
@@ -22,9 +22,9 @@ Level: .
          a   a   a   a   a   a          
            a   a   a   a   a            
 
-Level: .      
+Level: D      Path: 4
 
-           .   -   c   a   a            
+           C   C   c   a   a            
          a   a   a   a   a   a          
        a   a   a   a   a   a   a        
      a   a   a   a   a   a   a   a      
@@ -34,7 +34,7 @@ Level: .
          a   a   a   a   a   a          
            a   a   a   a   a            
 
-Level: .      
+Level: #      Path: 
 
            x   .   .   .   .            
          .   .   .   .   .   .          
