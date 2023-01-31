@@ -17,24 +17,6 @@
 
 the basis of the hanb system is a 61-cell hexagonal board:
 
-``                     a                     ``  
-``                a         a                ``  
-``           a         a         a           ``  
-``      a         a         a         a      ``  
-`` a         a         a         a         a ``  
-``      a         a         a         a      ``  
-`` a         a         a         a         a ``  
-``      a         a         a         a      ``  
-`` a         a         a         a         a ``  
-``      a         a         a         a      ``  
-`` a         a         a         a         a ``  
-``      a         a         a         a      ``  
-`` a         a         a         a         a ``  
-``      a         a         a         a      ``  
-``           a         a         a           ``  
-``                a         a                ``  
-``                     a                     ``  
-
 ``         a   a   a   a   a         ``  
 ``       a   a   a   a   a   a       ``  
 ``     a   a   a   a   a   a   a     ``  
@@ -44,6 +26,24 @@ the basis of the hanb system is a 61-cell hexagonal board:
 ``     a   a   a   a   a   a   a     ``  
 ``       a   a   a   a   a   a       ``  
 ``         a   a   a   a   a         `` 
+
+``                     a                     ``  
+``                a         a                ``  
+``           a         a         a           ``  
+``      a         a         a         a      ``  
+`` a         a         a         a         a ``  
+``      a         a         a         a      ``  
+`` a         a         a         a         a ``  
+``      a         a         a         a      ``  
+`` a         a         a         a         a ``  
+``      a         a         a         a      ``  
+`` a         a         a         a         a ``  
+``      a         a         a         a      ``  
+`` a         a         a         a         a ``  
+``      a         a         a         a      ``  
+``           a         a         a           ``  
+``                a         a                ``  
+``                     a                     ``  
 
 each cell contains a single character from a set of 64 total characters:
 
