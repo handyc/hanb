@@ -1,7 +1,7 @@
-#!//usr/local/bin/python3
+#!/usr/local/bin/python3
 
-edgeboard = """
-        a   a   a   a   a
+def print_board(board, rotation):
+    edgeboard = """        a   a   a   a   a
       a   a   a   a   a   a
     a   a   a   a   a   a   a
   a   a   a   a   a   a   a   a
@@ -9,11 +9,9 @@ a   a   a   a   a   a   a   a   a
   a   a   a   a   a   a   a   a
     a   a   a   a   a   a   a
       a   a   a   a   a   a
-        a   a   a   a   a
-"""
+        a   a   a   a   a"""
 
-pointboard = """
-                    a
+    pointboard = """                    a
                a         a
           a         a         a
      a         a         a         a
@@ -29,16 +27,18 @@ a         a         a         a         a
      a         a         a         a
           a         a         a
                a         a
-                    a
-"""
+                    a"""
 
-def print_board(board):
-    print(board)
+    if rotation == 0:
+        print(edgeboard)
+    elif rotation == 1:
+        print(pointboard)
 
 def main():
-    print_board(edgeboard)
-    print_board(pointboard)
+    example_board = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-."
+
+    print_board(example_board, 0)
+    print_board(example_board, 1)
 
 if __name__ == "__main__":
     main()
-
