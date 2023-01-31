@@ -30,5 +30,5 @@ a         a         a         a         a
                     a
 """
 
-print edgeboard
-print pointboard
+print(edgeboard)
+print(pointboard)
