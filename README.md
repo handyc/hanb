@@ -227,7 +227,7 @@ large dynamic spaces in limited memory
 
 `-` -- filament  
  
-`.` -- universe container (1 Rm = 1 x 10^27 m)
+`.` -- universe (1 Rm = 1 x 10^27 m) contained in `#` (matrix) board
 
 (10^30 m = 1 Qm)
 
