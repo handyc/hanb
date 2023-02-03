@@ -29,7 +29,7 @@ pub fn print_board(board: &str, width: u8) -> Result<String, String> {
         ));
     }
     if width < 10 {
-        return Err(format!("Width must be greater than {}", DIAGONAL));
+        return Err(format!("Width must be greater than {DIAGONAL}"));
     }
     let mut board = board.chars();
     let left_padding = (width - DIAGONAL) / 2;
@@ -53,9 +53,9 @@ pub fn print_board(board: &str, width: u8) -> Result<String, String> {
                 DEFAULT_CELL_SIZE.chars().next().unwrap()
             };
             if c == end - 1 {
-                output += format!(" {}", char).as_str();
+                output += format!(" {char}").as_str();
             } else {
-                output += format!(" {}  ", char).as_str();
+                output += format!(" {char}  ").as_str();
             }
         }
         for _ in 0..(right_padding + offset.unsigned_abs()) {
@@ -88,7 +88,7 @@ pub fn parse_level(line: &str) -> Result<char, String> {
     }
     let level = line.split('#').next().unwrap().trim();
     if level.len() > 1 {
-        return Err(format!("Invalid level: {}", level));
+        return Err(format!("Invalid level: {level}"));
     }
     let value = level.chars().next();
     if value.is_none() {
@@ -103,12 +103,12 @@ pub fn eval_lines(
     context: &mut EvalContext,
 ) -> Result<Navigator, String> {
     let level = SIZES.chars().last().unwrap();
-    context.history.push_str(format!("{}\n", level).as_str());
+    context.history.push_str(format!("{level}\n").as_str());
     let navigator = &mut Navigator::new(level).unwrap();
     for stdinline in lines {
         let line = stdinline.trim().to_owned();
         if let Err(e) = eval(navigator, line.as_str(), context) {
-            eprintln!("{}", e);
+            eprintln!("{e}");
         }
     }
     Ok(navigator.clone())
@@ -153,7 +153,7 @@ pub fn eval(
                     }
                     let file = std::fs::File::open(args);
                     if let Err(e) = file {
-                        return Err(format!("{}", e));
+                        return Err(format!("{e}"));
                     }
                     let reader = io::BufReader::new(file.unwrap());
                     let mut lines = reader.lines().map(|l| l.unwrap());
@@ -169,9 +169,9 @@ pub fn eval(
             match result {
                 Ok(res) => {
                     if stdout || cmd.stdout {
-                        println!("{}", res);
+                        println!("{res}");
                     }
-                    context.history.push_str(format!("{}\n", line).as_str());
+                    context.history.push_str(format!("{line}\n").as_str());
                     return Ok(());
                 }
                 Err(e) => return Err(e),
@@ -179,7 +179,6 @@ pub fn eval(
         }
     }
     Err(format!(
-        "Command {} not found. Use 'help' to see available commands.",
-        command
+        "Command {command} not found. Use 'help' to see available commands."
     ))
 }

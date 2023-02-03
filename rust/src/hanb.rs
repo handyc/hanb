@@ -114,7 +114,7 @@ impl fmt::Display for Board {
             board.push(cell.size);
         }
         board.push_str(&self.color);
-        write!(f, "{}", board)
+        write!(f, "{board}")
     }
 }
 
@@ -130,7 +130,7 @@ impl Navigator {
     /// Create a new navigator with a board.
     pub fn new(level: char) -> Result<Self, String> {
         if !SIZES.contains(level) {
-            return Err(format!("Invalid level: {}", level));
+            return Err(format!("Invalid level: {level}"));
         }
         let root_board = Board::new(&DEFAULT_CELL_SIZE.repeat(BOARD_SIZE))?;
         Ok(Self {
@@ -183,8 +183,7 @@ impl Navigator {
     pub fn down(&mut self, cell: usize) -> Result<&Board, String> {
         if cell >= BOARD_SIZE {
             return Err(format!(
-                "Position must be less than {}. You entered {}",
-                BOARD_SIZE, cell
+                "Position must be less than {BOARD_SIZE}. You entered {cell}"
             ));
         }
         let cell_size = self.current_board().cells[cell].size;
@@ -206,8 +205,7 @@ impl Navigator {
     pub fn resolve(&mut self, pos: usize) -> Result<&Board, String> {
         if pos >= BOARD_SIZE {
             return Err(format!(
-                "Position must be less than {}. You entered {}",
-                BOARD_SIZE, pos
+                "Position must be less than {BOARD_SIZE}. You entered {pos}"
             ));
         }
         let cells = &self.current_board().cells;
@@ -220,8 +218,7 @@ impl Navigator {
             Ok(board)
         } else {
             Err(format!(
-                "Cell at position {} does not resolve to a board",
-                pos
+                "Cell at position {pos} does not resolve to a board"
             ))
         }
     }
@@ -246,7 +243,7 @@ impl Navigator {
 
     /// Sets the current board's cells to new values.
     /// If any of the values are bigger than the current level they will be truncated to the
-    /// current level.
+    /// current level. Will also recursively truncate inner boards if they exist.
     pub fn set_board(&mut self, board: &str) -> Result<(), String> {
         let board = Board::new(board)?;
         let mut current_board = &mut self.root_board;

@@ -49,7 +49,7 @@ fn main() {
             if cmd.repl_only {
                 continue;
             }
-            println!("{}", cmd);
+            println!("{cmd}");
         }
         return;
     }
@@ -60,7 +60,7 @@ fn main() {
         let mut lines = reader.lines().map(|l| l.unwrap());
         let mut context = EvalContext::new(false, false);
         if let Err(s) = eval_lines(&mut lines, &mut context) {
-            eprintln!("{}", s);
+            eprintln!("{s}");
         }
         return;
     }
@@ -70,7 +70,7 @@ fn main() {
         let mut lines = stdin.lock().lines().map(|l| l.unwrap());
         let mut context = EvalContext::new(args.verbose, false);
         if let Err(s) = eval_lines(&mut lines, &mut context) {
-            eprintln!("{}", s);
+            eprintln!("{s}");
         }
         return;
     }
@@ -83,8 +83,8 @@ fn main() {
     } else {
         let pb = print_board(&args.input, args.width);
         match pb {
-            Ok(board) => println!("{}", board),
-            Err(e) => eprintln!("{}", e),
+            Ok(board) => println!("{board}"),
+            Err(e) => eprintln!("{e}"),
         }
     }
 }
@@ -102,7 +102,7 @@ fn repl() {
     let level = SIZES.chars().last().unwrap();
     let navigator = Navigator::new(level);
     if let Err(e) = navigator {
-        eprintln!("{}", e);
+        eprintln!("{e}");
         return;
     }
     let mut navigator = navigator.unwrap();
@@ -113,7 +113,7 @@ fn repl() {
                 let line = line.trim();
                 rl.add_history_entry(line);
                 if let Err(e) = eval(&mut navigator, line, &mut context) {
-                    eprintln!("{}", e);
+                    eprintln!("{e}");
                 }
             }
             Err(ReadlineError::Interrupted) => {
@@ -125,7 +125,7 @@ fn repl() {
                 break;
             }
             Err(err) => {
-                eprintln!("Error: {:?}", err);
+                eprintln!("Error: {err:?}");
                 break;
             }
         }

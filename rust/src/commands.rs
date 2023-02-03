@@ -52,7 +52,7 @@ impl<'a> CmdArg<'a> {
                 if let Ok(default) = default {
                     ArgValue::Int(default as u16)
                 } else {
-                    ArgValue::Err(format!("{} is not a valid integer", value))
+                    ArgValue::Err(format!("{value} is not a valid integer"))
                 }
             }
         }
@@ -219,7 +219,7 @@ pub const COMMANDS: &[Command] = &[
                             return Ok("".to_string());
                         }
                     }
-                    return Err(format!("Command {} not found", cmdname));
+                    return Err(format!("Command {cmdname} not found"));
                 }
                 Err(_) => {
                     for cmd in COMMANDS.iter() {
@@ -229,11 +229,11 @@ pub const COMMANDS: &[Command] = &[
                                 Some(value) => value.to_string(),
                                 None => "None".to_string(),
                             };
-                            args.push_str(&format!(" [{}: {} = {}]", arg.name, arg.type_, default));
+                            args.push_str(&format!(" [{}: {} = {default}]", arg.name, arg.type_));
                         }
                         // replace line breaks with nothing
                         args = args.replace('\n', "");
-                        println!("  {} | {} {} -> {}", cmd.command, cmd.short, args, cmd.help);
+                        println!("  {} | {} {args} -> {}", cmd.command, cmd.short, cmd.help);
                     }
                     println!("Arguments are represented like: [name: type = default]\n\n");
                 }
@@ -278,13 +278,12 @@ pub const COMMANDS: &[Command] = &[
             Ok(_) => {
                 let board_str = print_level_board(navigator, DEFAULT_WIDTH).unwrap();
                 Ok(format!(
-                    "You ascend to the upper board. You see:\n{}",
-                    board_str
+                    "You ascend to the upper board. You see:\n{board_str}"
                 ))
             }
             Err(e) => {
                 let board_str = print_level_board(navigator, DEFAULT_WIDTH).unwrap();
-                Ok(format!("{}\n{}", e, board_str))
+                Ok(format!("{e}\n{board_str}"))
             }
         },
     },
@@ -305,10 +304,7 @@ pub const COMMANDS: &[Command] = &[
             match navigator.down(cell as usize) {
                 Ok(_) => {
                     let board_str = print_level_board(navigator, DEFAULT_WIDTH).unwrap();
-                    Ok(format!(
-                        "You resolved cell {}. You see:\n{}",
-                        cell, board_str
-                    ))
+                    Ok(format!("You resolved cell {cell}. You see:\n{board_str}"))
                 }
                 Err(msg) => Err(msg),
             }
@@ -331,7 +327,7 @@ pub const COMMANDS: &[Command] = &[
             match navigator.set_board(board_arg) {
                 Ok(_) => {
                     let board_str = print_level_board(navigator, DEFAULT_WIDTH).unwrap();
-                    Ok(format!("You set the board. You see:\n{}", board_str))
+                    Ok(format!("You set the board. You see:\n{board_str}"))
                 }
                 Err(msg) => Err(msg),
             }
@@ -356,11 +352,11 @@ pub const COMMANDS: &[Command] = &[
                 Ok(mut file) => {
                     let content = navigator.get_explored_map();
                     match file.write_all(content.as_bytes()) {
-                        Ok(_) => Ok(format!("Saved to {}", filename)),
-                        Err(_) => Err(format!("Could not write to {}", filename)),
+                        Ok(_) => Ok(format!("Saved to {filename}")),
+                        Err(_) => Err(format!("Could not write to {filename}")),
                     }
                 }
-                Err(err) => Err(format!("Error saving to {}: {}", filename, err)),
+                Err(err) => Err(format!("Error saving to {filename}: {err}")),
             }
         },
     },
@@ -380,17 +376,17 @@ pub const COMMANDS: &[Command] = &[
             };
             let content = match fs::read_to_string(filename) {
                 Ok(content) => content,
-                Err(err) => return Err(format!("Error reading {}: {}", filename, err)),
+                Err(err) => return Err(format!("Error reading {filename}: {err}")),
             };
             let level = SIZES.chars().last().unwrap();
-            println!("Loading at level {} from {}", level, filename);
+            println!("Loading at level {level} from {filename}");
             match Navigator::from_map(level, &content) {
                 Ok(nav) => {
                     *navigator = nav;
-                    Ok(format!("Loaded from '{}' successfully", filename))
+                    Ok(format!("Loaded from '{filename}' successfully"))
                 }
                 Err(msg) => {
-                    eprintln!("Error loading from '{}'", filename);
+                    eprintln!("Error loading from '{filename}'");
                     Err(msg)
                 }
             }
@@ -412,10 +408,10 @@ pub const COMMANDS: &[Command] = &[
             let mut file = File::create(&filename);
             match file {
                 Ok(ref mut file) => match file.write_all(script.as_bytes()) {
-                    Ok(_) => Ok(format!("Script {} saved", filename)),
-                    Err(err) => Err(format!("Error saving script: {}", err)),
+                    Ok(_) => Ok(format!("Script {filename} saved")),
+                    Err(err) => Err(format!("Error saving script: {err}")),
                 },
-                Err(e) => Err(format!("Error saving script: {}", e)),
+                Err(e) => Err(format!("Error saving script: {e}")),
             }
         },
     },
