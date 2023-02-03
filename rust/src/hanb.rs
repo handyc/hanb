@@ -1,6 +1,6 @@
 use std::{cmp::min, fmt};
 
-use crate::constants::{BOARD_SIZE, DEFAULT_CELL_SIZE, SIZES};
+use crate::constants::{ALPHABET, BOARD_SIZE, DEFAULT_CELL_SIZE, SIZES};
 
 /// Compares two characters in the SIZE sequence. If a character index is greater than the other it
 /// is considered to be bigger.
@@ -71,12 +71,12 @@ impl Board {
     fn preprocess(input: &str) -> String {
         let mut output = String::new();
         for c in input.chars() {
-            if SIZES.contains(c) {
+            if ALPHABET.contains(c) {
                 output.push(c);
             } else {
                 output.push(match c {
-                    ' ' => SIZES.chars().rev().nth(1).unwrap(),
-                    _ => SIZES.chars().rev().next().unwrap(),
+                    ' ' => ALPHABET.chars().rev().nth(1).unwrap(),
+                    _ => ALPHABET.chars().rev().next().unwrap(),
                 });
             }
         }
