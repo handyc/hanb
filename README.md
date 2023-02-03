@@ -205,7 +205,7 @@ large dynamic spaces in limited memory
 
 `Z` -- 1 Pm
 
-`0` --  
+`0` -- (about 1 lightyear)  
 
 `1` -- 
 
