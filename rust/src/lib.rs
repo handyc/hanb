@@ -122,8 +122,8 @@ pub fn eval(
     let stdout: bool = context.stdout;
     let repl: bool = context.repl;
 
-    // Everything after a '#' is a comment so we can ignore it.
-    let line = line.split('#').next().unwrap().trim();
+    // Everything after a '//' is a comment so we can ignore it.
+    let line = line.split("//").next().unwrap().trim();
     if line.is_empty() {
         return Ok(());
     }
