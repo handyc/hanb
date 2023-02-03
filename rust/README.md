@@ -49,8 +49,8 @@ Hanb help:
   up | u  -> Move up one level
   down | d  [cell: int = 0] -> Move down one level
   board | b  [board: string = .] -> Set the current board
-  save | s  [filename: string = hanb.hsit] -> Saves the current situation to a file
-  load | l  [filename: string = hanb.hsit] [Level: string = .] -> Load a saved situation from a file
+  save | s  [filename: string = hanb.hsit] -> Saves the current explored map to a file
+  load | l  [filename: string = hanb.hsit] [Level: string = .] -> Load a saved explored map from a file
   export | e  [script: string = script.hanb] -> Export the current repl history as a hanb script
   import | i  [script: string = script.hanb] -> Import a hanb script and execute it into this repl overwriting t
 he current navigator
@@ -77,8 +77,8 @@ cargo run -- -f examples/demo.hanb
 
 That file contains some info and instructions about the query language.
 
-## Hanb situations
-Hanb universes can be serialized to situations. Check `examples/example.hsit`. You can save situations from the repl with `save` and load one with `load`. They store the state of the entire universe.
+## Hanb explored maps
+Hanb universes can be serialized to explored maps. Check `examples/example.hsit`. You can save explored maps from the repl with `save` and load one with `load`. They store the state of the entire universe.
 
 This is basically a declarative language for hanb.
 

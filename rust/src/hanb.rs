@@ -56,7 +56,7 @@ impl fmt::Display for Cell {
     }
 }
 
-/// Hanb board. A board is a collection of 61 cells + 3 optional characters that are the board
+/// Hanb board. A board is a collection of 61 cells + 3 optional characters that are the board's
 /// color.
 #[derive(Debug, Clone)]
 pub struct Board {
@@ -285,41 +285,41 @@ impl Navigator {
     }
 
     fn serialize(&mut self) -> String {
-        let mut situation = String::new();
-        situation.push_str(self.get_path().as_str());
-        situation.push(' ');
+        let mut map = String::new();
+        map.push_str(self.get_path().as_str());
+        map.push(' ');
         let clone = self.clone();
         let cells = &clone.current_board().cells;
         for cell in cells.iter() {
-            situation.push(cell.size);
+            map.push(cell.size);
         }
-        situation.push('\n');
+        map.push('\n');
         for (i, _) in cells.iter().enumerate() {
             if self.current_board().cells[i].board.is_some() {
                 self.down(i).unwrap();
-                situation.push_str(self.serialize().as_str());
+                map.push_str(self.serialize().as_str());
                 self.up().unwrap();
             }
         }
-        situation
+        map
     }
 
-    /// Serialize into a situaion string representation
-    pub fn get_situation(&mut self) -> String {
+    /// Serialize into a declarative map string representation
+    pub fn get_explored_map(&mut self) -> String {
         // Store the path to restore it later
         let current_path = self.cell_stack.clone();
         self.go_to_root();
-        let situation = self.serialize();
+        let map = self.serialize();
         // Return to the current path
         for cell in current_path {
             self.down(cell).unwrap();
         }
-        situation
+        map
     }
 
-    /// Creates a navigator from a situation string representation
-    pub fn from_situation(level: char, situation: &str) -> Result<Self, String> {
-        // Loop through each line of the situation, trim it
+    /// Creates a navigator from a explored map string representation
+    pub fn from_map(level: char, map: &str) -> Result<Self, String> {
+        // Loop through each line of the map, trim it
         // The path is in the first part in the format number -> number -> ...
         // The board is in the second part
         let navigator = Navigator::new(level);
@@ -327,7 +327,7 @@ impl Navigator {
             return Err(navigator.err().unwrap());
         }
         let mut navigator = navigator.unwrap();
-        for line in situation.lines() {
+        for line in map.lines() {
             let line = line.trim();
             if line.is_empty() {
                 continue;
@@ -349,7 +349,7 @@ impl Navigator {
                             Ok(_) => {}
                             Err(e) => {
                                 return Err(format!(
-                                    "Invalid path in situation: {}\n{}",
+                                    "Invalid path in map: {}\n{}",
                                     navigator.get_path(),
                                     e
                                 ))

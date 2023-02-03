@@ -340,7 +340,7 @@ pub const COMMANDS: &[Command] = &[
     Command {
         command: "save",
         short: "s",
-        help: "Saves the current situation to a file",
+        help: "Saves current explored map to a file",
         args: &[CommonArgs::Filename.value()],
         stdout: false,
         repl_only: false,
@@ -354,7 +354,7 @@ pub const COMMANDS: &[Command] = &[
             let file = File::create(filename);
             match file {
                 Ok(mut file) => {
-                    let content = navigator.get_situation();
+                    let content = navigator.get_explored_map();
                     match file.write_all(content.as_bytes()) {
                         Ok(_) => Ok(format!("Saved to {}", filename)),
                         Err(_) => Err(format!("Could not write to {}", filename)),
@@ -367,7 +367,7 @@ pub const COMMANDS: &[Command] = &[
     Command {
         command: "load",
         short: "l",
-        help: "Load a saved situation from a file",
+        help: "Load a saved map from a file",
         args: &[CommonArgs::Filename.value(), CommonArgs::Level.value()],
         stdout: false,
         repl_only: false,
@@ -384,7 +384,7 @@ pub const COMMANDS: &[Command] = &[
             };
             let level = SIZES.chars().last().unwrap();
             println!("Loading at level {} from {}", level, filename);
-            match Navigator::from_situation(level, &content) {
+            match Navigator::from_map(level, &content) {
                 Ok(nav) => {
                     *navigator = nav;
                     Ok(format!("Loaded from '{}' successfully", filename))
