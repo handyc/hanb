@@ -133,19 +133,19 @@ large dynamic spaces in limited memory
 
 `p` (1 zm) 
 
-`q` (10 zm) 
+`q` (10 zm) -- smallest observed matter
 
 `r` (100 zm) 
 
-`s` (1 am) 
+`s` (1 am)  
 
 `t` (10 am) 
 
-`u` (100 am) 
+`u` (100 am) -- quark (1 x 10^-16 m) 
 
 `v` (1 fm)(classical proton radius= 0.84 femtometers)
 
-`w` (10 fm)(classical electron radius 2.82x10-15 m)
+`w` (10 fm)(classical electron radius 2.82x10-15 m -> ~6x10^-15 m )
 
 `x` (100 fm) 
 
