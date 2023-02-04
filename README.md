@@ -344,12 +344,49 @@ with the return value coded as '9-.'
 ``                                           ``  
 ``                     9-.                   ``  
 
+``         a   b   c   d   e         ``    
+``       f   g   h   i   j   k       ``    
+``     l   m   n   o   p   q   r     ``   
+``   s   t   u   v   w   x   y   z   ``   
+`` A   B   C   D   E   F   G   H   I ``   
+``   J   K   L   M   N   O   P   Q   ``   
+``     R   S   T   U   V   W   X     ``   
+``       Y   Z   0   1   2   3       ``   
+``         4   5   6   7   8         `` 
+``                                   ``  
+``                       9-.         ``  
+ 
+ 
+therefore in the above board we could reference a cell
+through its related character
+ 
+there are 64 levels in hanb, which means a total of
 
-there are 64 levels in hanb
+64^61 cells or with 3-characters returns included, 64^64 combinations.
 
+Every object can be referenced easily through the unique route to its
+specific board.
 
-each complete hanb board is 64 characters
+e.g. a universe in position N of a universe matrix is addressed
+simply as the string:
+``N``  
 
+consider a possible universe in which there is a planet 'R' located
+somewhere in a galaxy of size 6:
+
+6443210ZYXWVUTSR
+
+in order to reference its location in the galaxy of size 6 we provide
+the cell for its location on that size 6 board:
+``K``
+then we also provide its position within the size 5 cell returned by the ``K``
+
+and on until we get to its position in S
+
+a complete location of any object within a matrix will be a length inversely
+proportional to its size, such that the smallest 'a' objects are located
+in strings 64 characters long, listing universe cell, supercluster ...
+all the way to the position within 'b'
 
 
 
