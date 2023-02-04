@@ -849,20 +849,20 @@ wooden hanb board by John Fisherkeller
 ``x``  
 ``expand largest mass in abdWE-99cddvDDEjfj2-WD30Jfj-SFTHFjtkedlkjelfl272-sXXjajsRF20sks3``  
 ``expanding largest mass in - to lkj5lk5t9g09figdjflkd99939eudlkj3l3lkjdkjl3jrf4880w049r878diuygd``  
-``...```  
+``...``    
 ``expanding to city size O: MNaKMNaNMLMLMaMNMNMaMNKNMLaMNNMaMNLaMMNKNNMLMaMNNMNMNaNMMNMaMKLM``  
 ``x``  
 ``expand largest mass in MNaKMNaNMLMLMaMNMNMaMNKNMLaMNNMaMNLaMMNKNNMLMaMNNMNMNaNMMNMaMKLM``   
 ``expanding largest mass in N to MMMMMMMMMMMMMMLMMMMMMMMMMMMMMMMMMLMMMMMMMMMMMMMMMMMMMMMLMMMMMMMM``  
 
 ``#``  
-````. -> generate matrix from random seed``  
+``. -> generate matrix from random seed``  
 ``. with seed FC0F4FFF generate universe: .......49.........9................89...........39.........19HGK``  
 ``#``  
-````. -> generate matrix from random seed``  
+``. -> generate matrix from random seed``  
 ``. with seed FFEF0FAF generate universe: ........s........n...ee.........3e.....1n...........ou.....19212``  
 ``#``  
-````. -> generate matrix from random seed``  
+``. -> generate matrix from random seed``  
 ``. with seed FA0FFF3F generate universe: ....11111f.......24nA......222a2........a.....F00d.....a...19fEF``  
 
 color test
