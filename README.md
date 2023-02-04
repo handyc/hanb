@@ -4,7 +4,7 @@
 * hanb can be used with or without a computer  
 * if you know the alphabet then you can use hanb  
 
-the basis of the hanb system is a 61-cell hexagonal board:
+the basis of the hanb system is a 61-cell hexagonal board (displayed in text mode in 2 different rotations):
 
 ``         a   a   a   a   a         ``  
 ``       a   a   a   a   a   a       ``  
@@ -54,7 +54,15 @@ boards can be written in a compressed form as 61-character strings, e.g.:
 
 ``t7t82Ry18okmA1HCr0R8zi0HncVQyGtTo5xGo-44PXA4NRK0ND-sbVrT8fJMt``  
 
-size # matrix:
+
+Each board represents a finite space at a particular scale between 0 and 63,
+also represented by the above character set, such that 'a' is a board filled
+with quantum foam and '.' is a board containing a universe
+
+therefore we call 'a' a quantum foam particle and '.' a universe
+Multiple universes can be transmitted as a universe matrix #:
+
+example universe matrix:
 
 ``                     a                     ``  
 ``                a         a                ``  
@@ -73,6 +81,27 @@ size # matrix:
 ``           a         a         a           ``  
 ``                a         a                ``  
 ``                     a                     ``  
+
+example universe:
+
+``                     a                     ``  
+``                a         -                ``  
+``           a         a         a           ``  
+``      a         a         -         -      ``  
+`` a         -         -         -         a ``  
+``      a         -         -         -      ``  
+`` -         -         -         -         - ``  
+``      -         9         -         -      ``  
+`` -         4         -         -         a ``  
+``      -         -         9         -      ``  
+`` a         3         9         -         a ``  
+``      -         -         -         -      ``  
+`` a         -         8         2         a ``  
+``      a         -         2         2      ``  
+``           -         -         -           ``  
+``                a         -                ``  
+``                     a                     ``  
+
 
 size P board:
 
@@ -94,11 +123,7 @@ size P board:
 ``                K         L                ``  
 ``                     N                     ``  
 
-Each board represents a finite space at a particular scale between 0 and 63,
-also represented by the above character set, such that 'a' is a board filled
-with quantum foam and '.' is a board containing a universe
 
-therefore we call 'a' a quantum foam particle and '.' a universe
 
 hanb board sizes increase by a factor of 10 with each character, e.g.
 
