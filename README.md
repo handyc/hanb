@@ -59,7 +59,9 @@ Each board represents a finite space at a particular scale between 0 and 63,
 also represented by the above character set, such that 'a' is a board filled
 with quantum foam and '.' is a board containing a universe
 
+
 therefore we call 'a' a quantum foam particle and '.' a universe
+
 Multiple universes can be transmitted as a universe matrix #:
 
 example universe matrix:
