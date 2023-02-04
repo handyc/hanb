@@ -54,12 +54,52 @@ boards can be written in a compressed form as 61-character strings, e.g.:
 
 ``t7t82Ry18okmA1HCr0R8zi0HncVQyGtTo5xGo-44PXA4NRK0ND-sbVrT8fJMt``  
 
+size # matrix:
+
+``                     a                     ``  
+``                a         a                ``  
+``           a         a         a           ``  
+``      a         a         a         a      ``  
+`` a         a         a         a         a ``  
+``      a         9         a         a      ``  
+`` a         a         9         a         a ``  
+``      a         9         a         a      ``  
+`` a         a         .         a         a ``  
+``      a         a         8         a      ``  
+`` a         a         3         a         a ``  
+``      a         a         a         a      ``  
+`` a         a         a         a         a ``  
+``      a         a         a         a      ``  
+``           a         a         a           ``  
+``                a         a                ``  
+``                     a                     ``  
+
+size P board:
+
+``                     O                     ``  
+``                a         a                ``  
+``           a         a         a           ``  
+``      a         a         a         a      ``  
+`` a         O         a         N         a ``  
+``      a         N         a         N      ``  
+`` N         a         a         L         K ``  
+``      a         O         L         K      ``  
+`` O         a         N         N         K ``  
+``      a         L         a         a      ``  
+`` a         L         O         a         O ``  
+``      L         K         K         M      ``  
+`` a         O         a         O         a ``  
+``      a         a         L         a      ``  
+``           K         a         a           ``  
+``                K         L                ``  
+``                     N                     ``  
+
 Each board represents a finite space at a particular scale between 0 and 63,
 also represented by the above character set, such that 'a' is a board filled
 with quantum foam and '.' is a board containing one or more universes
 
-therefore we call 'a' a quantum foam container or a quantum foam particle
-and '.' a universe container or universe
+therefore we call 'a' a quantum foam particle
+and '.' a universe
 
 hanb board sizes increase by a factor of 10 with each character, e.g.
 
