@@ -4,7 +4,8 @@
 * hanb can be used with or without a computer  
 * if you know the alphabet then you can use hanb  
 
-the basis of the hanb system is a 61-cell hexagonal board (displayed in text mode in 2 different rotations):
+the basis of the hanb system is a 61-cell hexagonal board  
+(displayed in text mode in 2 different rotations):
 
 ``         a   a   a   a   a         ``  
 ``       a   a   a   a   a   a       ``  
