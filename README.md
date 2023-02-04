@@ -153,7 +153,7 @@ large dynamic spaces in limited memory
 
 `z`  
 
-`A` -- Angstrom ("atom")  
+`A` -- Angstrom ("atom") (10^−10 meters)  
 
 `B` -- small molecule (1 nm)  
 
@@ -163,7 +163,7 @@ large dynamic spaces in limited memory
 
 `E` -- 1 µm  
 
-`F` -- 10µm    
+`F` -- 10µm Finehair (human hair bet. 17 and 180 µm diameter)    
 
 `G` -- pixel (.1 mm = 100 µm)  (.26mm used in CSS so hanb pixel is slightly smaller)
 
@@ -189,47 +189,53 @@ large dynamic spaces in limited memory
 
 `R` -- planet (10 Mm)  
 
-`S` -- planet-moon system (100 Mm)
+`S` -- planet-moon system (100 Mm) (light second = 2.998e+8 m)
 
-`T` -- 1 Gm (~ diameter of sun)
+`T` -- 1 Gm (~ diameter of sun) (3 light seconds)
 
-`U`  
+`U` -- 10 Gm (1 lightminute = 1.799e+10 m)
 
-`V` -- distance to Venus 
+`V` -- 100 Gm (distance to Venus) 
 
-`W` -- 1 Tm
+`W` -- 1 Tm (1 lighthour = 1,079e+12m) 
 
-`X` -- star system  
+`X` -- 10 Tm (complete star system) (light day = 2,59e+13)  
 
-`Y` --  
+`Y` -- 100 Tm (1 light week = 1,813e+14)
 
-`Z` -- 1 Pm
+`Z` -- 1 Pm (about 1 light month, 7,771e+14)
 
-`0` -- (about 1 lightyear)  
+`0` -- 10^16 m (about 1 lightyear, 9,461e+15 m)  
 
-`1` -- 
+`1` -- 10^17 (10 lightyears = 9.461e+16 m)
 
-`2` -- 1 Em
+`2` -- 1 Em (100 lightyears = 9.461e+17)
 
-`3` --  
+`3` -- 10 Em (1000 lightyears = 9,461e+18) 
 
-`4` -- 
+`4` -- 100 Em small galaxy (10,000 lightyears = 9.4607e+19)
 
-`5` -- 1 Zm
+`5` -- 1 Zm small galaxy (100,000 lightyears = 9.46073e+20m)
 
-`6` -- galaxy  
+`6` -- galaxy (1 million lightywears = 9.46073e+21)  
 
-`7` -- 
+`7` -- galaxy cluster (~10 million light years)
 
-`8` -- 1 Ym
+`8` -- small supercluster 1 Ym (~100 million light years)
 
-`9` -- 
+`9` -- large supercluster (1 billion light years)
 
-`-` -- filament  
+`-` -- filament (10 billion light years)
  
-`.` -- universe (1 Rm = 1 x 10^27 m) contained in `#` (matrix) board
+`.` -- universe (1 Rm = 1 x 10^27 m) (100 billion light years)
+contained in `#` (matrix) board -- 10 Rm -- (1 trillion light years)
 
-(10^30 m = 1 Qm)
+--
+
+@ -- 100 Rm -- (10 trillion light years)
+& -- (10^30 m = 1 Qm) (100 trillion light years)
+
+--
 
 # situations and events
 
