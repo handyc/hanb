@@ -105,49 +105,49 @@ large dynamic spaces in limited memory
 
 `b` -- Planck particle  
 
-`c`  
+`c` -- combined particle 
 
-`d`  
+`d`--   
 
-`e`  
+`e`--   
 
-`f`  
+`f`--  
 
 `g` (1 qm) 
 
-`h`  
+`h` (10 qm) 
 
 `i`  
 
 `j` (1 rm) 
 
-`k`  
+`k` (10 rm) 
 
-`l`  
+`l` (100 rm) 
 
 `m` (1 ym) 
 
-`n`  
+`n` (10 ym) 
 
-`o`  
+`o` (100 ym)  
 
 `p` (1 zm) 
 
-`q`  
+`q` (10 zm) 
 
-`r`  
+`r` (100 zm) 
 
 `s` (1 am) 
 
-`t`  
+`t` (10 am) 
 
-`u`  
+`u` (100 am) 
 
-`v` (1 fm)
+`v` (1 fm)(classical proton radius= 0.84 femtometers)
 
-`w`  
+`w` (10 fm)(classical electron radius 2.82x10-15 m)
 
-`x`  
+`x` (100 fm) 
 
 `y` (1 pm)
 
