@@ -313,6 +313,45 @@ contained in `#` (matrix) board -- 10 Rm -- (1 trillion light years)
 & -- (10^30 m = 1 Qm) (100 trillion light years)
 
 --
+# coordinates in hanb  
+
+each hanb board has 61 physical cells and a return value of three characters:
+we can reference any of these 64 cells using the hanb character alphabet:
+
+``abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-.``  
+
+therefore we call cell 0 'a', cell 1 'b', etc.
+with the return value coded as '9-.'
+
+
+``                     a                     ``  
+``                b         c                ``  
+``           d         e         f           ``  
+``      g         h         i         j      ``  
+`` k         l         m         n         o ``  
+``      p         q         r         s      ``  
+`` t         u         v         w         x ``  
+``      y         z         A         B      ``  
+`` C         D         E         F         G ``  
+``      H         I         J         K      ``  
+`` L         M         N         O         P ``  
+``      Q         R         S         T      ``  
+`` U         V         W         X         Y ``  
+``      Z         0         1         2      ``  
+``           3         4         5           ``  
+``                6         7                ``  
+``                     8                     ``  
+``                                           ``  
+``                     9-.                   ``  
+
+
+there are 64 levels in hanb
+
+
+each complete hanb board is 64 characters
+
+
+
 
 # situations and events
 
