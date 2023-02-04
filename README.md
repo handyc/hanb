@@ -842,18 +842,18 @@ wooden hanb board by John Fisherkeller
 
 # hanb interaction examples
 
-(hello world in hanb)
-``.`` 
-``. -> generate universe from random seed``
-``. with seed FFFFFFFF generate universe: abdWE-99cddvDDEjfj2-WD30Jfj-SFTHFjtkedlkjelfl272-sXXjajsRF20sks3``
-``x``
-``expand largest mass in abdWE-99cddvDDEjfj2-WD30Jfj-SFTHFjtkedlkjelfl272-sXXjajsRF20sks3``
-``expanding largest mass in - to lkj5lk5t9g09figdjflkd99939eudlkj3l3lkjdkjl3jrf4880w049r878diuygd``
-``...```
-``expanding to city size O: MNaKMNaNMLMLMaMNMNMaMNKNMLaMNNMaMNLaMMNKNNMLMaMNNMNMNaNMMNMaMKLM``
-``x``
-``expand largest mass in MNaKMNaNMLMLMaMNMNMaMNKNMLaMNNMaMNLaMMNKNNMLMaMNNMNMNaNMMNMaMKLM`` 
-``expanding largest mass in N to MMMMMMMMMMMMMMLMMMMMMMMMMMMMMMMMMLMMMMMMMMMMMMMMMMMMMMMLMMMMMMMM``
+(hello world in hanb)  
+``.``   
+``. -> generate universe from random seed``  
+``. with seed FFFFFFFF generate universe: abdWE-99cddvDDEjfj2-WD30Jfj-SFTHFjtkedlkjelfl272-sXXjajsRF20sks3``  
+``x``  
+``expand largest mass in abdWE-99cddvDDEjfj2-WD30Jfj-SFTHFjtkedlkjelfl272-sXXjajsRF20sks3``  
+``expanding largest mass in - to lkj5lk5t9g09figdjflkd99939eudlkj3l3lkjdkjl3jrf4880w049r878diuygd``  
+``...```  
+``expanding to city size O: MNaKMNaNMLMLMaMNMNMaMNKNMLaMNNMaMNLaMMNKNNMLMaMNNMNMNaNMMNMaMKLM``  
+``x``  
+``expand largest mass in MNaKMNaNMLMLMaMNMNMaMNKNMLaMNNMaMNLaMMNKNNMLMaMNNMNMNaNMMNMaMKLM``   
+``expanding largest mass in N to MMMMMMMMMMMMMMLMMMMMMMMMMMMMMMMMMLMMMMMMMMMMMMMMMMMMMMMLMMMMMMMM``  
 
 ``#``  
 ````. -> generate matrix from random seed``  
