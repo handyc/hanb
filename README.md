@@ -96,10 +96,9 @@ size P board:
 
 Each board represents a finite space at a particular scale between 0 and 63,
 also represented by the above character set, such that 'a' is a board filled
-with quantum foam and '.' is a board containing one or more universes
+with quantum foam and '.' is a board containing a universe
 
-therefore we call 'a' a quantum foam particle
-and '.' a universe
+therefore we call 'a' a quantum foam particle and '.' a universe
 
 hanb board sizes increase by a factor of 10 with each character, e.g.
 
