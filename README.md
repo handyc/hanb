@@ -129,23 +129,23 @@ size P board:
 
 size I board:
 
-                    a                    
-               H         H               
-          H         a         H          
-     a         H         H         a     
-a         a         H         a         a
-     a         H         H         a     
-a         a         H         a         a
-     a         a         a         a     
-a         a         H         a         a
-     a         a         a         a     
-a         a         H         a         a
-     H         H         H         H     
-H         H         H         H         H
-     a         a         a         a     
-          H         a         H          
-               a         a               
-                    a                    
+``                    a                    ``  
+``               H         H               ``  
+``          H         a         H          ``  
+``     a         H         H         a     ``  
+``a         a         H         a         a``  
+``     a         H         H         a     ``  
+``a         a         H         a         a``  
+``     a         a         a         a     ``  
+``a         a         H         a         a``  
+``     a         a         a         a     ``  
+``a         a         H         a         a``  
+``     H         H         H         H     ``  
+``H         H         H         H         H``  
+``     a         a         a         a     ``  
+``          H         a         H          ``  
+``               a         a               ``  
+``                    a                    ``  
 
 hanb board sizes increase by a factor of 10 with each character, e.g.
 
