@@ -4,6 +4,8 @@
 * hanb can be used with or without a computer  
 * if you know the alphabet then you can use hanb  
 
+# board
+
 the basis of the hanb system is a 61-cell hexagonal board  
 (displayed in text mode in 2 different rotations):
 
@@ -65,15 +67,15 @@ therefore we call 'a' a quantum foam particle and '.' a universe
 
 Multiple universes can be transmitted as a universe matrix #:
 
-example universe matrix:
+example universe matrix containing two universes:
 
 ``                     a                     ``  
 ``                a         a                ``  
-``           a         a         a           ``  
-``      a         a         a         a      ``  
-`` a         a         a         a         a ``  
-``      a         9         a         a      ``  
-`` a         a         9         a         a ``  
+``           a         a         9           ``  
+``      a         a         9         8      ``  
+`` a         a         a         .         a ``  
+``      a         9         3         1      ``  
+`` a         a         9         0         a ``  
 ``      a         9         a         a      ``  
 `` a         a         .         a         a ``  
 ``      a         a         8         a      ``  
@@ -106,7 +108,7 @@ example universe:
 ``                     a                     ``  
 
 
-size P board:
+size P board (province):
 
 ``                     O                     ``  
 ``                a         a                ``  
@@ -127,7 +129,7 @@ size P board:
 ``                     N                     ``  
 
 
-size I board:
+size I board (insect):
 
 
 ``                     a                     ``  
