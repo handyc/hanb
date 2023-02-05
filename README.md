@@ -575,61 +575,61 @@ a Planck time particle equivalent to the amount of time taken for light to trave
 
 `J` -- 1 x 10^-9 s --   -- (2nd alternate: 1 x 10^24 sec) 
 
-`K` -- 1 x 10^-8 s -- ( 1 x10^-8 sec using alternate method )  -- (2nd alternate: 1 x 10^26 sec) 
+`K` -- 1 x 10^-8 s -- ( 1 x10^-8 sec using alternate method ) 
 
-`L` -- 1 x 10^-7 s --1e100 yrs  -- ( 1 x10^-7 sec using alternate method )  -- (2nd alternate: 1 x 10^28 sec) 
+`L` -- 1 x 10^-7 s --1e100 yrs  -- ( 1 x10^-7 sec using alternate method ) 
 
-`M` -- 1 x 10^-6 s -- ( 1 x10^-6 sec using alternate method )  -- (2nd alternate: 1 x 10^30 sec) 
+`M` -- 1 x 10^-6 s -- ( 1 x10^-6 sec using alternate method )
 
-`N` -- 1 x 10^-5 s -- ( 1 x10^-5 sec using alternate method )  -- (2nd alternate: 1 x 10^32 sec) 
+`N` -- 1 x 10^-5 s -- ( 1 x10^-5 sec using alternate method )
 
-`O` -- 1 x 10^-4 s -- ( 1 x10^-4 sec using alternate method )  -- (2nd alternate: 1 x 10^34 sec) 
+`O` -- 1 x 10^-4 s -- ( 1 x10^-4 sec using alternate method )
 
-`P` -- 1 x 10^-3 s -- ( 1 x10^-3 sec using alternate method )  -- (2nd alternate: 1 x 10^36 sec) 
+`P` -- 1 x 10^-3 s -- ( 1 x10^-3 sec using alternate method )
 
-`Q` -- 1 x 10^-2 s -- ( 1 x10^-2 sec using alternate method )  -- (2nd alternate: 1 x 10^38 sec) 
+`Q` -- 1 x 10^-2 s -- ( 1 x10^-2 sec using alternate method ) 
 
-`R` -- 1 x 10^-1 s -- ( 1 x10^-1 sec using alternate method )  -- (2nd alternate: 1 x 10^40 sec) 
+`R` -- 1 x 10^-1 s -- ( 1 x10^-1 sec using alternate method )  
 
-`S` -- 1 second ( 1 x10^0 sec using alternate method )  -- (2nd alternate: 1 x 10^42 sec) 
+`S` -- 1 second ( 1 x10^0 sec using alternate method )  
 
-`T` -- 10 seconds ( 1 x10^1 sec using alternate method ) -- (2nd alternate: 1 x 10^44 sec) 
+`T` -- 10 seconds ( 1 x10^1 sec using alternate method ) 
 
-`U` -- 100 seconds ( 1 x10^2 sec using alternate method ) -- (2nd alternate: 1 x 10^46 sec) 
+`U` -- 100 seconds ( 1 x10^2 sec using alternate method ) 
 
-`V` -- 1000 seconds ( 1 x10^3 sec using alternate method = 16 minutes) -- (2nd alternate: 1 x 10^48 sec) 
+`V` -- 1000 seconds ( 1 x10^3 sec using alternate method = 16 minutes)  
 
-`W` -- 10,000 seconds ( 1 x10^3 sec using alternate method = 2.7 hrs) -- (2nd alternate: 1 x 10^50 sec) 
+`W` -- 10,000 seconds ( 1 x10^3 sec using alternate method = 2.7 hrs)  
 
-`X` -- 100,000 seconds ( 1 x10^4 sec using alternate method = 1 day)  -- (2nd alternate: 1 x 10^52 sec) 
+`X` -- 100,000 seconds ( 1 x10^4 sec using alternate method = 1 day)  
 
-`Y` -- 1,000,000 seconds ( 1 x10^5 sec using alternate method = 11 days) -- (2nd alternate: 1 x 10^54 sec) 
+`Y` -- 1,000,000 seconds ( 1 x10^5 sec using alternate method = 11 days) 
 
-`Z` -- 10 million seconds ( 1 x10^6 sec using alternate method = 115 days) -- (2nd alternate: 1 x 10^56 sec) 
+`Z` -- 10 million seconds ( 1 x10^6 sec using alternate method = 115 days) 
 
-`0` -- 100 million ( 1 x10^7 sec using alternate method = 1157 days = 3 yrs)  -- (2nd alternate: 1 x 10^58 sec) 
+`0` -- 100 million ( 1 x10^7 sec using alternate method = 1157 days = 3 yrs)  
 
-`1` -- 1 billion seconds ( 1 x10^8 sec using alternate method = 30 yrs )  -- (2nd alternate: 1 x 10^60 sec) 
+`1` -- 1 billion seconds ( 1 x10^8 sec using alternate method = 31 yrs )   
 
-`2` -- 10 billion seconds ( 1 x10^9 sec using alternate method = 300 yrs)  -- (2nd alternate: 1 x 10^62 sec) 
+`2` -- 10 billion seconds ( 1 x10^9 sec using alternate method = 317 yrs)  
 
-`3` -- 100 billion seconds ( 1 x10^10 sec using alternate method = 3000 yrs)   -- (2nd alternate: 1 x 10^64 sec) 
+`3` -- 100 billion seconds ( 1 x10^10 sec using alternate method = 3170 yrs)  
 
-`4` -- 1 trillion seconds ( 1 x10^11 sec using alternate method = 30000 yrs)   -- (2nd alternate: 1 x 10^66 sec) 
+`4` -- 1 trillion seconds ( 1 x10^11 sec using alternate method = 31700 yrs)   
 
-`5` -- 10 trillion seconds ( 1 x10^12 sec using alternate method = 3 million yrs)   -- (2nd alternate: 1 x 10^68 sec) 
+`5` -- 10 trillion seconds ( 1 x10^12 sec using alternate method = 317097 yrs)    
 
-`6` -- 100 trillion seconds ( 1 x10^13 sec using alternate method = 30 million yrs)  -- (2nd alternate: 1 x 10^70 sec) 
+`6` -- 100 trillion seconds ( 1 x10^13 sec using alternate method = 3.17 million yrs)  
 
-`7` -- 1 quadrillion seconds ( 1 x10^14 sec using alternate method = 300 million yrs) -- (2nd alternate: 1 x 10^72 sec)   
+`7` -- 1 quadrillion seconds ( 1 x10^14 sec using alternate method = 31.7 million years)  
 
-`8` -- 10 quadrillion seconds ( 1 x10^15 sec using alternate method = 3 billion years) -- (2nd alternate: 1 x 10^74 sec)  
+`8` -- 10 quadrillion seconds ( 1 x10^15 sec using alternate method = 317 million years) 
 
-`9` -- 100 quadrillion seconds ( 1 x10^16 sec using alternate method = 31.7 billion years) -- (2nd alternate: 1 x 10^76 sec) 
+`9` -- 100 quadrillion seconds ( 1 x10^16 sec using alternate method = 3.17 billion yrs) 
 
-`-` -- 1 quintillion seconds ( 1 x10^17 sec using alternate method = 317 billion yrs) -- (2nd alternate: 1 x 10^78 sec)   
+`-` -- 1 quintillion seconds ( 1 x10^17 sec using alternate method = 31.7 billion years)   
 
-`.` -- 10 quintillion seconds ( 1 x10^18 sec using alternate method = 3.17 trillion yrs) -- (2nd alternate: 1 x 10^79 sec = 3.17x10^71 yrs )  
+`.` -- 10 quintillion seconds ( 1 x10^18 sec using alternate method = 317 billion years)   
 
 
 example times (additive):  
@@ -678,13 +678,13 @@ one Planck time unit (first possible event)
 one second
 
 ``a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:.``  
-137 billion years
+317 billion years
 
 ``----:99999:888888:777777:666666:55555:W:V:U:T:S``  
 4,320432x10^17 seconds = 13.7 billion years
 
 ``.:.:.``  
-31.7 billion yrs ^3 + 31.7 billion yrs ^2 + 31.7 billion yrs ^1 
+317 billion yrs ^3 + 317 billion yrs ^2 + 317 billion yrs ^1 
 
 
 ``.:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:S``  
@@ -701,6 +701,13 @@ one second
 
 ``.:a:a:a:.:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:.:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:S``  
 317 billion yrs ^64 + 31.7 billion yrs ^60 + 31.7 billion yrs ^41 + 1 second 
+
+``.........``  
+2.853 trillion years
+
+
+``.........TS``
+2.853 trillion years + 10 seconds + 1 second
 
 
 floating clock (64 chars):
