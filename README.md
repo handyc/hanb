@@ -509,87 +509,87 @@ a Planck time particle equivalent to the amount of time taken for light to trave
 
 `c` -- 1 x 10^-42 s 
 
-`d` -- 1 x 10^-41 s-- (2nd alternate: 1 x 10^-40 sec) 
+`d` -- 1 x 10^-41 s -- (2nd alternate: 1 x 10^-40 sec) 
 
-`e`   -- (2nd alternate: 1 x 10^-38 sec) 
+`e` -- 1 x 10^-40 s -- (2nd alternate: 1 x 10^-38 sec) 
 
-`f`   -- (2nd alternate: 1 x 10^-36 sec) 
+`f` -- 1 x 10^-39 s -- (2nd alternate: 1 x 10^-36 sec) 
 
-`g`   -- (2nd alternate: 1 x 10^-34 sec) 
+`g` -- 1 x 10^-38 s -- (2nd alternate: 1 x 10^-34 sec) 
 
-`h`   -- (2nd alternate: 1 x 10^-32 sec) 
+`h` -- 1 x 10^-37 s -- (2nd alternate: 1 x 10^-32 sec) 
 
-`i`   -- (2nd alternate: 1 x 10^-30 sec) 
+`i` -- 1 x 10^-36 s -- (2nd alternate: 1 x 10^-30 sec) 
 
-`j`   -- (2nd alternate: 1 x 10^-28 sec) 
+`j` -- 1 x 10^-35 s -- (2nd alternate: 1 x 10^-28 sec) 
 
-`k`   -- (2nd alternate: 1 x 10^-26 sec) 
+`k` -- 1 x 10^-34 s -- (2nd alternate: 1 x 10^-26 sec) 
 
-`l`   -- (2nd alternate: 1 x 10^-24 sec) 
+`l` -- 1 x 10^-33 s -- (2nd alternate: 1 x 10^-24 sec) 
 
-`m`   -- (2nd alternate: 1 x 10^-22 sec) 
+`m` -- 1 x 10^-32 s -- (2nd alternate: 1 x 10^-22 sec) 
 
-`n`   -- (2nd alternate: 1 x 10^-20 sec) 
+`n` -- 1 x 10^-31 s -- (2nd alternate: 1 x 10^-20 sec) 
 
-`o`   -- (2nd alternate: 1 x 10^-18 sec) 
+`o`   -- 1 x 10^-30 s -- (2nd alternate: 1 x 10^-18 sec) 
 
-`p`   -- (2nd alternate: 1 x 10^-16 sec) 
+`p`   -- 1 x 10^-29 s -- (2nd alternate: 1 x 10^-16 sec) 
 
-`q`   -- (2nd alternate: 1 x 10^-14 sec) 
+`q`   -- 1 x 10^-28 s -- (2nd alternate: 1 x 10^-14 sec) 
 
-`r`   -- (2nd alternate: 1 x 10^-12 sec) 
+`r`   -- 1 x 10^-27 s -- (2nd alternate: 1 x 10^-12 sec) 
 
-`s`   -- (2nd alternate: 1 x 10^-10 sec) 
+`s`   -- 1 x 10^-26 s -- (2nd alternate: 1 x 10^-10 sec) 
 
-`t`   -- (2nd alternate: 1 x 10^-8 sec) 
+`t`   -- 1 x 10^-25 s -- (2nd alternate: 1 x 10^-8 sec) 
 
-`u`   -- (2nd alternate: 1 x 10^-6 sec) 
+`u`   -- 1 x 10^-24 s -- (2nd alternate: 1 x 10^-6 sec) 
 
-`v`   -- (2nd alternate: 1 x 10^-4 sec) 
+`v`   -- 1 x 10^-23 s -- (2nd alternate: 1 x 10^-4 sec) 
 
-`w`   -- (2nd alternate: 1 x 10^-2 sec) 
+`w`   -- 1 x 10^-22 s -- (2nd alternate: 1 x 10^-2 sec) 
 
-`x`   -- (2nd alternate: 1 x 10^0 sec) 
+`x`   -- 1 x 10^-21 s -- (2nd alternate: 1 x 10^0 sec) 
 
-`y`   -- (2nd alternate: 1 x 10^2 sec) 
+`y`   -- 1 x 10^-20 s -- (2nd alternate: 1 x 10^2 sec) 
 
-`z` -- 1 million yrs -- (2nd alternate: 1 x 10^4 sec) 
+`z` -- 1 x 10^-19 s --  -- (2nd alternate: 1 x 10^4 sec) 
 
-`A` -- <1 billion yrs   -- (2nd alternate: 1 x 10^6 sec) 
+`A` -- 1 x 10^-18 s --    -- (2nd alternate: 1 x 10^6 sec) 
 
-`B` --  >1 billion yrs -- (2nd alternate: 1 x 10^8 sec) 
+`B` -- 1 x 10^-17 s --   -- (2nd alternate: 1 x 10^8 sec) 
 
-`C` -- 1 trillion yrs -- (2nd alternate: 1 x 10^10 sec) 
+`C` -- 1 x 10^-16 s --  -- (2nd alternate: 1 x 10^10 sec) 
 
-`D` -- 1 quadrillion yrs  -- (2nd alternate: 1 x 10^12 sec) 
+`D` -- 1 x 10^-15 s --   -- (2nd alternate: 1 x 10^12 sec) 
 
-`E` --    -- (2nd alternate: 1 x 10^14 sec) 
+`E` -- 1 x 10^-14 s --    -- (2nd alternate: 1 x 10^14 sec) 
 
-`F` --    -- (2nd alternate: 1 x 10^16 sec) 
+`F` -- 1 x 10^-13 s --    -- (2nd alternate: 1 x 10^16 sec) 
 
-`G` --   -- (2nd alternate: 1 x 10^18 sec) 
+`G` -- 1 x 10^-12 s --   -- (2nd alternate: 1 x 10^18 sec) 
 
-`H` --  -- (2nd alternate: 1 x 10^20 sec) 
+`H` -- 1 x 10^-11 s --  -- (2nd alternate: 1 x 10^20 sec) 
 
-`I` --   -- (2nd alternate: 1 x 10^22 sec) 
+`I` -- 1 x 10^-10 s --   -- (2nd alternate: 1 x 10^22 sec) 
 
-`J` --   -- (2nd alternate: 1 x 10^24 sec) 
+`J` -- 1 x 10^-9 s --   -- (2nd alternate: 1 x 10^24 sec) 
 
-`K` -- ( 1 x10^-8 sec using alternate method )  -- (2nd alternate: 1 x 10^26 sec) 
+`K` -- 1 x 10^-8 s -- ( 1 x10^-8 sec using alternate method )  -- (2nd alternate: 1 x 10^26 sec) 
 
-`L` --1e100 yrs  -- ( 1 x10^-7 sec using alternate method )  -- (2nd alternate: 1 x 10^28 sec) 
+`L` -- 1 x 10^-7 s --1e100 yrs  -- ( 1 x10^-7 sec using alternate method )  -- (2nd alternate: 1 x 10^28 sec) 
 
-`M` -- ( 1 x10^-6 sec using alternate method )  -- (2nd alternate: 1 x 10^30 sec) 
+`M` -- 1 x 10^-6 s -- ( 1 x10^-6 sec using alternate method )  -- (2nd alternate: 1 x 10^30 sec) 
 
-`N` -- ( 1 x10^-5 sec using alternate method )  -- (2nd alternate: 1 x 10^32 sec) 
+`N` -- 1 x 10^-5 s -- ( 1 x10^-5 sec using alternate method )  -- (2nd alternate: 1 x 10^32 sec) 
 
-`O` -- ( 1 x10^-4 sec using alternate method )  -- (2nd alternate: 1 x 10^34 sec) 
+`O` -- 1 x 10^-4 s -- ( 1 x10^-4 sec using alternate method )  -- (2nd alternate: 1 x 10^34 sec) 
 
-`P` -- ( 1 x10^-3 sec using alternate method )  -- (2nd alternate: 1 x 10^36 sec) 
+`P` -- 1 x 10^-3 s -- ( 1 x10^-3 sec using alternate method )  -- (2nd alternate: 1 x 10^36 sec) 
 
-`Q` -- ( 1 x10^-2 sec using alternate method )  -- (2nd alternate: 1 x 10^38 sec) 
+`Q` -- 1 x 10^-2 s -- ( 1 x10^-2 sec using alternate method )  -- (2nd alternate: 1 x 10^38 sec) 
 
-`R` -- ( 1 x10^-1 sec using alternate method )  -- (2nd alternate: 1 x 10^40 sec) 
+`R` -- 1 x 10^-1 s -- ( 1 x10^-1 sec using alternate method )  -- (2nd alternate: 1 x 10^40 sec) 
 
 `S` -- 1 second ( 1 x10^0 sec using alternate method )  -- (2nd alternate: 1 x 10^42 sec) 
 
@@ -690,7 +690,41 @@ example times (multiplicative):
 ``.:.:.:.:.:.:.:.:.:.:.:.:.:.:.`` 31.7 billion yrs ^ 15 (157)
 ``.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.`` 31.7 billion yrs ^ 16
 
+full clock:
+a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a
+ambiguous time (no event has occurred previously)
 
+a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:b
+one Planck time unit (first possible event)
+
+a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:S
+one second
+
+a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:.
+13.7 billion years
+
+a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:.:S
+31.7 billion yrs ^2 + 1 second  
+= 1 x 10^121 yrs (end of black hole era)
+
+a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:.:.:.
+31.7 billion yrs ^3 + 31.7 billion yrs ^2 + 31.7 billion yrs ^1 
+
+
+.:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:S
+31.7 billion yrs ^64 + 1 second 
+
+.:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:SS
+31.7 billion yrs ^64 + 2 seconds 
+
+.:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:SSb
+31.7 billion yrs ^64 + 2 seconds + 1 Planck time unit
+
+.:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:SSSSSSSSSS
+31.7 billion yrs ^64 + 10 seconds 
+
+.:a:a:a:.:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:.:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:S
+31.7 billion yrs ^64 + 31.7 billion yrs ^60 + 31.7 billion yrs ^41 + 1 second 
 
 # examples of location descriptions with situations, events and time durations:
 
