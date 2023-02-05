@@ -631,6 +631,29 @@ a Planck time particle equivalent to the amount of time taken for light to trave
 
 `.` -- 1 quintillion seconds ( 1 x10^18 sec using alternate method = 31.7 billion yrs) -- (2nd alternate: 1 x 10^79 sec = 3.17x10^71 yrs )  
 
+
+example times:  
+
+``S``  one second
+
+``UT`` 110 seconds 
+
+``VU`` 1100 seconds 
+
+``.S`` 1 quintillion and one seconds  
+
+``.T`` 1 quintillion + 110 seconds 
+
+``..`` 1 quintillion + 1 quintillion seconds  
+
+``................................................................`` 64 quintillion seconds
+
+``...............................................................S`` 63 quintillion seconds + 1 second
+
+
+
+
+
 # examples of location descriptions with situations, events and time durations:
 
 Atom:
