@@ -182,7 +182,7 @@ large dynamic spaces in limited memory
 
 `a` -- quantum foam particle  
 
-`b` -- Planck particle  
+`b` -- Planck particle (real world Planck length = 1.616255(18) × 10^-35 m) 
 
 `c` -- combined particle 
 
@@ -489,52 +489,21 @@ In the above example, the position string has been altered by one character, suc
 object size 'b' to object size 'H'
 
 
-# hanb replacement language
-describe objects at any resolution, combine various resolutions in any way
-
-examples:  
-
-apple  -- size J  
--- contains high detail sections of size I  
--- some I sections have very high detail sections size H  
--- some of those sections have pixel detail sections size G  
-
-generating apple:  
--- generate J (apple)  
-
-board='J' 
-
--- replace J with 61 I cells  
-
-J -> dUp5R4nvFuBGHUDlMg1JyX8ID8H5Znwo82RoF0myOcUhjRjwORaoIJCcZnEsG
-
--- replace I cells with H cells
-
-board='dUp5R4nvFuBGHUDlMg1JyX8ID8H5Znwo82RoF0myOcUhjRjwORaoIJCcZnEsG'  
-for char in board  
-  char -> lookup(char)
-
--- replace H cells with G cells (pixels)  
-for char in board  
-  char -> lookup(char)
-
--G returns RGB
-
-automobile  -- size K  
--- steering wheel size J  
--- tire size J  
--- hood ornament size I  
-
-city  -- size O  
-continent  -- size Q  
-planet  -- size R  
-
 
 # time in hanb
 
-`a` -- Planck time particle  
+The transition from one situation to another, called an event, occurs within a duration of time.
+As with space, time is represented as a series of scales using the hanb 64-character set:
 
-`b` --   
+abcdefghiklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
+
+Here, a time duration of 'a' is considered as "ambiguous time" and the unit 'b' is called
+a Planck time particle equivalent to the amount of time taken for light to traverse one Planck length (spatial unit 'b').
+( = 5.391247(60)×10−44 s)
+
+`a` -- ambiguous time particle  
+
+`b` -- Planck time particle  
 
 `c`  
 
@@ -659,6 +628,62 @@ planet  -- size R
 `-` --  
 
 `.` -- 
+
+# examples of location descriptions with situations, events and time durations:
+
+Atom:
+
+`` object container:  #.-9876443210ZYXWVUTSRQPONMLKJIHGFEDCB``  
+``                    ||||||||||||||||||||||||||||||||||||||``  
+``      object size:  .-9876443210ZYXWVUTSRQPONMLKJIHGFEDCBA``  
+``                    ||||||||||||||||||||||||||||||||||||||``  
+``  object location:  aaaaaKu3923sderfdewWddfglkhgre0lkheogr``  
+``    time duration:  c``  
+`` object situation:  ahbkjhffddlkhueuusgdghejkdjkgsdhsjhgsd``   
+``    event outcome:  ahbkjhffddekhueuusedghejkdjkgsdhejhgsd`` 
+
+
+
+
+# hanb replacement language
+describe objects at any resolution, combine various resolutions in any way
+
+examples:  
+
+apple  -- size J  
+-- contains high detail sections of size I  
+-- some I sections have very high detail sections size H  
+-- some of those sections have pixel detail sections size G  
+
+generating apple:  
+-- generate J (apple)  
+
+board='J' 
+
+-- replace J with 61 I cells  
+
+J -> dUp5R4nvFuBGHUDlMg1JyX8ID8H5Znwo82RoF0myOcUhjRjwORaoIJCcZnEsG
+
+-- replace I cells with H cells
+
+board='dUp5R4nvFuBGHUDlMg1JyX8ID8H5Znwo82RoF0myOcUhjRjwORaoIJCcZnEsG'  
+for char in board  
+  char -> lookup(char)
+
+-- replace H cells with G cells (pixels)  
+for char in board  
+  char -> lookup(char)
+
+-G returns RGB
+
+automobile  -- size K  
+-- steering wheel size J  
+-- tire size J  
+-- hood ornament size I  
+
+city  -- size O  
+continent  -- size Q  
+planet  -- size R  
 
 
 # Implementing hanb
