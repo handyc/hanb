@@ -346,28 +346,29 @@ with the return value coded as '9-.'
 ``                                           ``  
 ``                     9-.                   ``  
 
-``         a   b   c   d   e         ``    
-``       f   g   h   i   j   k       ``    
-``     l   m   n   o   p   q   r     ``   
-``   s   t   u   v   w   x   y   z   ``   
-`` A   B   C   D   E   F   G   H   I ``   
-``   J   K   L   M   N   O   P   Q   ``   
-``     R   S   T   U   V   W   X     ``   
-``       Y   Z   0   1   2   3       ``   
+``         a   b   c   d   e         ``  
+``       f   g   h   i   j   k       ``  
+``     l   m   n   o   p   q   r     ``  
+``   s   t   u   v   w   x   y   z   ``  
+`` A   B   C   D   E   F   G   H   I ``  
+``   J   K   L   M   N   O   P   Q   ``  
+``     R   S   T   U   V   W   X     ``  
+``       Y   Z   0   1   2   3       ``  
 ``         4   5   6   7   8         `` 
-``                                   ``  
-``                       9-.         ``  
- 
+``                                   `` 
+``                  9-.              ``  
  
 therefore in the above board we could reference a cell
 through its related character
  
 there are 64 levels in hanb, which means a total of
-
-64^61 cells or with 3-characters returns included, 64^64 combinations.
+64^61 cells or with 3-character returns included, 64^64 combinations.
 
 Every object can be referenced easily through the unique route to its
-specific board.
+specific board, with the string length increasing at each level
+of resolution. So the position of a universe within its
+corresponding matrix # is a single character representing its position
+on the matrix board.
 
 e.g. a universe in position N of a universe matrix is addressed
 simply as the string:
@@ -376,19 +377,51 @@ simply as the string:
 consider a possible universe in which there is a planet 'R' located
 somewhere in a galaxy of size 6:
 
-6443210ZYXWVUTSR
+6 -> 5 -> 4 -> 3 -> 2 -> 1 -> 0 ->Z -> Y -> X -> W -> V -> U -> T -> S -> R
 
 in order to reference its location in the galaxy of size 6 we provide
 the cell for its location on that size 6 board:
 ``K``
+
+6443210ZYXWVUTS
+|||||||||||||||
+K
+
 then we also provide its position within the size 5 cell returned by the ``K``
+
+6443210ZYXWVUTS
+|||||||||||||||
+Ku
 
 and on until we get to its position in S
 
+6443210ZYXWVUTS
+|||||||||||||||
+Ku3923sderfdewW
+
 a complete location of any object within a matrix will be a length inversely
-proportional to its size, such that the smallest 'a' objects are located
+proportional to its size:
+
+. -> - -> 9 -> 8 -> 7 -> 6 -> 5 -> 4 -> 3 -> 2 -> 1 -> 0 ->Z -> Y -> X -> W -> V -> U -> T -> S -> R
+
+.-9876443210ZYXWVUTS
+||||||||||||||||||||
+aaaaaKu3923sderfdewW
+
+Notice that the location string goes only to the length of the board size and not object size,
+as we are referencing the object's position within its board.
+Above, we reference the location of an object of size R (planet size) within the hierarchy of
+boards above it, all the way to the scale of the universe's position within its universe matrix.
+
+The smallest possible 'a' objects (quantum foam particles) are located
 in strings 64 characters long, listing universe cell, supercluster ...
-all the way to the position within 'b'
+all the way to the position within 'b':
+
+``object container: #.-9876443210ZYXWVUTSRQPONMLKJIHGFEDCBAzyxwvutsrqponmlkjihgfedcb ``  
+``                  |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ``  
+``     object size: .-9876443210ZYXWVUTSRQPONMLKJIHGFEDCBAzyxwvutsrqponmlkjihgfedcba ``  
+``                  |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ``  
+`` object location: aaaaaKu3923sderfdewWddfglkhgre0lkheogr8ef978df7vpslfkvjshvkjhffd ``  
 
 
 
