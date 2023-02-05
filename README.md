@@ -383,19 +383,19 @@ in order to reference its location in the galaxy of size 6 we provide
 the cell for its location on that size 6 board:
 ``K``
 
-``6443210ZYXWVUTS``  
+``6543210ZYXWVUTS``  
 ``|||||||||||||||``  
 ``K``  
 
 then we also provide its position within the size 5 cell returned by the ``K``
 
-``6443210ZYXWVUTS``  
+``6543210ZYXWVUTS``  
 ``|||||||||||||||``  
 ``Ku``  
 
 and on until we get to its position in S
 
-``6443210ZYXWVUTS``  
+``6543210ZYXWVUTS``  
 ``|||||||||||||||``  
 ``Ku3923sderfdewW``  
 
@@ -404,7 +404,7 @@ proportional to its size:
 
 . -> - -> 9 -> 8 -> 7 -> 6 -> 5 -> 4 -> 3 -> 2 -> 1 -> 0 ->Z -> Y -> X -> W -> V -> U -> T -> S -> R
 
-``.-9876443210ZYXWVUTS``  
+``.-9876543210ZYXWVUTS``  
 ``||||||||||||||||||||``  
 ``aaaaaKu3923sderfdewW``  
 
@@ -417,9 +417,9 @@ The smallest possible 'a' objects (quantum foam particles) are located
 in strings 64 characters long, listing universe cell, supercluster ...
 all the way to the position within 'b':
 
-``object container: #.-9876443210ZYXWVUTSRQPONMLKJIHGFEDCBAzyxwvutsrqponmlkjihgfedcb``  
+``object container: #.-9876543210ZYXWVUTSRQPONMLKJIHGFEDCBAzyxwvutsrqponmlkjihgfedcb``  
 ``                   |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ``  
-``     object size:  .-9876443210ZYXWVUTSRQPONMLKJIHGFEDCBAzyxwvutsrqponmlkjihgfedcba ``  
+``     object size:  .-9876543210ZYXWVUTSRQPONMLKJIHGFEDCBAzyxwvutsrqponmlkjihgfedcba ``  
 ``                   |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ``  
 `` object location:  aaaaaKu3923sderfdewWddfglkhgre0lkheogr8ef978df7vpslfkvjshvkjhffd ``  
 
@@ -441,25 +441,25 @@ Universe:
 
 City:
 
-``object container:  #.-9876443210ZYXWVUTSRQP``  
+``object container:  #.-9876543210ZYXWVUTSRQP``  
 ``                   ||||||||||||||||||||||||``  
-``     object size:  .-9876443210ZYXWVUTSRQPO``  
+``     object size:  .-9876543210ZYXWVUTSRQPO``  
 ``                   ||||||||||||||||||||||||``  
 `` object location:  aaaaaKu3923sderfdewWddfg``  
 
 Person:
 
-``object container:  #.-9876443210ZYXWVUTSRQPONML``  
+``object container:  #.-9876543210ZYXWVUTSRQPONML``  
 ``                   ||||||||||||||||||||||||||||``  
-``     object size:  .-9876443210ZYXWVUTSRQPONMLK``  
+``     object size:  .-9876543210ZYXWVUTSRQPONMLK``  
 ``                   ||||||||||||||||||||||||||||``  
 `` object location:  aaaaaKu3923sderfdewWddfglkhg``  
 
 Atom:
 
-``object container:  #.-9876443210ZYXWVUTSRQPONMLKJIHGFEDCB``  
+``object container:  #.-9876543210ZYXWVUTSRQPONMLKJIHGFEDCB``  
 ``                   ||||||||||||||||||||||||||||||||||||||``  
-``     object size:  .-9876443210ZYXWVUTSRQPONMLKJIHGFEDCBA``  
+``     object size:  .-9876543210ZYXWVUTSRQPONMLKJIHGFEDCBA``  
 ``                   ||||||||||||||||||||||||||||||||||||||``  
 `` object location:  aaaaaKu3923sderfdewWddfglkhgre0lkheogr``  
 
