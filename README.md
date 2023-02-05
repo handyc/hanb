@@ -432,22 +432,32 @@ Consider the following objects with their locations:
 
 Universe:
 
-``object container: #``  
+``object container:  #``  
 ``                   |``  
 ``     object size:  .``  
 ``                   |``  
 `` object location:  a``  
 
 
+City:
+
+``object container:  #.-9876443210ZYXWVUTSRQP``  
+``                   ||||||||||||||||||||||||``  
+``     object size:  .-9876443210ZYXWVUTSRQPO``  
+``                   ||||||||||||||||||||||||``  
+`` object location:  aaaaaKu3923sderfdewWddfg``  
+
 Person:
-``object container: #.-9876443210ZYXWVUTSRQPONML``  
+
+``object container:  #.-9876443210ZYXWVUTSRQPONML``  
 ``                   ||||||||||||||||||||||||||||``  
 ``     object size:  .-9876443210ZYXWVUTSRQPONMLK``  
 ``                   ||||||||||||||||||||||||||||``  
 `` object location:  aaaaaKu3923sderfdewWddfglkhg``  
 
 Atom:
-``object container: #.-9876443210ZYXWVUTSRQPONMLKJIHGFEDCB``  
+
+``object container:  #.-9876443210ZYXWVUTSRQPONMLKJIHGFEDCB``  
 ``                   ||||||||||||||||||||||||||||||||||||||``  
 ``     object size:  .-9876443210ZYXWVUTSRQPONMLKJIHGFEDCBA``  
 ``                   ||||||||||||||||||||||||||||||||||||||``  
