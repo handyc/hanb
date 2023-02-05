@@ -499,17 +499,17 @@ abcdefghiklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
 
 Here, a time duration of 'a' is considered as "ambiguous time" and the unit 'b' is called
 a Planck time particle equivalent to the amount of time taken for light to traverse one Planck length (spatial unit 'b').
-( = 5.391247(60)×10−44 s)
+( 1 x 10^-43 s, real world Planck time = 5.391247×10−44 s)
 
 (this duration map is currently underdoing major revisions, so there are some conflicting labels):
 
-`a` -- ambiguous time particle  -- () 
+`a` -- ambiguous time particle  -- (1 x 10^-44 s is below real world Planck time of 5.391247(60)×10−44 s) 
 
-`b` -- Planck time particle ( = 5.391247(60)×10−44 s) -- (2nd alternate: 1 × 10 −44 s) 
+`b` -- Planck time particle -- 1 x 10^-43 s is above real world Planck time of 5.391247(60)×10−44 s
 
-`c` -- ( = 5.391247(60)×10−43 s)   -- (2nd alternate: 1 x 10^-42 sec) 
+`c` -- 1 x 10^-42 s 
 
-`d`   -- (2nd alternate: 1 x 10^-40 sec) 
+`d` -- 1 x 10^-41 s-- (2nd alternate: 1 x 10^-40 sec) 
 
 `e`   -- (2nd alternate: 1 x 10^-38 sec) 
 
@@ -575,61 +575,61 @@ a Planck time particle equivalent to the amount of time taken for light to trave
 
 `J` --   -- (2nd alternate: 1 x 10^24 sec) 
 
-`K` --   -- (2nd alternate: 1 x 10^26 sec) 
+`K` -- ( 1 x10^-8 sec using alternate method )  -- (2nd alternate: 1 x 10^26 sec) 
 
-`L` --1e100 yrs   -- (2nd alternate: 1 x 10^28 sec) 
+`L` --1e100 yrs  -- ( 1 x10^-7 sec using alternate method )  -- (2nd alternate: 1 x 10^28 sec) 
 
-`M` --   -- (2nd alternate: 1 x 10^30 sec) 
+`M` -- ( 1 x10^-6 sec using alternate method )  -- (2nd alternate: 1 x 10^30 sec) 
 
-`N` --   -- (2nd alternate: 1 x 10^32 sec) 
+`N` -- ( 1 x10^-5 sec using alternate method )  -- (2nd alternate: 1 x 10^32 sec) 
 
-`O` --  -- (2nd alternate: 1 x 10^34 sec) 
+`O` -- ( 1 x10^-4 sec using alternate method )  -- (2nd alternate: 1 x 10^34 sec) 
 
-`P` --   -- (2nd alternate: 1 x 10^36 sec) 
+`P` -- ( 1 x10^-3 sec using alternate method )  -- (2nd alternate: 1 x 10^36 sec) 
 
-`Q` --  -- (2nd alternate: 1 x 10^38 sec) 
+`Q` -- ( 1 x10^-2 sec using alternate method )  -- (2nd alternate: 1 x 10^38 sec) 
 
-`R` -- ( )   -- (2nd alternate: 1 x 10^40 sec) 
+`R` -- ( 1 x10^-1 sec using alternate method )  -- (2nd alternate: 1 x 10^40 sec) 
 
-`S` -- ( .5 sec using alternate method)  -- (2nd alternate: 1 x 10^42 sec) 
+`S` -- 1 second ( 1 x10^0 sec using alternate method )  -- (2nd alternate: 1 x 10^42 sec) 
 
-`T` -- ( 5 sec using alternate method) -- (2nd alternate: 1 x 10^44 sec) 
+`T` -- 10 seconds ( 1 x10^1 sec using alternate method ) -- (2nd alternate: 1 x 10^44 sec) 
 
-`U` -- ( 50 sec alternate) -- (2nd alternate: 1 x 10^46 sec) 
+`U` -- 100 seconds ( 1 x10^2 sec using alternate method ) -- (2nd alternate: 1 x 10^46 sec) 
 
-`V`  1e1000 yrs = heat death (500 sec alternate) -- (2nd alternate: 1 x 10^48 sec) 
+`V` -- 1000 seconds ( 1 x10^3 sec using alternate method ) -- (2nd alternate: 1 x 10^48 sec) 
 
-`W` (5 000 sec alternate) -- (2nd alternate: 1 x 10^50 sec) 
+`W` -- 1000 seconds ( 1 x10^3 sec using alternate method ) -- (2nd alternate: 1 x 10^50 sec) 
 
-`X` -- (50 000 sec alternate)  -- (2nd alternate: 1 x 10^52 sec) 
+`X` -- 10,000 seconds ( 1 x10^4 sec using alternate method )  -- (2nd alternate: 1 x 10^52 sec) 
 
-`Y` -- (500 000 sec alternate) -- (2nd alternate: 1 x 10^54 sec) 
+`Y` -- 100,00 seconds ( 1 x10^5 sec using alternate method ) -- (2nd alternate: 1 x 10^54 sec) 
 
-`Z` -- (5 x 10^6 sec alternate) -- (2nd alternate: 1 x 10^56 sec) 
+`Z` -- 1,000,000 seconds ( 1 x10^6 sec using alternate method ) -- (2nd alternate: 1 x 10^56 sec) 
 
-`0` -- (5 x 10^7 sec alternate)  -- (2nd alternate: 1 x 10^58 sec) 
+`0` -- 10,000,000 seconds ( 1 x10^7 sec using alternate method )  -- (2nd alternate: 1 x 10^58 sec) 
 
-`1` -- (5 x 10^8 sec alternate)  -- (2nd alternate: 1 x 10^60 sec) 
+`1` -- 100,000,000 seconds ( 1 x10^8 sec using alternate method )  -- (2nd alternate: 1 x 10^60 sec) 
 
-`2` -- (5 x 10^9 sec alternate)  -- (2nd alternate: 1 x 10^62 sec) 
+`2` -- 1 billion seconds ( 1 x10^9 sec using alternate method )  -- (2nd alternate: 1 x 10^62 sec) 
 
-`3` -- (5 x 10^10 sec alternate)   -- (2nd alternate: 1 x 10^64 sec) 
+`3` -- 10 billion seconds ( 1 x10^10 sec using alternate method )   -- (2nd alternate: 1 x 10^64 sec) 
 
-`4` -- (5 x 10^11 sec alternate)   -- (2nd alternate: 1 x 10^66 sec) 
+`4` -- 100 billion seconds ( 1 x10^11 sec using alternate method )   -- (2nd alternate: 1 x 10^66 sec) 
 
-`5` -- (5 x 10^12 sec alternate)   -- (2nd alternate: 1 x 10^68 sec) 
+`5` -- 1 trillion seconds ( 1 x10^12 sec using alternate method )   -- (2nd alternate: 1 x 10^68 sec) 
 
-`6` -- (5 x 10^13 sec alternate)  -- (2nd alternate: 1 x 10^70 sec) 
+`6` -- 10 trillion seconds ( 1 x10^13 sec using alternate method )  -- (2nd alternate: 1 x 10^70 sec) 
 
-`7` -- 1e0 yrs (5 x 10^14 sec alternate) -- (2nd alternate: 1 x 10^72 sec)   
+`7` -- 100 trillion seconds ( 1 x10^14 sec using alternate method ) -- (2nd alternate: 1 x 10^72 sec)   
 
-`8` -- 1e1 yrs (5 x 10^15 sec alternate) -- (2nd alternate: 1 x 10^74 sec)  
+`8` -- 1 quadrillion seconds ( 1 x10^15 sec using alternate method ) -- (2nd alternate: 1 x 10^74 sec)  
 
-`9` -- 1e10 yrs (5 x 10^16 sec alternate) -- (2nd alternate: 1 x 10^76 sec) 
+`9` -- 10 quadrillion seconds ( 1 x10^16 sec using alternate method ) -- (2nd alternate: 1 x 10^76 sec) 
 
-`-` -- 1e100 yrs (5 x 10^17 sec alternate) -- (2nd alternate: 1 x 10^78 sec)   
+`-` -- 100 quadrillion seconds ( 1 x10^17 sec using alternate method ) -- (2nd alternate: 1 x 10^78 sec)   
 
-`.` -- 1e100 yrs = 3.154 x 10^107 seconds (5 x 10^18 sec alternate -- 31.7 billion years) -- (2nd alternate: 1 x 10^108 sec)  
+`.` -- 1 quintillion seconds ( 1 x10^18 sec using alternate method = 31.7 billion yrs) -- (2nd alternate: 1 x 10^79 sec = 3.17x10^71 yrs )  
 
 # examples of location descriptions with situations, events and time durations:
 
