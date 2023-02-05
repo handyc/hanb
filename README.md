@@ -632,7 +632,7 @@ a Planck time particle equivalent to the amount of time taken for light to trave
 `.` -- 1 quintillion seconds ( 1 x10^18 sec using alternate method = 31.7 billion yrs) -- (2nd alternate: 1 x 10^79 sec = 3.17x10^71 yrs )  
 
 
-example times:  
+example times (additive):  
 
 ``S``  one second
 
@@ -651,6 +651,44 @@ example times:
 ``...............................................................S`` 63 quintillion seconds + 1 second
 
 
+example times (multiplicative):  
+
+``:S``  one second
+
+``:T``  10 seconds
+
+``:T:U``  one second plus 1 second
+
+``:UT`` 100 seconds x 10 seconds 
+
+``:VU`` 1000 x 100 seconds 
+
+``:.S`` 1 quintillion x one seconds  
+
+``:.T`` 1 quintillion x 110 seconds 
+
+``:..`` 1 quintillion x 1 quintillion seconds  
+
+``................................................................`` 64 quintillion seconds
+
+``...............................................................S`` 63 quintillion seconds + 1 second
+
+``:.`` 31.7 billion yrs ^ 1
+``.:.`` 31.7 billion yrs ^ 2      (21)
+``.:.:.`` 31.7 billion yrs ^ 3    (31)
+``.:.:.:.`` 31.7 billion yrs ^ 4  (42)
+``.:.:.:.:.`` 31.7 billion yrs ^ 5 (52)
+``.:.:.:.:.:.`` 31.7 billion yrs ^ 6  (63)
+``.:.:.:.:.:.:.`` 31.7 billion yrs ^ 7  (73)
+``.:.:.:.:.:.:.:.`` 31.7 billion yrs ^ 8 (84)
+``.:.:.:.:.:.:.:.:.`` 31.7 billion yrs ^ 9  (94)
+``.:.:.:.:.:.:.:.:.:.`` 31.7 billion yrs ^ 10  (105)
+``.:.:.:.:.:.:.:.:.:.:.`` 31.7 billion yrs ^ 11  (115)
+``.:.:.:.:.:.:.:.:.:.:.:.`` 31.7 billion yrs ^ 12 (126)
+``.:.:.:.:.:.:.:.:.:.:.:.:.`` 31.7 billion yrs ^ 13 (136)
+``.:.:.:.:.:.:.:.:.:.:.:.:.:.`` 31.7 billion yrs ^ 14 (147)
+``.:.:.:.:.:.:.:.:.:.:.:.:.:.:.`` 31.7 billion yrs ^ 15 (157)
+``.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.`` 31.7 billion yrs ^ 16
 
 
 
