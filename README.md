@@ -383,30 +383,30 @@ in order to reference its location in the galaxy of size 6 we provide
 the cell for its location on that size 6 board:
 ``K``
 
-6443210ZYXWVUTS
-|||||||||||||||
-K
+``6443210ZYXWVUTS``  
+``|||||||||||||||``  
+``K``  
 
 then we also provide its position within the size 5 cell returned by the ``K``
 
-6443210ZYXWVUTS
-|||||||||||||||
-Ku
+``6443210ZYXWVUTS``  
+``|||||||||||||||``  
+``Ku``  
 
 and on until we get to its position in S
 
-6443210ZYXWVUTS
-|||||||||||||||
-Ku3923sderfdewW
+``6443210ZYXWVUTS``  
+``|||||||||||||||``  
+``Ku3923sderfdewW``  
 
 a complete location of any object within a matrix will be a length inversely
 proportional to its size:
 
 . -> - -> 9 -> 8 -> 7 -> 6 -> 5 -> 4 -> 3 -> 2 -> 1 -> 0 ->Z -> Y -> X -> W -> V -> U -> T -> S -> R
 
-.-9876443210ZYXWVUTS
-||||||||||||||||||||
-aaaaaKu3923sderfdewW
+``.-9876443210ZYXWVUTS``  
+``||||||||||||||||||||``  
+``aaaaaKu3923sderfdewW``  
 
 Notice that the location string goes only to the length of the board size and not object size,
 as we are referencing the object's position within its board.
