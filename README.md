@@ -57,13 +57,19 @@ boards can be written in a compressed form as 61-character strings, e.g.:
 
 ``t7t82Ry18okmA1HCr0R8zi0HncVQyGtTo5xGo-44PXA4NRK0ND-sbVrT8fJMt``  
 
+Each character in the string corresponds to the value of a single cell on the board.
+e.g. in the string ``t7t82Ry18okmA1HCr0R8zi0HncVQyGtTo5xGo-44PXA4NRK0ND-sbVrT8fJMt``  
+the value of cell 0 is 't', and the value of cell 1 is '7'.
+
+The values of cells can be interpreted in a variety of ways.
+The main purpose of cell values is to indicate the presence
+and type of matter contained in the cell.
 
 Each board represents a finite space at a particular scale between 0 and 63,
 also represented by the above character set, such that 'a' is a board filled
-with quantum foam and '.' is a board containing a universe
+with quantum foam and '.' is a board containing a universe.
 
-
-therefore we call 'a' a quantum foam particle and '.' a universe
+Therefore we call 'a' a quantum foam particle and '.' a universe.
 
 Multiple universes can be transmitted as a universe matrix #:
 
@@ -86,6 +92,8 @@ example universe matrix containing two universes:
 ``           a         a         a           ``  
 ``                a         a                ``  
 ``                     a                     ``  
+
+``aaaaa9aa98aaa.aa931aa90aa9aaaa.aaaa8aaa3aaaaaaaaaaaaaaaaaaaaa``  
 
 example universe:
 
