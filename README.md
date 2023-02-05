@@ -509,127 +509,127 @@ a Planck time particle equivalent to the amount of time taken for light to trave
 
 `c` -- 1 x 10^-42 s 
 
-`d` -- 1 x 10^-41 s -- (2nd alternate: 1 x 10^-40 sec) 
+`d` -- 1 x 10^-41 s 
 
-`e` -- 1 x 10^-40 s -- (2nd alternate: 1 x 10^-38 sec) 
+`e` -- 1 x 10^-40 s 
 
-`f` -- 1 x 10^-39 s -- (2nd alternate: 1 x 10^-36 sec) 
+`f` -- 1 x 10^-39 s 
 
-`g` -- 1 x 10^-38 s -- (2nd alternate: 1 x 10^-34 sec) 
+`g` -- 1 x 10^-38 s 
 
-`h` -- 1 x 10^-37 s -- (2nd alternate: 1 x 10^-32 sec) 
+`h` -- 1 x 10^-37 s
 
-`i` -- 1 x 10^-36 s -- (2nd alternate: 1 x 10^-30 sec) 
+`i` -- 1 x 10^-36 s
 
-`j` -- 1 x 10^-35 s -- (2nd alternate: 1 x 10^-28 sec) 
+`j` -- 1 x 10^-35 s
 
-`k` -- 1 x 10^-34 s -- (2nd alternate: 1 x 10^-26 sec) 
+`k` -- 1 x 10^-34 s 
 
-`l` -- 1 x 10^-33 s -- (2nd alternate: 1 x 10^-24 sec) 
+`l` -- 1 x 10^-33 s  
 
-`m` -- 1 x 10^-32 s -- (2nd alternate: 1 x 10^-22 sec) 
+`m` -- 1 x 10^-32 s 
 
-`n` -- 1 x 10^-31 s -- (2nd alternate: 1 x 10^-20 sec) 
+`n` -- 1 x 10^-31 s 
 
-`o`   -- 1 x 10^-30 s -- (2nd alternate: 1 x 10^-18 sec) 
+`o`   -- 1 x 10^-30 s
 
-`p`   -- 1 x 10^-29 s -- (2nd alternate: 1 x 10^-16 sec) 
+`p`   -- 1 x 10^-29 s 
 
-`q`   -- 1 x 10^-28 s -- (2nd alternate: 1 x 10^-14 sec) 
+`q`   -- 1 x 10^-28 s 
 
-`r`   -- 1 x 10^-27 s -- (2nd alternate: 1 x 10^-12 sec) 
+`r`   -- 1 x 10^-27 s 
 
-`s`   -- 1 x 10^-26 s -- (2nd alternate: 1 x 10^-10 sec) 
+`s`   -- 1 x 10^-26 s 
 
-`t`   -- 1 x 10^-25 s -- (2nd alternate: 1 x 10^-8 sec) 
+`t`   -- 1 x 10^-25 s 
 
-`u`   -- 1 x 10^-24 s -- (2nd alternate: 1 x 10^-6 sec) 
+`u`   -- 1 x 10^-24 s  
 
-`v`   -- 1 x 10^-23 s -- (2nd alternate: 1 x 10^-4 sec) 
+`v`   -- 1 x 10^-23 s 
 
-`w`   -- 1 x 10^-22 s -- (2nd alternate: 1 x 10^-2 sec) 
+`w`   -- 1 x 10^-22 s 
 
-`x`   -- 1 x 10^-21 s -- (2nd alternate: 1 x 10^0 sec) 
+`x`   -- 1 x 10^-21 s 
 
-`y`   -- 1 x 10^-20 s -- (2nd alternate: 1 x 10^2 sec) 
+`y`   -- 1 x 10^-20 s 
 
-`z` -- 1 x 10^-19 s --  -- (2nd alternate: 1 x 10^4 sec) 
+`z` -- 1 x 10^-19 s --  
 
-`A` -- 1 x 10^-18 s --    -- (2nd alternate: 1 x 10^6 sec) 
+`A` -- 1 x 10^-18 s --    
 
-`B` -- 1 x 10^-17 s --   -- (2nd alternate: 1 x 10^8 sec) 
+`B` -- 1 x 10^-17 s --  
 
-`C` -- 1 x 10^-16 s --  -- (2nd alternate: 1 x 10^10 sec) 
+`C` -- 1 x 10^-16 s --  
 
-`D` -- 1 x 10^-15 s --   -- (2nd alternate: 1 x 10^12 sec) 
+`D` -- 1 x 10^-15 s -- 
 
-`E` -- 1 x 10^-14 s --    -- (2nd alternate: 1 x 10^14 sec) 
+`E` -- 1 x 10^-14 s -- 
 
-`F` -- 1 x 10^-13 s --    -- (2nd alternate: 1 x 10^16 sec) 
+`F` -- 1 x 10^-13 s --   
 
-`G` -- 1 x 10^-12 s --   -- (2nd alternate: 1 x 10^18 sec) 
+`G` -- 1 x 10^-12 s --   
 
-`H` -- 1 x 10^-11 s --  -- (2nd alternate: 1 x 10^20 sec) 
+`H` -- 1 x 10^-11 s --  
 
-`I` -- 1 x 10^-10 s --   -- (2nd alternate: 1 x 10^22 sec) 
+`I` -- 1 x 10^-10 s --  
 
-`J` -- 1 x 10^-9 s --   -- (2nd alternate: 1 x 10^24 sec) 
+`J` -- 1 x 10^-9 s --   ( 1 x10^-8 sec = 1 nanosecond )  -- (2nd alternate: 1 x 10^24 sec) 
 
-`K` -- 1 x 10^-8 s -- ( 1 x10^-8 sec using alternate method ) 
+`K` -- 1 x 10^-8 s -- ( 1 x10^-8 sec ) 
 
-`L` -- 1 x 10^-7 s --1e100 yrs  -- ( 1 x10^-7 sec using alternate method ) 
+`L` -- 1 x 10^-7 s --1e100 yrs  -- ( 1 x10^-7 sec ) 
 
-`M` -- 1 x 10^-6 s -- ( 1 x10^-6 sec using alternate method )
+`M` -- 1 x 10^-6 s -- ( 1 x10^-6 sec = 1 microsecond )
 
-`N` -- 1 x 10^-5 s -- ( 1 x10^-5 sec using alternate method )
+`N` -- 1 x 10^-5 s -- ( 1 x10^-5 sec )
 
-`O` -- 1 x 10^-4 s -- ( 1 x10^-4 sec using alternate method )
+`O` -- 1 x 10^-4 s -- ( 1 x10^-4 sec )
 
-`P` -- 1 x 10^-3 s -- ( 1 x10^-3 sec using alternate method )
+`P` -- 1 x 10^-3 s -- ( 1 x10^-3 sec = 1 millisecond )
 
-`Q` -- 1 x 10^-2 s -- ( 1 x10^-2 sec using alternate method ) 
+`Q` -- 1 x 10^-2 s -- ( 1 x10^-2 sec ) 
 
-`R` -- 1 x 10^-1 s -- ( 1 x10^-1 sec using alternate method )  
+`R` -- 1 x 10^-1 s -- ( 1 x10^-1 sec )  
 
-`S` -- 1 second ( 1 x10^0 sec using alternate method )  
+`S` -- 1 second ( 1 x10^0 sec )  
 
-`T` -- 10 seconds ( 1 x10^1 sec using alternate method ) 
+`T` -- 10 seconds ( 1 x10^1 sec) 
 
-`U` -- 100 seconds ( 1 x10^2 sec using alternate method ) 
+`U` -- 100 seconds ( 1 x10^2 sec = 1.67 minutes) 
 
-`V` -- 1000 seconds ( 1 x10^3 sec using alternate method = 16 minutes)  
+`V` -- 1000 seconds ( 1 x10^3 sec = 16 minutes)  
 
-`W` -- 10,000 seconds ( 1 x10^3 sec using alternate method = 2.7 hrs)  
+`W` -- 10,000 seconds ( 1 x10^3 sec = 2.7 hrs)  
 
-`X` -- 100,000 seconds ( 1 x10^4 sec using alternate method = 1 day)  
+`X` -- 100,000 seconds ( 1 x10^4 sec = 1 day)  
 
-`Y` -- 1,000,000 seconds ( 1 x10^5 sec using alternate method = 11 days) 
+`Y` -- 1,000,000 seconds ( 1 x10^5 sec = 11 days) 
 
-`Z` -- 10 million seconds ( 1 x10^6 sec using alternate method = 115 days) 
+`Z` -- 10 million seconds ( 1 x10^6 sec = 115 days) 
 
-`0` -- 100 million ( 1 x10^7 sec using alternate method = 1157 days = 3 yrs)  
+`0` -- 100 million ( 1 x10^7 sec = 1157 days = 3 yrs)  
 
-`1` -- 1 billion seconds ( 1 x10^8 sec using alternate method = 31 yrs )   
+`1` -- 1 billion seconds ( 1 x10^8 sec = 31 yrs )   
 
-`2` -- 10 billion seconds ( 1 x10^9 sec using alternate method = 317 yrs)  
+`2` -- 10 billion seconds ( 1 x10^9 sec = 317 yrs)  
 
-`3` -- 100 billion seconds ( 1 x10^10 sec using alternate method = 3170 yrs)  
+`3` -- 100 billion seconds ( 1 x10^10 sec = 3170 yrs)  
 
-`4` -- 1 trillion seconds ( 1 x10^11 sec using alternate method = 31700 yrs)   
+`4` -- 1 trillion seconds ( 1 x10^11 sec = 31700 yrs)   
 
-`5` -- 10 trillion seconds ( 1 x10^12 sec using alternate method = 317097 yrs)    
+`5` -- 10 trillion seconds ( 1 x10^12 sec = 317097 yrs)    
 
-`6` -- 100 trillion seconds ( 1 x10^13 sec using alternate method = 3.17 million yrs)  
+`6` -- 100 trillion seconds ( 1 x10^13 sec = 3.17 million yrs)  
 
-`7` -- 1 quadrillion seconds ( 1 x10^14 sec using alternate method = 31.7 million years)  
+`7` -- 1 quadrillion seconds ( 1 x10^14 sec = 31.7 million years)  
 
-`8` -- 10 quadrillion seconds ( 1 x10^15 sec using alternate method = 317 million years) 
+`8` -- 10 quadrillion seconds ( 1 x10^15 sec = 317 million years) 
 
-`9` -- 100 quadrillion seconds ( 1 x10^16 sec using alternate method = 3.17 billion yrs) 
+`9` -- 100 quadrillion seconds ( 1 x10^16 sec = 3.17 billion yrs) 
 
-`-` -- 1 quintillion seconds ( 1 x10^17 sec using alternate method = 31.7 billion years)   
+`-` -- 1 quintillion seconds ( 1 x10^17 sec = 31.7 billion years)   
 
-`.` -- 10 quintillion seconds ( 1 x10^18 sec using alternate method = 317 billion years)   
+`.` -- 10 quintillion seconds ( 1 x10^18 sec = 317 billion years)   
 
 
 example times (additive):  
