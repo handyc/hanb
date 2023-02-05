@@ -343,7 +343,7 @@ with the return value coded as '9-.'
 ``           3         4         5           ``  
 ``                6         7                ``  
 ``                     8                     ``  
-``                                           ``  
+``                                         ``  
 ``                     9-.                   ``  
 
 ``         a   b   c   d   e         ``  
@@ -354,8 +354,8 @@ with the return value coded as '9-.'
 ``   J   K   L   M   N   O   P   Q   ``  
 ``     R   S   T   U   V   W   X     ``  
 ``       Y   Z   0   1   2   3       ``  
-``         4   5   6   7   8         `` 
-``                                   `` 
+``         4   5   6   7   8         ``  
+``                                 ``  
 ``                  9-.              ``  
  
 therefore in the above board we could reference a cell
@@ -417,11 +417,42 @@ The smallest possible 'a' objects (quantum foam particles) are located
 in strings 64 characters long, listing universe cell, supercluster ...
 all the way to the position within 'b':
 
-``object container: #.-9876443210ZYXWVUTSRQPONMLKJIHGFEDCBAzyxwvutsrqponmlkjihgfedcb ``  
-``                  |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ``  
-``     object size: .-9876443210ZYXWVUTSRQPONMLKJIHGFEDCBAzyxwvutsrqponmlkjihgfedcba ``  
-``                  |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ``  
-`` object location: aaaaaKu3923sderfdewWddfglkhgre0lkheogr8ef978df7vpslfkvjshvkjhffd ``  
+``object container: #.-9876443210ZYXWVUTSRQPONMLKJIHGFEDCBAzyxwvutsrqponmlkjihgfedcb``  
+``                   |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ``  
+``     object size:  .-9876443210ZYXWVUTSRQPONMLKJIHGFEDCBAzyxwvutsrqponmlkjihgfedcba ``  
+``                   |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ``  
+`` object location:  aaaaaKu3923sderfdewWddfglkhgre0lkheogr8ef978df7vpslfkvjshvkjhffd ``  
+
+Size 'a' quantum particles can not be used as containers, and return a random 3-character string when queried.
+and conversely,
+Size '#' matrix does not exist in space and therefore does not have a position on a larger board.
+The matrix board is the basis for creating space, and contains one or more universes and any other smaller particles.
+
+Consider the following objects with their locations:
+
+Universe:
+
+``object container: #``  
+``                   |``  
+``     object size:  .``  
+``                   |``  
+`` object location:  a``  
+
+
+Person:
+``object container: #.-9876443210ZYXWVUTSRQPONML``  
+``                   ||||||||||||||||||||||||||||``  
+``     object size:  .-9876443210ZYXWVUTSRQPONMLK``  
+``                   ||||||||||||||||||||||||||||``  
+`` object location:  aaaaaKu3923sderfdewWddfglkhg``  
+
+Atom:
+``object container: #.-9876443210ZYXWVUTSRQPONMLKJIHGFEDCB``  
+``                   ||||||||||||||||||||||||||||||||||||||``  
+``     object size:  .-9876443210ZYXWVUTSRQPONMLKJIHGFEDCBA``  
+``                   ||||||||||||||||||||||||||||||||||||||``  
+`` object location:  aaaaaKu3923sderfdewWddfglkhgre0lkheogr``  
+
 
 
 
