@@ -700,7 +700,7 @@ one second
 317 billion yrs ^64 + 10 seconds 
 
 ``.:a:a:a:.:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:.:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:S``  
-317 billion yrs ^64 + 31.7 billion yrs ^60 + 31.7 billion yrs ^41 + 1 second 
+317 billion yrs ^64 + 317 billion yrs ^60 + 317 billion yrs ^41 + 1 second 
 
 ``.........``  
 2.853 trillion years
@@ -719,28 +719,14 @@ floating clock (64 chars):
 ``a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a``  
 
 
-alternate method of time using only a-zA-Z0-9-.  
-
-'.' used a separator so maximum value is '-' = 100 quadrillion seconds 
-
-``aaa.aaaaa.a.aa.aa.aaa.a.aaaa.aaa.aa.a.aaa.a.aa.aa.aaaa.aa.a.a.aa``  
-
-``uuu.ttttt.s.rr.qq.ppp.o.nnnn.mmm.ll.k.jjj.i.hh.gg.ffff.ee.d.c.bb``  
-
-``T.SSSSSSSS.RRR.QQQQQ.PPP.OOOOOOO.NN.MMMMM.LLLL.KKKKKKKKK.JJJ.III``    
-
-``T.SSSSSSSS.RRR.QQQQQ.PPP.OOOOOOO.NN.MMMMM.LLLLL.a.JJJ.III``    
-
-``0.Z.Y.X.W.V.U.T.SSSSSSSS.RRR.QQQQQ.PPP.OOOOOOO.NN.MMMMM.LLLL.a.JJJ.III``    
-
-
-the separator is not necessary if the time additions are provided in order (max 9 chars for each level):
-
-``.-9876543210ZYXWVUTSRQPONMLKJIHGFEDCBAzyxwvutsrqponmlkjihgfedcba``  
-
-
 
 ``-10ZYXWVUTSRQPONMLKJIHGFEDCBAzyxwvutsrqponmlkjihgfedcba``  
+
+``-10ZYXWVUTSRQPONMLKJIHGFEDCBAzyxwvutsrqponmlkjihgfedcba``  
+
+``-10ZYXWVUTSRQPONMLKJIHGFEDCBAzyxwvutsrqponmlkjihgfedcba``  
+
+
 
 
 # examples of location descriptions with situations, events and time durations:
