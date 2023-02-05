@@ -505,7 +505,7 @@ a Planck time particle equivalent to the amount of time taken for light to trave
 
 `a` -- ambiguous time particle  -- (1 x 10^-44 s is below real world Planck time of 5.391247(60)×10−44 s) 
 
-`b` -- Planck time particle -- 1 x 10^-43 s is above real world Planck time of 5.391247(60)×10−44 s
+`b` -- Planck time particle -- 1 x 10^-43 s is above real world Planck time of 5.391247×10−44 s
 
 `c` -- 1 x 10^-42 s 
 
