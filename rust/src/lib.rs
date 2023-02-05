@@ -114,6 +114,7 @@ pub fn eval_lines(
     Ok(navigator.clone())
 }
 
+/// Evaluates a single line of input as a command
 pub fn eval(
     navigator: &mut Navigator,
     line: &str,

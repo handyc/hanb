@@ -2,6 +2,11 @@ use std::{cmp::min, fmt};
 
 use crate::constants::{ALPHABET, BOARD_SIZE, DEFAULT_CELL_SIZE, SIZES};
 
+// Size index in the SIZE array
+pub fn size_index(size: char) -> usize {
+    SIZES.chars().position(|r| r == size).unwrap()
+}
+
 /// Compares two characters in the SIZE sequence. If a character index is greater than the other it
 /// is considered to be bigger.
 pub fn size_greater(a: char, b: char) -> bool {
@@ -104,6 +109,31 @@ impl Board {
         }
         let color = truncated_board.chars().skip(BOARD_SIZE).take(3).collect();
         Ok(Board { cells, color })
+    }
+
+    // Recursively apply the offset to the sizes of the inner cells.
+    pub fn resize_cells(&mut self, offset: i8) {
+        if offset == 0 {
+            return;
+        }
+        let mut new_cells = Vec::new();
+        for cell in &self.cells {
+            let mut new_cell = cell.clone();
+            let index = SIZES.find(cell.size).unwrap();
+            let new_index = index as i8 + offset;
+            if new_index < 0 {
+                new_cell.board = None;
+                new_cell.size = SIZES.chars().next().unwrap();
+                new_cells.push(new_cell);
+                continue;
+            }
+            new_cell.size = SIZES.chars().nth(new_index as usize).unwrap();
+            if let Some(board) = new_cell.board.as_mut() {
+                board.resize_cells(offset);
+            }
+            new_cells.push(new_cell);
+        }
+        self.cells = new_cells;
     }
 }
 
@@ -242,8 +272,8 @@ impl Navigator {
     }
 
     /// Sets the current board's cells to new values.
-    /// If any of the values are bigger than the current level they will be truncated to the
-    /// current level. Will also recursively truncate inner boards if they exist.
+    /// If any of the values are bigger than the current level they will be clamped to the
+    /// current level. Will also recursively resize inner boards by the same offset if they exist.
     pub fn set_board(&mut self, board: &str) -> Result<(), String> {
         let board = Board::new(board)?;
         let mut current_board = &mut self.root_board;
@@ -251,6 +281,8 @@ impl Navigator {
             current_board = current_board.cells[*cell].board.as_mut().unwrap();
         }
         for (i, cell) in board.cells.iter().enumerate() {
+            let offset =
+                size_index(cell.size) as i8 - size_index(current_board.cells[i].size) as i8;
             if size_smaller(cell.size, self.level) {
                 current_board.cells[i].size = cell.size;
             } else {
@@ -262,6 +294,11 @@ impl Navigator {
                     ));
                 }
                 current_board.cells[i].size = SIZES.chars().nth(index - 1).unwrap();
+            }
+            if current_board.cells[i].size == SIZES.chars().next().unwrap() {
+                current_board.cells[i].board = None;
+            } else if let Some(board) = current_board.cells[i].board.as_mut() {
+                board.resize_cells(offset);
             }
         }
         current_board.color = board.color;
