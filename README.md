@@ -502,7 +502,11 @@ therefore in the above board we could reference a cell
 through its related character
  
 there are 64 levels in hanb, which means a total of
-64^61 cells or with 3-character returns included, 64^64 combinations.
+61^64 cells or with 3-character returns included, 64^64 combinations.
+
+``[ total 'a' cells on board ] x [ total b boards on c] x [ total c boards on d ] x ... x [ . boards on # ]``  
+
+
 
 Every object can be referenced easily through the unique route to its
 specific board, with the string length increasing at each level
