@@ -37,24 +37,24 @@ the basis of the hanb system is a 61-cell hexagonal board
 ``                a         a                ``  
 ``                     a                     ``  
 
-``           a    a    a    a    a           ``
-``                                           ``
-``         a    a    a    a    a    a        `` 
-``                                           ``
-``      a    a    a    a    a    a    a      `` 
-``                                           ``
-``   a    a    a    a    a    a    a    a    `` 
-``                                           ``
-`` a    a    a    a    a    a    a    a    a ``  
-``                                           ``
-``   a    a    a    a    a    a    a    a    ``
-``                                           ``
-``      a    a    a    a    a    a    a      ``
-``                                           ``
-``         a    a    a    a    a    a        ``
-``                                           ``
-``           a    a    a    a    a           ``
-
+``           a    a    a    a    a           ``  
+``                                           ``  
+``         a    a    a    a    a    a        ``   
+``                                           ``  
+``      a    a    a    a    a    a    a      ``   
+``                                           ``  
+``   a    a    a    a    a    a    a    a    ``   
+``                                           ``  
+`` a    a    a    a    a    a    a    a    a ``    
+``                                           ``  
+``   a    a    a    a    a    a    a    a    ``  
+``                                           ``  
+``      a    a    a    a    a    a    a      ``  
+``                                           ``  
+``         a    a    a    a    a    a        ``  
+``                                           ``  
+``           a    a    a    a    a           ``  
+  
 
 
 
