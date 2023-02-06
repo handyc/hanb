@@ -645,9 +645,7 @@ Here, a time duration of 'a' is considered as "ambiguous time" and the unit 'b' 
 a Planck time particle equivalent to the amount of time taken for light to traverse one Planck length (spatial unit 'b').
 ( 1 x 10^-43 s, real world Planck time = 5.391247×10−44 s)
 
-(this duration map is currently underdoing major revisions, so there are some conflicting labels):
-
-`a` -- ambiguous time particle  -- (1 x 10^-44 s is below real world Planck time of 5.391247(60)×10−44 s) 
+`a` -- ambiguous time particle  -- (1 x 10^-44 s is below real world Planck time of 5.391247×10−44 s) 
 
 `b` -- Planck time particle -- 1 x 10^-43 s is above real world Planck time of 5.391247×10−44 s
 
@@ -786,10 +784,23 @@ example times (additive):
 
 ``.S`` 10 quintillion and one seconds  
 
-``.T`` 10 quintillion + 110 seconds 
+``.SS`` 10 quintillion and two seconds  
 
-``..`` 10 quintillion + 10 quintillion seconds  
+``.SSSSSSSSS`` 10 quintillion and nine seconds  
 
+``.T`` 10 quintillion and 10 seconds  
+
+``..`` 10 quintillion + 10 quintillion seconds = 600 billion yrs  
+
+``...`` 30 quintillion seconds = 1 trillion years
+`` = 3 seconds x 10^18 ``
+
+``....``  ten trillion yrs
+``.....`` 100 trillion yrs
+``......`` 1 quadrillion yrs
+``.......``  10 quadrillion yrs
+
+``.....................................................``  1 x 10^64 yrs
 
 
 example times (multiplicative):  
