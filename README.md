@@ -111,8 +111,54 @@ with quantum foam and '.' is a board containing a universe.
 
 We can use the values of cells on a board to represent objects of different
 sizes in this way, and interpret those cells as similar boards at smaller scales.
+The rotations of the hexagon of any hanb board are 90 degrees different from
+the cells of that board.
 
-Therefore we call 'a' a quantum foam particle and '.' a universe.
+
+``         t   7   t   8   2         ``  
+``       R   y   1   8   o   k       ``  
+``     m   A   1   H   C   r   0     ``  
+``   R   8   z   i   0   H   n   c   ``  
+`` V   Q   y   G   t   T   o   5   x ``  
+``   G   o   -   4   4   P   X   A   ``  
+``     4   N   R   K   0   N   D     ``  
+``       -   s   b   V   r   T       ``  
+``         8   f   J   M   t         ``   
+``                     |             ``  
+``                     |             ``  
+``                     t                     ``  
+``                v         v                ``  
+``           d         v         R           ``  
+``      j         v         v         b      ``  
+`` j         j         L         d         b ``  
+``      j         j         b         b      ``  
+`` j         L         L         L         b ``  
+``      j         L         L         h      ``  
+`` j         L         L         L         o ``  
+``      a         L         L         h      ``  
+`` j         L         L         e         h ``  
+``      L         L         L         b      ``  
+`` j         L         L         b         h ``  
+``      L         b         b         r      ``  
+``           b         b         f    |      ``  
+``                J         b         |      ``  
+``                     t              |      ``  
+``                                    /      ``  
+``                                   /       ``  
+``                                  /        ``  
+``         a   b   c   q   e       /         ``  
+``       q   a   q   a   a   f    /          ``  
+``     q   q   a   a   q   d   g             ``  
+``   q   q   q   i   j   e   q   h           ``  
+`` q   q   q   h   f   k   d   q   i         ``  
+``   q   p   q   g   l   q   q   j           ``  
+``     c   o   n   m   q   q   k             ``  
+``       q   q   b   q   r   l               ``  
+``         p   p   o   n   m                 `` 
+
+
+
+we call 'a' a quantum foam particle and '.' a universe.
 Values of 'a' particles are represented on 'b' size boards, and can group together
 to create 'b' particles. Each level of particle can combine with others of its level
 to form the next higher particle, and each level down to 'a' can be reduced
