@@ -98,7 +98,7 @@ Another way to read the same string results in the following board:
 ``         8   f   J   M   t         `` 
 
 The same characters are used as in the previous board, but the difference
-in rotation means that the relationships between cell values is now different.
+in rotation means that the relationships between cell values are now different.
 
 The main purpose of cell values is to indicate the presence
 and type of matter contained in a cell.
