@@ -81,14 +81,43 @@ the value of cell 0 is 't', and the value of cell 1 is '7'.
 
 
 The values of cells can be interpreted in a variety of ways.
+
+``t7t82Ry18okmA1HCr0R8zi0HncVQyGtTo5xGo-44PXA4NRK0ND-sbVrT8fJMt``  
+
+Another way to read the same string results in the following board:  
+
+
+``         t   7   t   8   2         ``  
+``       R   y   1   8   o   k       ``  
+``     m   A   1   H   C   r   0     ``  
+``   R   8   z   i   0   H   n   c   ``  
+`` V   Q   y   G   t   T   o   5   x ``  
+``   G   o   -   4   4   P   X   A   ``  
+``     4   N   R   K   0   N   D     ``  
+``       -   s   b   V   r   T       ``  
+``         8   f   J   M   t         `` 
+
+The same characters are used as in the previous board, but the difference
+in rotation means that the relationships between cell values is now different.
+
 The main purpose of cell values is to indicate the presence
-and type of matter contained in the cell.
+and type of matter contained in a cell.
+
+A hanb board is a map of the relationships between objects.
 
 Each board represents a finite space at a particular scale between 0 and 63,
 also represented by the above character set, such that 'a' is a board filled
 with quantum foam and '.' is a board containing a universe.
 
+We can use the values of cells on a board to represent objects of different
+sizes in this way, and interpret those cells as similar boards at smaller scales.
+
 Therefore we call 'a' a quantum foam particle and '.' a universe.
+Values of 'a' particles are represented on 'b' size boards, and can group together
+to create 'b' particles. Each level of particle can combine with others of its level
+to form the next higher particle, and each level down to 'a' can be reduced
+to a board of values one level below its own. Queries on 'a' particles return a
+random value.
 
 Multiple universes can be transmitted as a universe matrix #:
 
