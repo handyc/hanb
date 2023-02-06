@@ -153,7 +153,7 @@ the cells of that board.
 `` q   q   q   h   f   k   d   q   i         ``  
 ``   q   p   q   g   l   q   q   j           ``  
 ``     c   o   n   m   q   q   k             ``  
-``       q   q   b   q   r   l               ``  
+``       q   q   b   q   a   l               ``  
 ``         p   p   o   n   m                 `` 
 
 
