@@ -55,7 +55,7 @@ boards can be written in a compressed form as 61-character strings, e.g.:
 
 ``aYfqpEOK1s5gtDE-ocemVoUH45Ef88Pp9POLKF7cH97WADGBa2dBC6kL6wljU``  
 
-``t7t82Ry18o kmA1H Cr0R 8zi0H ncVQ yGtTo 5xGo -44PX A4NR K0ND- sbVr T8fJMt``  
+``t7t82Ry18okmA1HCr0R8zi0HncVQyGtTo5xGo-44PXA4NRK0ND-sbVrT8fJMt``  
 
 Each character in the string corresponds to the value of a single cell on the board.
 e.g. in the string ``t7t82Ry18okmA1HCr0R8zi0HncVQyGtTo5xGo-44PXA4NRK0ND-sbVrT8fJMt``  
