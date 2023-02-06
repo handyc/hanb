@@ -795,14 +795,6 @@ example times (additive):
 ``...`` 30 quintillion seconds = 1 trillion years
 `` = 3 seconds x 10^18 ``
 
-``....``  ten trillion yrs
-``.....`` 100 trillion yrs
-``......`` 1 quadrillion yrs
-``.......``  10 quadrillion yrs
-
-``.....................................................``  1 x 10^64 yrs
-
-
 example times (multiplicative):  
 
 ``:S``  one second
@@ -820,7 +812,6 @@ example times (multiplicative):
 ``:.T`` 10 quintillion x 110 seconds 
 
 ``:..`` 10 quintillion x 10 quintillion seconds  
-
 
 full clock:
 ``a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a:a``  
