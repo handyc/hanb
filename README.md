@@ -166,7 +166,7 @@ the cells of that board.
 ``                     |             ``  
 ``                     t                     ``  
 ``                v         v                ``  
-``           d         v         R           ``  
+``           d         v         s           ``  
 ``      j         v         v         b      ``  
 `` j         j         L         d         b ``  
 ``      j         j         b         b      ``  
