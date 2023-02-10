@@ -872,7 +872,8 @@ floating clock (64 chars):
 
 ``-10ZYXWVUTSRQPONMLKJIHGFEDCBAzyxwvutsrqponmlkjihgfedcba``  
 
-
+hanb condensed 64 character time string:
+``aaabbb....BBBBfgggghhhhhHHHHH45yy5555555554444455555555``  
 
 
 # examples of location descriptions with situations, events and time durations:
