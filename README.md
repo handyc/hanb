@@ -1042,6 +1042,23 @@ allowing for 64^64 different character filters
 
 these filters take in one hanb character and output one hanb character
 
+the form of the truth table can be reduced to 64-character form as:
+
+
+``I | R ``  
+``--|---``  
+``a | 0 ``  
+``b | 0 ``  
+``c | 0 ``  
+``d | 0 ``  
+``...   ``  
+``9 | 0 ``  
+``- | 0 ``  
+``. | 0 ``  
+
+the truth tables and character mappings are therefore interchangeable
+
+
 # Implementing hanb
 # physical
 
