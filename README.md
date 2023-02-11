@@ -967,10 +967,18 @@ planet  -- size R
 # 64 character truth tables
 
 each hanb character string is 64 characters long
-a truth table operating on 6 boolean values contains 64 possible output values (2^6)
-a hanb characters represents a 6 bit value (2^6)
-so we can use hanb 64 character strings as truth tables for 6 bits at once
-for all possible operators on 6 inputs
+
+a truth table operating on 2 boolean values contains 16 possible output values (2^(2^2))
+
+a truth table operating on 6 boolean values:
+
+``A B C D E F | R ``  
+``------------|---``  
+``0 0 0 0 0 0 | 0 ``  
+``0 0 0 0 0 1 | 0 ``  
+``0 0 0 0 1 0 | 0 ``  
+``0 0 0 0 1 1 | 0 ``  
+
 
 ``0   000000  a    1   000001  b    2   000010  c    3   000011  d ``  
 ``4   000100  e    5   000101  f    6   000110  g    7   000111  h ``  
