@@ -932,6 +932,16 @@ city  -- size O
 continent  -- size Q  
 planet  -- size R  
 
+# 16 truth tables
+
+``A B | O ``
+``----|---``
+``0 0 | O ``
+``0 1 | O ``
+``1 0 | O ``
+``1 1 | 1 ``
+
+
 # 64 character truth tables
 
 each hanb character string is 64 characters long
