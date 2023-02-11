@@ -934,6 +934,8 @@ planet  -- size R
 
 # 16 truth tables
 
+`` all possible logical relationships between boolean values A and B ``  
+
 ``A B | R     A B | R     A B | R     A B | R ``  
 ``----|---    ----|---    ----|---    ----|---``  
 ``0 0 | 0     0 0 | 0     0 0 | 0     0 0 | 0 ``  
