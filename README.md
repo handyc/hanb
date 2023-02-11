@@ -968,9 +968,12 @@ planet  -- size R
 
 each hanb character string is 64 characters long
 
+
+a truth table operating on 2 boolean values contains 4 output values (2^2)
+
 a truth table operating on 2 boolean values contains 16 possible output values (2^(2^2))
 
-a truth table operating on 6 boolean values:
+a truth table operating on 6 boolean values contains 64 output values (2^6):
 
 ``A B C D E F | R ``  
 ``------------|---``  
@@ -983,6 +986,7 @@ a truth table operating on 6 boolean values:
 ``1 1 1 1 1 0 | 0 ``  
 ``1 1 1 1 1 1 | 0 ``  
 
+a truth table operating on 6 boolean values contains 1.845 x 10^19 possible output values 2^(2^6)
 
 
 ``0   000000  a    1   000001  b    2   000010  c    3   000011  d ``  
