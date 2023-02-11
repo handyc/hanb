@@ -1030,6 +1030,8 @@ therefore each hanb character can represent 6 separate function outputs in a str
 each of these 6 separate function outputs can be applied to a specific bit of an input character,
 allowing for 64^64 different character filters
 
+these filters take in one hanb character and output one hanb character
+
 # Implementing hanb
 # physical
 
