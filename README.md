@@ -964,16 +964,30 @@ planet  -- size R
 ``1 0 | 0     1 0 | 0     1 0 | 1     1 0 | 1 ``  
 ``1 1 | 0     1 1 | 1     1 1 | 0     1 1 | 1 ``  
 
+Since the inputs are always the same, the tables differ only in the single bit
+output they have for each input pair:
+
+
+``| R  | R  | R  | R  | R  | R  | R  | R  | R  | R  | R  | R  | R  | R  | R  | R ``  
+``|--- |--- |--- |--- |--  |--- |--- |--- |--- |--- |--- |--- |--  |--- |--- |---``  
+``| 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 1  | 1  | 1  | 1  | 1  | 1  | 1  | 1 ``  
+``| 0  | 0  | 0  | 0  | 1  | 1  | 1  | 1  | 0  | 0  | 0  | 0  | 1  | 1  | 1  | 1 ``  
+``| 0  | 0  | 1  | 1  | 0  | 0  | 1  | 1  | 0  | 0  | 1  | 1  | 0  | 0  | 1  | 1 ``  
+``| 0  | 1  | 0  | 1  | 0  | 1  | 0  | 1  | 0  | 1  | 0  | 1  | 0  | 1  | 0  | 1 ``  
+`` ``  
+
+
 # 64 character truth tables
 
 each hanb character string is 64 characters long
 
 
 a truth table operating on 2 boolean values contains 4 output values (2^2)
-
 a truth table operating on 2 boolean values contains 16 possible output values (2^(2^2))
 
-a truth table operating on 6 boolean values contains 64 output values (2^6):
+a truth table operating on 6 boolean values contains 64 output values (2^6)
+a truth table operating on 6 boolean values contains 1.845 x 10^19 possible output values 2^(2^6)
+
 
 ``A B C D E F | R ``  
 ``------------|---``  
@@ -986,8 +1000,11 @@ a truth table operating on 6 boolean values contains 64 output values (2^6):
 ``1 1 1 1 1 0 | 0 ``  
 ``1 1 1 1 1 1 | 0 ``  
 
-a truth table operating on 6 boolean values contains 1.845 x 10^19 possible output values 2^(2^6)
+these values can be rewritten as a 64-digit string: 0000000000000000000000000000000000000000000000000000000000000000 
 
+6 strings combined can be written as sequences of 6 bits: {0,0,0,0,0,0}, {0,0,0,0,0,0}, {0,0,0,0,0,0}, ... {0,0,0,0,0,0} 
+
+a sequence of 6 bits can be represented by a single hanb character:
 
 ``0   000000  a    1   000001  b    2   000010  c    3   000011  d ``  
 ``4   000100  e    5   000101  f    6   000110  g    7   000111  h ``  
@@ -1005,6 +1022,10 @@ a truth table operating on 6 boolean values contains 1.845 x 10^19 possible outp
 ``52  110100  0   53   110101  1   54   110110  2   55   110111 56 ``  
 ``56  111000 57   57   111001  5   58   111010  6   59   111011  7 ``  
 ``60  111100  8   61   111101  9   62   111110  -   63   111111  . ``  
+
+therefore each hanb character can represent 6 separate function outputs in a string of 64 characters:
+
+``Asd45dldkjhgkdljhw44hsh444dsSSWGGTTEEE55598989jlcFFFFFsflksjflkj``  
 
 
 # Implementing hanb
