@@ -3,7 +3,7 @@
 <title>hanb PHP</title>
 </head>
 <body>
-<?php echo '<p>
+<?php echo '<pre>
                     a                    
                a         a               
           a         a         a          
@@ -21,7 +21,7 @@ a         a         a         a         a
           a         a         a          
                a         a               
                     a                   
-</p>';   
+</pre>';   
   ?>
 </body>
 </html>
