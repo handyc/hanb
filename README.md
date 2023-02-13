@@ -1165,9 +1165,14 @@ sample character sets for each board size:
 `` d  -- abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ ``  
 `` e  -- abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ ``  
 `` f  -- abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ ``  
-`` g  -- abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ ``  
+`` g  -- abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ `` 
 
+`` F  -- abcdefghijklmnopqrstuvwxyz🦠🦠🦠🦠🦠🦠🦠🦠🦠🦠🦠🦠🦠🦠🦠🦠QRSTUVWXYZ `` 
 
+`` L  -- 🌱🪴🌲🌳🌴🌵🌾🌿☘️🍀🍁🍂🍃🌷🌼🌻🌺🥀🌹🏵️🪷💮🌸💐🚗🚗🚗🚌🚓🏍️🚗🚗🚗🚗🚗🚗🦠🪱🪰🦟🦂🕸️🕷️🪳🦗🐞🪲🐝🐜🐛🦋🐌 ``
+`` M  -- 🚗🚌🚓🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚌🚓🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗 ``
+`` N  -- 🚗🚌🚓🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚌🚓🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗 ``
+`` O  -- 🧱🪨🪵🏛️🛖🏘️🏚️🏠🏡🏢🏣🏤🏥🏦🏫🏪🏨🏩🏗️🏟️🏬🏭🏰🏯⛪🛕💒🗼🗽🧱🪨🪵🏛️🛖🏘️🏚️🏠🏡🏢🏣🏤🏥🏦🏫🏪🏨🏩🏗️🏟️🏬🏭🏰🏯⛪🛕💒🗼🗽 `` 
 
 
 # genetic hanb
