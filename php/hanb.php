@@ -21,6 +21,17 @@ a         a         a         a         a
           a         a         a          
                a         a               
                     a                   
+</pre>
+<pre>
+        a   a   a   a   a        
+      a   a   a   a   a   a      
+    a   a   a   a   a   a   a    
+  a   a   a   a   a   a   a   a  
+a   a   a   a   a   a   a   a   a
+  a   a   a   a   a   a   a   a  
+    a   a   a   a   a   a   a    
+      a   a   a   a   a   a      
+        a   a   a   a   a        
 </pre>';   
   ?>
 </body>
