@@ -3,6 +3,25 @@
 <title>hanb PHP</title>
 </head>
 <body>
-<?php echo '<p>hanb</p>'; ?>
+<?php echo '<p>
+                    a                    
+               a         a               
+          a         a         a          
+     a         a         a         a     
+a         a         a         a         a
+     a         a         a         a     
+a         a         a         a         a
+     a         a         a         a     
+a         a         a         a         a
+     a         a         a         a     
+a         a         a         a         a
+     a         a         a         a     
+a         a         a         a         a
+     a         a         a         a     
+          a         a         a          
+               a         a               
+                    a                   
+</p>';   
+  ?>
 </body>
 </html>
