@@ -2,6 +2,9 @@ on:
   push:
     paths:
       - rust/**
+      - docker/rust/**
+      - .github/**
+
 
 name: Clippy check
 env:
@@ -43,6 +46,6 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           context: .
+          file: docker/rust/Dockerfile
+          tags: mattfly/hanb:latest,mattfly/hanb:${{ github.sha }}
           push: true
-          file: docker/Dockerfile
-          tags: ${{ github.sha }}
