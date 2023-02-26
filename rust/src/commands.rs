@@ -425,4 +425,27 @@ pub const COMMANDS: &[Command] = &[
         repl_only: true,
         action: |_cmd, _navigator, _args| Err("Implement this from repl".to_string()),
     },
+    Command {
+        command: "quit",
+        short: "quit",
+        help: "Quits from the repl",
+        args: &[],
+        stdout: false,
+        repl_only: true,
+        action: |_cmd, _navigator, args| {
+            let arglist = args.split(' ').collect::<Vec<&str>>();
+            let filename = arglist.first().unwrap().to_string();
+
+            // Script is all strings in arguments after file name
+            let script = arglist[1..].join(" ");
+            let mut file = File::create(&filename);
+            match file {
+                Ok(ref mut file) => match file.write_all(script.as_bytes()) {
+                    Ok(_) => Ok(format!("Script {filename} saved")),
+                    Err(err) => Err(format!("Error saving script: {err}")),
+                },
+                Err(e) => Err(format!("Error saving script: {e}")),
+            }
+        },
+    },
 ];

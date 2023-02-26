@@ -165,6 +165,10 @@ pub fn eval(
                         Err("Failed to import".to_string())
                     }
                 }
+                "quit" => {
+                    eprintln!("exiting...");
+                    std::process::exit(0);
+                }
                 _ => (cmd.action)(cmd, navigator, &args),
             };
             match result {
