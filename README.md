@@ -404,9 +404,9 @@ large dynamic spaces in limited memory
 
 `P` -- province (100 km) 
 
-`Q` -- continent (1 Mm) 
+`Q` -- kingdom / continent (small) (1 Mm) 
 
-`R` -- planet (10 Mm)  
+`R` -- region (large continent) / planet (folded) (10 Mm)  
 
 `S` -- planet-moon system (100 Mm) (light second = 2.998e+8 m)
 
