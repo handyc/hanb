@@ -196,7 +196,7 @@ the cells of that board.
 
 
 
-we call 'a' a quantum foam particle and '.' a universe.
+We call 'a' a quantum foam particle and '.' a universe.
 Values of 'a' particles are represented on 'b' size boards, and can group together
 to create 'b' particles. Each level of particle can combine with others of its level
 to form the next higher particle, and each level down to 'a' can be reduced
