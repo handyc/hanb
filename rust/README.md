@@ -80,7 +80,7 @@ That file contains some info and instructions about the query language.
 ## Hanb explored maps
 Hanb universes can be serialized to explored maps. Check `examples/example.hsit`. You can save explored maps from the repl with `save` and load one with `load`. They store the state of the entire universe.
 
-This is basically a declarative language for hanb.
+This is basically a declarative language for Hanb.
 
 ## Palettes 
 Not implemented
