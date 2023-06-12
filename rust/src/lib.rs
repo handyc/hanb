@@ -184,6 +184,6 @@ pub fn eval(
         }
     }
     Err(format!(
-        "Command {command} not found. Use 'help' to see available commands."
+        "Command '{command}' not found. Use 'help' to see available commands."
     ))
 }
