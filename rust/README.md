@@ -50,7 +50,7 @@ Hanb help:
   down | d  [cell: int = 0] -> Move down one level
   board | b  [board: string = .] -> Set the current board
   save | s  [filename: string = hanb.hsit] -> Saves the current explored map to a file
-  load | l  [filename: string = hanb.hsit] [Level: string = .] -> Load a saved explored map from a file
+  load | l  [filename: string = hanb.hsit] [Level: string = .] -> Loads a saved explored map from a file
   export | e  [script: string = script.hanb] -> Export the current repl history as a hanb script
   import | i  [script: string = script.hanb] -> Import a hanb script and execute it into this repl overwriting t
 he current navigator

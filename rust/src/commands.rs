@@ -363,7 +363,7 @@ pub const COMMANDS: &[Command] = &[
     Command {
         command: "load",
         short: "l",
-        help: "Load a saved map from a file",
+        help: "Loads a saved map from a file",
         args: &[CommonArgs::Filename.value(), CommonArgs::Level.value()],
         stdout: false,
         repl_only: false,
@@ -395,7 +395,7 @@ pub const COMMANDS: &[Command] = &[
     Command {
         command: "export",
         short: "e",
-        help: "Export the current repl history as a hanb script",
+        help: "Exports the current repl history as a hanb script",
         args: &[CommonArgs::ScriptName.value()],
         stdout: false,
         repl_only: true,
@@ -419,7 +419,7 @@ pub const COMMANDS: &[Command] = &[
         command: "import",
         short: "i",
         help:
-            "Import a hanb script and execute it into this repl overwriting the current navigator",
+            "Imports a hanb script and execute it into this repl overwriting the current navigator",
         args: &[CommonArgs::ScriptName.value()],
         stdout: false,
         repl_only: true,
