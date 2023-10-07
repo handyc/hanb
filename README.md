@@ -741,37 +741,37 @@ a Planck time particle equivalent to the amount of time taken for light to trave
 
 `V` -- 1000 seconds ( 1 x10^3 sec = 16 minutes)  
 
-`W` -- 10,000 seconds ( 1 x10^3 sec = 2.7 hrs)  
+`W` -- 10,000 seconds ( 1 x10^4 sec = 2.7 hrs)  
 
-`X` -- 100,000 seconds ( 1 x10^4 sec = 1 day)  
+`X` -- 100,000 seconds ( 1 x10^5 sec = 1 day)  
 
-`Y` -- 1,000,000 seconds ( 1 x10^5 sec = 11 days) 
+`Y` -- 1,000,000 seconds ( 1 x10^6 sec = 11 days) 
 
-`Z` -- 10 million seconds ( 1 x10^6 sec = 115 days) 
+`Z` -- 10 million seconds ( 1 x10^7 sec = 115 days) 
 
-`0` -- 100 million ( 1 x10^7 sec = 1157 days = 3 yrs)  
+`0` -- 100 million ( 1 x10^8 sec = 1157 days = 3 yrs)  
 
-`1` -- 1 billion seconds ( 1 x10^8 sec = 31 yrs )   
+`1` -- 1 billion seconds ( 1 x10^9 sec = 31 yrs )   
 
-`2` -- 10 billion seconds ( 1 x10^9 sec = 317 yrs)  
+`2` -- 10 billion seconds ( 1 x10^10 sec = 317 yrs)  
 
-`3` -- 100 billion seconds ( 1 x10^10 sec = 3170 yrs)  
+`3` -- 100 billion seconds ( 1 x10^11 sec = 3170 yrs)  
 
-`4` -- 1 trillion seconds ( 1 x10^11 sec = 31700 yrs)   
+`4` -- 1 trillion seconds ( 1 x10^12 sec = 31700 yrs)   
 
-`5` -- 10 trillion seconds ( 1 x10^12 sec = 317097 yrs)    
+`5` -- 10 trillion seconds ( 1 x10^13 sec = 317097 yrs)    
 
-`6` -- 100 trillion seconds ( 1 x10^13 sec = 3.17 million yrs)  
+`6` -- 100 trillion seconds ( 1 x10^14 sec = 3.17 million yrs)  
 
-`7` -- 1 quadrillion seconds ( 1 x10^14 sec = 31.7 million years)  
+`7` -- 1 quadrillion seconds ( 1 x10^15 sec = 31.7 million years)  
 
-`8` -- 10 quadrillion seconds ( 1 x10^15 sec = 317 million years) 
+`8` -- 10 quadrillion seconds ( 1 x10^16 sec = 317 million years) 
 
-`9` -- 100 quadrillion seconds ( 1 x10^16 sec = 3.17 billion yrs) 
+`9` -- 100 quadrillion seconds ( 1 x10^17 sec = 3.17 billion yrs) 
 
-`-` -- 1 quintillion seconds ( 1 x10^17 sec = 31.7 billion years)   
+`-` -- 1 quintillion seconds ( 1 x10^18 sec = 31.7 billion years)   
 
-`.` -- 10 quintillion seconds ( 1 x10^18 sec = 317 billion years)   
+`.` -- 10 quintillion seconds ( 1 x10^19 sec = 317 billion years)   
 
 
 example times (additive):  
