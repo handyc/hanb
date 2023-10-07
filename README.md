@@ -1561,6 +1561,8 @@ abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-.
 
 [hanb Rust implementation](https://github.com/matheusfillipe/hanb) by Matheus Fillipe
 
+[hanb HTML implementation on SDF](https://handyc.sdf.org) handyc SDF site
+
 wooden hanb board by John Fisherkeller
 ![wooden hanb board](images/hex_board.jpg)
 
