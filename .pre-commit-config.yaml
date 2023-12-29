@@ -1,0 +1,23 @@
+-   repo: local
+    hooks:
+    -   id: fmt
+        name : fmt
+        language: system
+        entry: bash -c 'cd rust && cargo fmt'
+        files: \.rs$
+        args: []
+
+    -   id: cargo-check
+        name: cargo check
+        description: Check the package for errors.
+        entry: bash -c 'cd rust && cargo check'
+        language: system
+        files: \.rs$
+        pass_filenames: false
+
+    -   id: clippy
+        name : clippy
+        language: system
+        entry: bash -c 'cd rust && cargo clippy -- -D warnings'
+        files: \.rs$
+        pass_filenames: false

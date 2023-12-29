@@ -1,0 +1,50 @@
+Level: #      Path: 
+
+           A   D   B   D   D            
+         B   F   J   B   D   F          
+       J   K   S   J   F   K   J        
+     S   B   K   J   B   F   J   D      
+   K   J   S   B   D   J   F   D   J    
+     a   a   a   a   a   a   a   a      
+       a   a   a   a   a   a   a        
+         a   a   a   a   a   a          
+           a   a   a   a   a            
+
+Level: D      Path: 4
+
+           A   A   A   A   A            
+         B   C   A   a   a   a          
+       a   a   a   a   a   a   a        
+     a   a   a   a   a   a   a   a      
+   a   a   a   a   a   a   a   a   a    
+     a   a   a   a   a   a   a   a      
+       a   a   a   a   a   a   a        
+         a   a   a   a   a   a          
+           a   a   a   a   a            
+
+Level: D      Path: 4
+
+           C   C   c   a   a            
+         a   a   a   a   a   a          
+       a   a   a   a   a   a   a        
+     a   a   a   a   a   a   a   a      
+   a   a   a   a   a   a   a   a   a    
+     a   a   a   a   a   a   a   a      
+       a   a   a   a   a   a   a        
+         a   a   a   a   a   a          
+           a   a   a   a   a            
+
+Level: #      Path: 
+
+           x   .   .   .   .            
+         .   .   .   .   .   .          
+       .   .   .   .   .   .   .        
+     .   .   .   .   .   .   .   .      
+   .   .   .   .   .   x   a   a   a    
+     a   a   a   a   a   a   a   a      
+       a   a   a   a   a   a   a        
+         a   a   a   a   a   a          
+           a   a   a   a   a            
+
+x..............................xaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
