@@ -1,0 +1,27 @@
+[package]
+name = "hanb"
+version = "0.0.2"
+edition = "2021"
+license = "MIT"
+repository = "https://github.com/handyc/hanb" 
+documentation = "https://github.com/handyc/hanb" 
+readme = "README.md"
+keywords = ["hanb"]
+categories = ["hanb"]
+description = "hanb is a system for representing objects in space at different sizes, using a minimal amount of data"
+authors = ["mattf <matheusfillipeag@gmail.com>"]
+
+[dependencies]
+assert_cmd = "2.0.8"
+clap = { version = "4.1.0", features = ["derive"] }
+rustyline = "10.0.0"
+
+
+[lib]
+name = "hanb"
+path = "src/lib.rs"
+
+[[bin]]
+name = "hanb"
+path = "src/main.rs"
+

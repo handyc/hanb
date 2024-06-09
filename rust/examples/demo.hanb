@@ -1,0 +1,15 @@
+ // This is a comment
+board ADBDDBFJBDFJKSJFKJSBKJBFJDKJSBDJFDJ // This is how you define the board.
+print // prints the current board
+down 4 // Enters into cell 4
+board AAAAABCA  // We are currently in level D and the cells can't be bigger than that
+print
+down 60
+board     .      c
+print
+up
+down 40
+down 39
+board x..............................x
+print
+printseq
