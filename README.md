@@ -1178,6 +1178,13 @@ sample character sets for each board size:
 
 # genetic hanb
 
+coming soon
+
+
+# quantum hanb
+
+coming soon using IBM Quantum
+
 # storage benefits  
 
 one board is 61 cells x 1 byte / cell = 61 bytes  
