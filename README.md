@@ -1135,7 +1135,7 @@ Within each 64x64 = 4096 table there are 64 possibilities for each character,
 
 For each of the 16 boolean functions there should be one or more analogous hanb functions:
 
-"AND"?
+"identity function"?
 
 ``   abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZa123456789-.``  
 `` a aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa``  
