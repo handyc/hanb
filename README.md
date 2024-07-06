@@ -1127,6 +1127,14 @@ a table can be created of size 64 x 64 representing the output character for any
 `` . 0000000000000000000000000000000000000000000000000000000000000000``  
 
 
+Within each 64x64 = 4096 table there are 64 possibilities for each character,
+
+4096x64=262,144 which is the total number of possible unique two character functions
+
+(compare with boolean 16 total functions)
+
+For each of the 16 boolean functions there should be one or more analogous hanb functions:
+
 "AND"?
 
 ``   abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZa123456789-.``  
@@ -1194,6 +1202,27 @@ a table can be created of size 64 x 64 representing the output character for any
 `` 9 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa9aa``  
 `` - aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa-a``  
 `` . aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.`` 
+
+
+```
+0 null (false)
+1 AND
+2 inhibition A AND NOT-B
+3 transfer (A)
+4 inhibition B AND NOT-A
+5 transfer (B)
+6 XOR
+7 OR
+8 NOR
+9 equivalence (XNOR), iff A then B
+10 NOT-B
+11 implication (if B then A)
+12 NOT-A
+13 implication (if A then B)
+14 NAND
+15 identity (true)
+```
+
 
 # Implementing hanb
 # physical
