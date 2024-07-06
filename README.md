@@ -1126,6 +1126,75 @@ a table can be created of size 64 x 64 representing the output character for any
 `` - 0000000000000000000000000000000000000000000000000000000000000000``  
 `` . 0000000000000000000000000000000000000000000000000000000000000000``  
 
+
+"AND"?
+
+``   abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZa123456789-.``  
+`` a aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa``  
+`` b abaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa``  
+`` c aacaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa``  
+`` d aaadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa``  
+`` e aaaaeaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa``  
+`` f aaaaafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa``  
+`` g aaaaaagaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa``  
+`` h aaaaaaahaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa``  
+`` i aaaaaaaaiaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa``  
+`` j aaaaaaaaajaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa``  
+`` k aaaaaaaaaakaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa``  
+`` l aaaaaaaaaaalaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa``  
+`` m aaaaaaaaaaaamaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa``  
+`` n aaaaaaaaaaaaanaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa``  
+`` o aaaaaaaaaaaaaaoaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa``  
+`` p aaaaaaaaaaaaaaapaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa``  
+`` q aaaaaaaaaaaaaaaaqaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa``  
+`` r aaaaaaaaaaaaaaaaaraaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa``  
+`` s aaaaaaaaaaaaaaaaaasaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa``  
+`` t aaaaaaaaaaaaaaaaaaataaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa``  
+`` u aaaaaaaaaaaaaaaaaaaauaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa``  
+`` v aaaaaaaaaaaaaaaaaaaaavaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa``  
+`` w aaaaaaaaaaaaaaaaaaaaaawaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa``  
+`` x aaaaaaaaaaaaaaaaaaaaaaaxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa``  
+`` y aaaaaaaaaaaaaaaaaaaaaaaayaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa``  
+`` z aaaaaaaaaaaaaaaaaaaaaaaaazaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa``  
+`` A aaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa``  
+`` B aaaaaaaaaaaaaaaaaaaaaaaaaaaBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa``  
+`` C aaaaaaaaaaaaaaaaaaaaaaaaaaaaCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa``  
+`` D aaaaaaaaaaaaaaaaaaaaaaaaaaaaaDaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa``  
+`` E aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa``  
+`` F aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa``  
+`` G aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa``  
+`` H aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa``  
+`` I aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaIaaaaaaaaaaaaaaaaaaaaaaaaaaaaa``  
+`` J aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaJaaaaaaaaaaaaaaaaaaaaaaaaaaaa``  
+`` K aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaKaaaaaaaaaaaaaaaaaaaaaaaaaaa``  
+`` L aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaLaaaaaaaaaaaaaaaaaaaaaaaaaa``  
+`` M aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaMaaaaaaaaaaaaaaaaaaaaaaaaa``  
+`` N aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaNaaaaaaaaaaaaaaaaaaaaaaaa``  
+`` O aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaOaaaaaaaaaaaaaaaaaaaaaaa``  
+`` P aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaPaaaaaaaaaaaaaaaaaaaaaa``  
+`` Q aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaQaaaaaaaaaaaaaaaaaaaaa``  
+`` R aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaRaaaaaaaaaaaaaaaaaaaa``  
+`` S aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaSaaaaaaaaaaaaaaaaaaa``  
+`` T aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaTaaaaaaaaaaaaaaaaaa``  
+`` U aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaUaaaaaaaaaaaaaaaaa``  
+`` V aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaVaaaaaaaaaaaaaaaa``  
+`` W aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaWaaaaaaaaaaaaaaa``  
+`` X aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaXaaaaaaaaaaaaaa``  
+`` Y aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaYaaaaaaaaaaaaa``  
+`` Z aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaZaaaaaaaaaaaa``  
+`` a aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa0aaaaaaaaaaa``  
+`` 1 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa1aaaaaaaaaa``  
+`` 2 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa2aaaaaaaaa``  
+`` 3 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa3aaaaaaaa``  
+`` 4 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa4aaaaaaa``  
+`` 5 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa5aaaaaa``  
+`` 6 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa6aaaaa``  
+`` 7 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa7aaaa``  
+`` 8 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa8aaa``  
+`` 9 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa9aa``  
+`` - aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa-a``  
+`` . aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.`` 
+
 # Implementing hanb
 # physical
 
