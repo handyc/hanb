@@ -1707,4 +1707,9 @@ Q. I have a suggestion for improving hanb. How can I contribute to hanb?
 A. Feedback is always appreciated. Use a pull request on this repo to send your suggestion(s) about improving hanb.
 
 
+Q. Why does the actual universe have properties that are missing in hanb? / I think hanb is broken because it doesn't reliably model the actual universe.
+
+A. This project is called a "toy universe" because it is inspired by the actual universe but is not intended to be a perfect model of reality.
+
+
 
