@@ -416,27 +416,27 @@ large dynamic spaces in limited memory
 
 `V` -- 100 Gm (distance to Venus) 
 
-`W` -- 1 Tm (1 lighthour = 1,079e+12m) 
+`W` -- 1 Tm (1 lighthour = 1.079e+12m) 
 
-`X` -- 10 Tm (complete star system) (light day = 2,59e+13)  
+`X` -- 10 Tm (complete star system) (light day = 2.59e+13)  
 
-`Y` -- 100 Tm (1 light week = 1,813e+14)
+`Y` -- 100 Tm (1 light week = 1.813e+14)
 
-`Z` -- 1 Pm (about 1 light month, 7,771e+14)
+`Z` -- 1 Pm (about 1 light month, 7.771e+14)
 
-`0` -- 10^16 m (about 1 lightyear, 9,461e+15 m)  
+`0` -- 10^16 m (about 1 lightyear, 9.461e+15 m)  
 
 `1` -- 10^17 (10 lightyears = 9.461e+16 m)
 
 `2` -- 1 Em (100 lightyears = 9.461e+17)
 
-`3` -- 10 Em (1000 lightyears = 9,461e+18) 
+`3` -- 10 Em (1000 lightyears = 9.461e+18) 
 
 `4` -- 100 Em small galaxy (10,000 lightyears = 9.4607e+19)
 
 `5` -- 1 Zm small galaxy (100,000 lightyears = 9.46073e+20m)
 
-`6` -- galaxy (1 million lightywears = 9.46073e+21)  
+`6` -- galaxy (1 million lightyears = 9.46073e+21)  
 
 `7` -- galaxy cluster (~10 million light years)
 
@@ -719,7 +719,7 @@ a Planck time particle equivalent to the amount of time taken for light to trave
 
 `K` -- 1 x 10^-8 s -- ( 1 x10^-8 sec ) 
 
-`L` -- 1 x 10^-7 s --1e100 yrs  -- ( 1 x10^-7 sec ) 
+`L` -- 1 x 10^-7 s -- ( 1 x10^-7 sec ) 
 
 `M` -- 1 x 10^-6 s -- ( 1 x10^-6 sec = 1 microsecond )
 
@@ -892,7 +892,7 @@ Atom:
 
 
 
-# hanb replacement language
+# hanb replacement language (in progress)
 describe objects at any resolution, combine various resolutions in any way
 
 examples:  
@@ -1666,6 +1666,8 @@ abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-.
 
 [hanb Rust implementation](https://github.com/matheusfillipe/hanb) by Matheus Fillipe
 
+[hanb IRC implementation](https://github.com/h4ks-com/hanbot) by Matheus Fillipe
+
 [hanb HTML implementation on SDF](https://handyc.sdf.org) handyc SDF site
 
 wooden hanb board by John Fisherkeller
@@ -1697,4 +1699,12 @@ This section is still in progress and is not yet implemented anywhere.
 ``#``  
 ``. -> generate matrix from random seed``  
 ``. with seed FA0FFF3F generate universe: ....11111f.......24nA......222a2........a.....F00d.....a...19fEF``  
+
+# Frequently Asked Questions
+
+Q. I have a suggestion for improving hanb. How can I contribute to hanb?
+
+A. Feedback is always appreciated. Use a pull request on this repo to send your suggestion(s) about improving hanb.
+
+
 
