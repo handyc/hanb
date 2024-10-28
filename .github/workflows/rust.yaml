@@ -9,7 +9,7 @@ on:
 name: Clippy check
 env:
   RUSTFLAGS: "-Dwarnings" 
-  REGISTRY_IMAGE: mattfly/hanb
+  REGISTRY_IMAGE: ${{ secrets.REGISTRY_IMAGE }}  # example mattfly/hanb
 
 jobs:
   clippy_check:
