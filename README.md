@@ -384,7 +384,7 @@ large dynamic spaces in limited memory
 
 `F` -- 10µm Finehair (human hair bet. 17 and 180 µm diameter)    
 
-`G` -- pixel (.1 mm = 100 µm)  (.26mm used in CSS so hanb pixel is slightly smaller)
+`G` -- Graphics pixel (.1 mm = 100 µm)  (.26mm used in CSS so hanb pixel is slightly smaller)
 
 `H` -- "hair" (1 mm)
 
