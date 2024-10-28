@@ -81,7 +81,7 @@ impl Board {
             } else {
                 output.push(match c {
                     ' ' => ALPHABET.chars().rev().nth(1).unwrap(),
-                    _ => ALPHABET.chars().rev().next().unwrap(),
+                    _ => ALPHABET.chars().next_back().unwrap(),
                 });
             }
         }
@@ -184,7 +184,7 @@ impl Navigator {
         let index = SIZES.find(self.level).unwrap();
         if index == SIZES.len() - 1 {
             return Err(format!(
-                "You've reached the top limit fo the universe\nColor {}",
+                "You've reached the top limit of the universe\nColor {}",
                 self.current_board().color
             ));
         }
@@ -204,7 +204,7 @@ impl Navigator {
             board = board.cells[*cell].get_board().unwrap();
         }
         if self.cell_stack.is_empty() {
-            self.level = SIZES.chars().rev().next().unwrap();
+            self.level = SIZES.chars().next_back().unwrap();
         }
         Ok(board)
     }
