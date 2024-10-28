@@ -639,7 +639,7 @@ object size 'b' to object size 'H'
 The transition from one situation to another, called an event, occurs within a duration of time.
 As with space, time is represented as a series of scales using the hanb 64-character set:
 
-abcdefghiklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
+``abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-.`` 
 
 Here, a time duration of 'a' is considered as "ambiguous time" and the unit 'b' is called
 a Planck time particle equivalent to the amount of time taken for light to traverse one Planck length (spatial unit 'b').
