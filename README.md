@@ -2867,6 +2867,8 @@ abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-.
 
 [hanb HTML implementation on SDF](https://handyc.sdf.org) handyc SDF site
 
+[hanb AI test](https://lovable.dev/projects/467ebca9-bfd2-4a2c-958b-871d4bda7971) AI-generated hanb test implementation by lovable
+
 wooden hanb board by John Fisherkeller
 ![wooden hanb board](images/hex_board.jpg)
 
