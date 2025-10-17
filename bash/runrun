@@ -1,0 +1,115 @@
+array=(a b c d e f g h i j k l m n o p q r s t u v w x y z A B C D
+E F G H I J K L M N O P Q R S T U V W X Y Z 0 1 2 3 4 5 6 7 8 9 - .)
+
+#echo "aaaaaaaaaabbbbbbbbbbccccccccccddddddddddeeeeeeeeeeffffffffffgggggggggghhhhhhhhhh"
+posdepth=$((RANDOM % (63 - 0 + 1 ) + 0))
+#posdepth=0
+maxprnt=$((63-$posdepth))
+#echo ""
+
+#echo
+#echo -e "$(tput bold) reg  bld  und   tput-command-colors$(tput sgr0)"
+
+#for i in $(seq 1 7); do
+#  echo " $(tput setaf $i)Text$(tput sgr0) $(tput bold)$(tput setaf $i)Text$(tput sgr0) $(tput sgr 0 1)$(tput setaf $i)Text$(tput sgr0)  \$(tput setaf $i)"
+#done
+
+#echo ' Bold            $(tput bold)'
+#echo ' Underline       $(tput sgr 0 1)'
+#echo ' Reset           $(tput sgr0)'
+
+tput setaf $((RANDOM % (63 - 0 + 1 ) + 0))
+printf "level: $posdepth ${array[$posdepth]}"
+echo ""
+tput setaf $((RANDOM % (63 - 0 + 1 ) + 0))
+echo "request change to position:"
+tput setaf $((RANDOM % (63 - 0 + 1 ) + 0))
+for i in $(seq 0 $maxprnt); 
+do 
+#tput setaf $((RANDOM % (63 - 0 + 1 ) + 0))
+#tput setaf $((RANDOM % (63 - 0 + 1 ) + 0))
+printf "${array[( RANDOM % (63 - 0 + 1 ) + 0 )]}"; 
+done; echo ""
+tput setaf $((RANDOM % (63 - 0 + 1 ) + 0))
+echo "requested change:"
+tput setaf $((RANDOM % (63 - 0 + 1 ) + 0))
+printf "mineral  :"
+tput setaf $((RANDOM % (63 - 0 + 1 ) + 0))
+for i in $(seq 0 63); do printf "${array[( RANDOM % (63 - 0 + 1 ) + 0 )]}"; 
+done; echo ""
+tput setaf $((RANDOM % (63 - 0 + 1 ) + 0))
+printf "vegetable:"
+tput setaf $((RANDOM % (63 - 0 + 1 ) + 0))
+for i in $(seq 0 63); do printf "${array[( RANDOM % (63 - 0 + 1 ) + 0 )]}"; 
+done; echo ""
+tput setaf $((RANDOM % (63 - 0 + 1 ) + 0))
+printf "animal   :"
+tput setaf $((RANDOM % (63 - 0 + 1 ) + 0))
+for i in $(seq 0 63); do printf "${array[( RANDOM % (63 - 0 + 1 ) + 0 )]}"; 
+done; echo ""
+tput setaf $((RANDOM % (63 - 0 + 1 ) + 0))
+printf "item     :"
+tput setaf $((RANDOM % (63 - 0 + 1 ) + 0))
+for i in $(seq 0 63); do printf "${array[( RANDOM % (63 - 0 + 1 ) + 0 )]}"; 
+done; echo ""
+echo ""
+
+tput setaf $((RANDOM % (63 - 0 + 1 ) + 0))
+echo "parent position 1:"
+tput setaf $((RANDOM % (63 - 0 + 1 ) + 0))
+for i in $(seq 0 $maxprnt); do printf "${array[( RANDOM % (63 - 0 + 1 ) + 0 )]}"; 
+done; echo ""
+tput setaf $((RANDOM % (63 - 0 + 1 ) + 0))
+echo "contents 1:"
+tput setaf $((RANDOM % (63 - 0 + 1 ) + 0))
+printf "mineral  :"
+tput setaf $((RANDOM % (63 - 0 + 1 ) + 0))
+for i in $(seq 0 63); do printf "${array[( RANDOM % (63 - 0 + 1 ) + 0 )]}"; 
+done; echo ""
+tput setaf $((RANDOM % (63 - 0 + 1 ) + 0))
+printf "vegetable:"
+tput setaf $((RANDOM % (63 - 0 + 1 ) + 0))
+for i in $(seq 0 63); do printf "${array[( RANDOM % (63 - 0 + 1 ) + 0 )]}"; 
+done; echo ""
+tput setaf $((RANDOM % (63 - 0 + 1 ) + 0))
+printf "animal   :"
+tput setaf $((RANDOM % (63 - 0 + 1 ) + 0))
+for i in $(seq 0 63); do printf "${array[( RANDOM % (63 - 0 + 1 ) + 0 )]}"; 
+done; echo ""
+tput setaf $((RANDOM % (63 - 0 + 1 ) + 0))
+printf "item     :"
+tput setaf $((RANDOM % (63 - 0 + 1 ) + 0))
+for i in $(seq 0 63); do printf "${array[( RANDOM % (63 - 0 + 1 ) + 0 )]}"; 
+done; echo ""
+echo ""
+
+tput setaf $((RANDOM % (63 - 0 + 1 ) + 0))
+echo "parent position 2:"
+tput setaf $((RANDOM % (63 - 0 + 1 ) + 0))
+for i in $(seq 0 $maxprnt); do printf "${array[( RANDOM % (63 - 0 + 1 ) + 0 )]}"; 
+done; echo ""
+tput setaf $((RANDOM % (63 - 0 + 1 ) + 0))
+echo "contents 2:"
+tput setaf $((RANDOM % (63 - 0 + 1 ) + 0))
+printf "mineral  :"
+tput setaf $((RANDOM % (63 - 0 + 1 ) + 0))
+for i in $(seq 0 63); do printf "${array[( RANDOM % (63 - 0 + 1 ) + 0 )]}"; 
+done; echo ""
+tput setaf $((RANDOM % (63 - 0 + 1 ) + 0))
+printf "vegetable:"
+tput setaf $((RANDOM % (63 - 0 + 1 ) + 0))
+for i in $(seq 0 63); do printf "${array[( RANDOM % (63 - 0 + 1 ) + 0 )]}"; 
+done; echo ""
+tput setaf $((RANDOM % (63 - 0 + 1 ) + 0))
+printf "animal   :"
+tput setaf $((RANDOM % (63 - 0 + 1 ) + 0))
+for i in $(seq 0 63); do printf "${array[( RANDOM % (63 - 0 + 1 ) + 0 )]}"; 
+done; echo ""
+tput setaf $((RANDOM % (63 - 0 + 1 ) + 0))
+printf "item     :"
+tput setaf $((RANDOM % (63 - 0 + 1 ) + 0))
+for i in $(seq 0 63); do printf "${array[( RANDOM % (63 - 0 + 1 ) + 0 )]}"; 
+done; echo ""
+#echo ""
+
+tput setaf $((RANDOM % (63 - 0 + 1 ) + 0))
